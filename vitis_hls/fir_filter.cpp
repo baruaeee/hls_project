@@ -21,6 +21,12 @@ void fir_filter(data_t *y, data_t x, data_t h[N_TAPS]){
 	#pragma HLS INTERFACE mode=ap_vld port=x
 	#pragma HLS INTERFACE mode=ap_vld port=h
 	// #pragma  HLS INTERFACE =>> port are defined as INTERFACE (not internal wire/signal)
+	// "ap_ctrl_hs" Specifies the Control Handshake protocol.
+	// This generates dedicated, discrete control signals
+	// (ap_start, ap_done, ap_idle, and ap_ready) to control
+	// the execution lifecycle of the IP block (or communicate with HW by ext. CPU).
+	// "port=return" =>> "not about a (c/c++) data input or data output pin.
+	// Its about the control pins that manage the starting and stopping of this entire hardware block.
 	#pragma HLS INTERFACE mode=ap_ctrl_hs port=return
 
 	// Shift register for input samples
@@ -29,12 +35,17 @@ void fir_filter(data_t *y, data_t x, data_t h[N_TAPS]){
 	// HLS Synthesize this as hardware registers
 	// (or RAM) that retain state across clock cycles.
 	static data_t shift_reg[N_TAPS];
+
+	// "type=complete" =>> break array into registers to access all components simultaneously
+	// without this HLS might use a RAM or the values clould be read one per cycle.
 	#pragma HLS ARRAY_PARTITION variable=shift_reg type=complete
 
 	// Shift in new sample (MSD-first: tap[3] gets newest)
 	SHIFT:	// naming of the following for loop
 	// i>0 =>> shift_reg[0] ignored in the loop (keep for newest data)
 	for (int i = N_TAPS-1; i>0; i--){
+		// copy the loop body multiple times (to do the iteration done in parallel)
+		// without this this for loop will take 'N_TAPS-1' clock cycle.
 		#pragma HLS UNROLL
 		shift_reg[i] = shift_reg[i-1];
 	}
@@ -44,8 +55,11 @@ void fir_filter(data_t *y, data_t x, data_t h[N_TAPS]){
 	acc_t acc = 0;
 	MAC:	// named the loop (Multiply Accumulate)
 	for (int i = 0; i < N_TAPS-1; i++){
+		// Pipelinig to reduce clock cycles
+		// II (Initiation Interval) =>> loop iteration delay times (II=1, new iteration every clock cycle)
 		#pragma HLS PIPELINE II=1
-		#pragma HLS UNROLL factor=2	// Partial unroll
+		// "factor=2" =>> run 2 iteration in parallel
+		// #pragma HLS UNROLL factor=2	// Partial unroll
 		acc += shift_reg[i] * h[i];
 	}
 	*y = acc;
