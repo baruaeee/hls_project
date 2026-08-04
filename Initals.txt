@@ -1,0 +1,28 @@
+applications beyond just AI — so think about areas like:
+Digital signal processing (DSP)
+Cryptography and security
+Image/video processing
+Networking and communications
+Control systems
+Scientific computing
+
+
+include non-AI applications, consider structuring around:
+Introduction to HLS (concepts, history, advantages)
+Tool Comparison (Vitis HLS vs. Stratus — methodology, features, limitations)
+Case Studies from Different Domains:
+Signal processing (e.g., FFT, digital filter)
+Cryptography (e.g., AES, SHA)
+Image processing (e.g., edge detection)
+Maybe one AI example for comparison
+Performance Analysis (latency, throughput, resource usage, power)
+Conclusion (best practices, tool recommendations)
+
+
+
+Clarify With Your Supervisor
+Should the thesis focus on comparing the two tools or exploring applications?
+Is there a specific target hardware platform (Xilinx FPGA, ASIC flow)?
+Any preferred non-AI application emphasized?
+
+Access to lab PC/Machines/FPGA boards!!

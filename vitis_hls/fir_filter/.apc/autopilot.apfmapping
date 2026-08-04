@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fir_filter.cpp" path="/home/ipad/HLS_Thesis/vitis_hls/fir_filter.cpp"/>
+    <originFiles name="fir_filter.h" path="/home/ipad/HLS_Thesis/vitis_hls/fir_filter.h"/>
+  </source>
+  <testbench>
+    <originFiles name="fir_tb.cpp" path="/home/ipad/HLS_Thesis/vitis_hls/fir_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
