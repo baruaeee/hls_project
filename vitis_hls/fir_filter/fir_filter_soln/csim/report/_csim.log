@@ -1,9 +1,7 @@
 INFO: [SIM 2] *************** CSIM start ***************
-INFO: [SIM 4] CSIM will launch GCC as the compiler.
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../fir_tb.cpp in debug mode
+   Compiling ../../../../fir_filter.cpp in debug mode
    Generating csim.exe
-/home/ipad/Vivado/Vivado/2023.1/tps/lnx64/binutils-2.37/bin/ld: /lib/../lib64/crt1.o: in function `_start':
-(.text+0x1b): undefined reference to `main'
-collect2: error: ld returned 1 exit status
-make: *** [Makefile.rules:323: csim.exe] Error 1
-ERR: [SIM 100] CSim file generation failed: compilation error(s).
+INFO: [SIM 1] CSim file generation done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

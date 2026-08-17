@@ -1,8 +1,8 @@
-<project xmlns="com.autoesl.autopilot.project" top="" name="fir_filter" projectType="C/C++">
+<project xmlns="com.autoesl.autopilot.project" name="fir_filter" top="fir_filter" projectType="C/C++">
     <includePaths/>
     <libraryPaths/>
     <Simulation>
-        <SimFlow name="csim" csimMode="2" lastCsimMode="2"/>
+        <SimFlow name="csim" profile="true" clean="true" csimMode="2" lastCsimMode="2"/>
     </Simulation>
     <files xmlns="">
         <file name="fir_filter.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>

@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "fir_filter",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "fir_filter"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "fir_filter",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "fir_filter"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

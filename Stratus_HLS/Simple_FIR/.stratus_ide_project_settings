@@ -1,0 +1,25 @@
+[General]
+SplitterPos=@ByteArray(\0\0\0\xff\0\0\0\x1\0\0\0\x2\0\0\x3\x92\xff\xff\xff\xff\x1\0\0\0\x1\x1\0\0\0\x2\0)
+programVersionString=24.01-p001
+
+[analysis]
+%2B\NIL\context=(nil)
+HLSConfig\Simple_FIR%3A%3AModules%3A%3Afir_filter%3A%3ABASIC\TopSplitOrientation=false
+HLSConfig\Simple_FIR%3A%3AModules%3A%3Afir_filter%3A%3ABASIC\TopSplitterPos=@ByteArray(\0\0\0\xff\0\0\0\x1\0\0\0\x2\0\0\x1\xfc\xff\xff\xff\xff\x1\0\0\0\b\x1\0\0\0\x1\0)
+HLSConfig\Simple_FIR%3A%3AModules%3A%3Afir_filter%3A%3ABASIC\context=Simple_FIR::Modules::fir_filter::BASIC
+HLSConfig\Simple_FIR%3A%3AModules%3A%3Afir_filter%3A%3ABASIC\firstSelTabKey=Dashboard
+HLSConfig\Simple_FIR%3A%3AModules%3A%3Afir_filter%3A%3ABASIC\selSecondTab=-1
+HLSConfig\Simple_FIR%3A%3AModules%3A%3Afir_filter%3A%3ABASIC\shownTabs=Dashboard
+HLSConfig\Simple_FIR%3A%3AModules%3A%3Afir_filter%3A%3ABASIC\splitTabs=@Invalid()
+HLSConfig\Simple_FIR%3A%3AModules%3A%3Afir_filter%3A%3ABASIC\tornOffTabs=@Invalid()
+Index\Simple_FIR%3A%3AModules%3A%3Afir_filter%3A%3ABASIC\accessAtOptimize=true
+Index\Simple_FIR%3A%3AModules%3A%3Afir_filter%3A%3ABASIC\accessAtRTL=true
+Index\Simple_FIR%3A%3AModules%3A%3Afir_filter%3A%3ABASIC\accessAtSchedule=true
+Index\Simple_FIR%3A%3AModules%3A%3Afir_filter%3A%3ABASIC\showFullDashboard=true
+
+[tree]
+OpenLibTypes=Memories, Interfaces, Resources
+OpenLibs=@Invalid()
+OpenModules=fir_filter
+OpenTopLevel=Modules, Config Groups, Sim Configs, Logic Synth Configs, PnR Configs, Power Configs, Analysis Configs, Equiv Configs, Coverage Configs, Libraries
+Selection=Simple_FIR::Modules::fir_filter::BASIC

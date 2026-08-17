@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QtCreatorSession>
+<!-- Written by Stratus IDE 4.6.2, 2026-08-17T14:24:39. -->
+<qtcreator>
+ <data>
+  <variable>CascadeSetActive</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>Color</variable>
+  <value type="QString">#666666</value>
+ </data>
+ <data>
+  <variable>EditorSettings</variable>
+  <value type="QByteArray">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</value>
+ </data>
+ <data>
+  <variable>ProjectDependencies</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+ <data>
+  <variable>ProjectList</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">/home/ipad/HLS_Thesis/Stratus_HLS/Simple_FIR/Simple_FIR.pro</value>
+   <value type="QString">/home/ipad/HLS_Thesis/Stratus_HLS/Simple_FIR/project.tcl</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>StartupProject</variable>
+  <value type="QString">/home/ipad/HLS_Thesis/Stratus_HLS/Simple_FIR/project.tcl</value>
+ </data>
+ <data>
+  <variable>value-ActiveMode</variable>
+  <value type="QString">Edit</value>
+ </data>
+ <data>
+  <variable>value-Breakpoints</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>value-DefaultFormats</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+ <data>
+  <variable>value-IndividualFormats</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+ <data>
+  <variable>value-ProjectTree.ExpandData</variable>
+  <valuelist type="QVariantList">
+   <valuelist type="QVariantList">
+    <value type="QString">/home/ipad/HLS_Thesis/Stratus_HLS/Simple_FIR</value>
+    <value type="QString">Sources</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/home/ipad/HLS_Thesis/Stratus_HLS/Simple_FIR</value>
+    <value type="QString">Headers</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/home/ipad/HLS_Thesis/Stratus_HLS/Simple_FIR</value>
+    <value type="QString">Other files</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">/home/ipad/HLS_Thesis/Stratus_HLS/Simple_FIR</value>
+    <value type="QString">Simple_FIR</value>
+   </valuelist>
+  </valuelist>
+ </data>
+ <data>
+  <variable>value-Watchers</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>valueKeys</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">ActiveMode</value>
+   <value type="QString">Breakpoints</value>
+   <value type="QString">DefaultFormats</value>
+   <value type="QString">IndividualFormats</value>
+   <value type="QString">ProjectTree.ExpandData</value>
+   <value type="QString">Watchers</value>
+  </valuelist>
+ </data>
+</qtcreator>

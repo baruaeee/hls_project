@@ -1,0 +1,9 @@
+[General]
+programVersionString=24.01-p001
+
+[tree]
+OpenLibTypes=Memories, Interfaces, Resources
+OpenLibs=@Invalid()
+OpenModules=fir
+OpenTopLevel=Modules, Config Groups, Sim Configs, Logic Synth Configs, PnR Configs, Power Configs, Analysis Configs, Equiv Configs, Coverage Configs, Libraries
+Selection=

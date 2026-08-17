@@ -56,3 +56,1026 @@ INFO: [HLS 200-2036] Building debug C Simulation binaries
 ERROR: [SIM 211-100] CSim file generation failed: compilation error(s).
 INFO: [SIM 211-3] *************** CSIM finish ***************
 INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.31 seconds. CPU system time: 0.16 seconds. Elapsed time: 0.52 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] CSim file generation failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3.72 seconds. CPU system time: 0.45 seconds. Elapsed time: 7.47 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3.69 seconds. CPU system time: 0.47 seconds. Elapsed time: 7.86 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3.76 seconds. CPU system time: 0.45 seconds. Elapsed time: 6.02 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -clean -profile -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.81 seconds. CPU system time: 0.71 seconds. Elapsed time: 16.03 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -clean -profile -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 7.57 seconds. CPU system time: 0.67 seconds. Elapsed time: 14.89 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -clean -profile -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] CSim file generation failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 4.92 seconds. CPU system time: 0.47 seconds. Elapsed time: 55.61 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -clean -profile -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.35 seconds. CPU system time: 0.53 seconds. Elapsed time: 10.09 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -clean -profile -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.1 seconds. CPU system time: 0.57 seconds. Elapsed time: 8.36 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -clean -profile -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.36 seconds. CPU system time: 0.61 seconds. Elapsed time: 16.98 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.18 seconds; current allocated memory: 183.043 MB.
+INFO: [HLS 200-10] Analyzing design file 'fir_filter.cpp' ... 
+WARNING: [HLS 207-5575] '#pragma HLS unroll' can only be applied inside loop body (fir_filter.cpp:34:9)
+WARNING: [HLS 207-5575] '#pragma HLS unroll' can only be applied inside loop body (fir_filter.cpp:52:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6.86 seconds. CPU system time: 0.76 seconds. Elapsed time: 12.05 seconds; current allocated memory: 183.695 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 579 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 94 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 55 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 70 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10fir_filterP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES2_S3_E9shift_reg': Complete partitioning on dimension 1. (fir_filter.cpp:26:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.15 seconds. CPU system time: 0.58 seconds. Elapsed time: 20.06 seconds; current allocated memory: 185.410 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 185.410 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.59 seconds; current allocated memory: 185.746 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 185.805 MB.
+INFO: [XFORM 203-510] Pipelining loop 'SHIFT' (fir_filter.cpp:40) in function 'fir_filter' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'MAC' (fir_filter.cpp:55) in function 'fir_filter' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 207.703 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 217.016 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir_filter' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_filter_Pipeline_SHIFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'SHIFT'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'SHIFT'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.46 seconds; current allocated memory: 218.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 218.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_filter_Pipeline_MAC' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln56) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'MAC'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'MAC'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 219.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 219.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 219.312 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 219.312 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_filter_Pipeline_SHIFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_1' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'mux_4_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_filter_Pipeline_SHIFT'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 219.312 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_filter_Pipeline_MAC' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fir_filter_Pipeline_MAC' pipeline 'MAC' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_26ns_26_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_4_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_filter_Pipeline_MAC'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.27 seconds; current allocated memory: 220.434 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/y' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/x' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir_filter' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_filter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 221.750 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.4 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.51 seconds; current allocated memory: 225.645 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.44 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.62 seconds; current allocated memory: 234.648 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir_filter.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir_filter.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 271.15 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 13.1 seconds. CPU system time: 1.56 seconds. Elapsed time: 36.06 seconds; current allocated memory: 51.828 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -clean -profile -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.52 seconds. CPU system time: 0.54 seconds. Elapsed time: 9.79 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 183.105 MB.
+INFO: [HLS 200-10] Analyzing design file 'fir_filter.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.95 seconds. CPU system time: 0.55 seconds. Elapsed time: 6.71 seconds; current allocated memory: 183.699 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 579 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 190 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 58 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 61 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-186] Unrolling loop 'MAC' (fir_filter.cpp:53:2) in function 'fir_filter' completely with a factor of 4 (fir_filter.cpp:3:0)
+INFO: [HLS 214-186] Unrolling loop 'SHIFT' (fir_filter.cpp:36:2) in function 'fir_filter' completely with a factor of 3 (fir_filter.cpp:3:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10fir_filterP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES2_S3_E9shift_reg': Complete partitioning on dimension 1. (fir_filter.cpp:26:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.69 seconds. CPU system time: 0.46 seconds. Elapsed time: 8.75 seconds; current allocated memory: 185.547 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 185.547 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 185.797 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 185.797 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 206.418 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 197.164 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir_filter' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln55_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln55_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln55_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 197.477 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 197.477 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/y' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/x' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir_filter' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_2' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_24ns_24_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_24_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_filter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 197.766 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.34 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.43 seconds; current allocated memory: 202.195 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.33 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.38 seconds; current allocated memory: 210.781 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir_filter.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir_filter.
+INFO: [HLS 200-789] **** Estimated Fmax: 179.21 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 10.88 seconds. CPU system time: 1.13 seconds. Elapsed time: 17.28 seconds; current allocated memory: 27.777 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./fir_filter/fir_filter_soln/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name fir_filter fir_filter 
+INFO: [HLS 200-1510] Running: csim_design -clean -profile -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 7.73 seconds. CPU system time: 0.73 seconds. Elapsed time: 18.58 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./fir_filter/fir_filter_soln/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name fir_filter fir_filter 
+INFO: [HLS 200-1510] Running: csim_design -clean -profile -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.09 seconds. CPU system time: 0.57 seconds. Elapsed time: 11.72 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./fir_filter/fir_filter_soln/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name fir_filter fir_filter 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.12 seconds; current allocated memory: 208.785 MB.
+INFO: [HLS 200-10] Analyzing design file 'fir_filter.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.22 seconds. CPU system time: 0.55 seconds. Elapsed time: 8.2 seconds; current allocated memory: 209.410 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 579 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 190 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 58 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 61 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-186] Unrolling loop 'MAC' (fir_filter.cpp:53:2) in function 'fir_filter' completely with a factor of 4 (fir_filter.cpp:3:0)
+INFO: [HLS 214-186] Unrolling loop 'SHIFT' (fir_filter.cpp:36:2) in function 'fir_filter' completely with a factor of 3 (fir_filter.cpp:3:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10fir_filterP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES2_S3_E9shift_reg': Complete partitioning on dimension 1. (fir_filter.cpp:26:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.65 seconds. CPU system time: 0.44 seconds. Elapsed time: 11.71 seconds; current allocated memory: 211.301 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 211.301 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.49 seconds; current allocated memory: 211.547 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 211.547 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 232.137 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 222.883 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir_filter' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln55_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln55_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln55_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.36 seconds; current allocated memory: 223.566 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 223.566 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/y' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/x' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir_filter' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_2' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_24ns_24_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_24_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_filter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.32 seconds; current allocated memory: 223.566 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.28 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.42 seconds; current allocated memory: 227.977 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.3 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.38 seconds; current allocated memory: 236.531 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir_filter.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir_filter.
+INFO: [HLS 200-789] **** Estimated Fmax: 179.21 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 10.02 seconds. CPU system time: 1.13 seconds. Elapsed time: 22.42 seconds; current allocated memory: 27.848 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./fir_filter/fir_filter_soln/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name fir_filter fir_filter 
+INFO: [HLS 200-1510] Running: csim_design -clean -profile -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.72 seconds. CPU system time: 0.56 seconds. Elapsed time: 9 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./fir_filter/fir_filter_soln/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name fir_filter fir_filter 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 208.785 MB.
+INFO: [HLS 200-10] Analyzing design file 'fir_filter.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.11 seconds. CPU system time: 0.54 seconds. Elapsed time: 5.82 seconds; current allocated memory: 209.395 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 579 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 190 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 58 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 61 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_53_2' (fir_filter.cpp:53:19) in function 'fir_filter' completely with a factor of 4 (fir_filter.cpp:3:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_36_1' (fir_filter.cpp:36:19) in function 'fir_filter' completely with a factor of 3 (fir_filter.cpp:3:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10fir_filterP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES2_S3_E9shift_reg': Complete partitioning on dimension 1. (fir_filter.cpp:26:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.35 seconds. CPU system time: 0.36 seconds. Elapsed time: 8.39 seconds; current allocated memory: 211.234 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 211.234 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 211.484 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 211.484 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 232.168 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 222.914 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir_filter' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln55_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln55_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln55_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 223.547 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 223.547 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/y' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/x' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir_filter' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_2' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_24ns_24_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_24_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_filter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 223.547 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.28 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.31 seconds; current allocated memory: 227.984 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.31 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.34 seconds; current allocated memory: 236.512 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir_filter.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir_filter.
+INFO: [HLS 200-789] **** Estimated Fmax: 179.21 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 9.58 seconds. CPU system time: 1.01 seconds. Elapsed time: 15.59 seconds; current allocated memory: 27.828 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./fir_filter/fir_filter_soln/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name fir_filter fir_filter 
+INFO: [HLS 200-1510] Running: csim_design -clean -profile -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.44 seconds. CPU system time: 0.53 seconds. Elapsed time: 7.69 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./fir_filter/fir_filter_soln/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name fir_filter fir_filter 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.12 seconds; current allocated memory: 208.785 MB.
+INFO: [HLS 200-10] Analyzing design file 'fir_filter.cpp' ... 
+WARNING: [HLS 207-5575] '#pragma HLS unroll' can only be applied inside loop body (fir_filter.cpp:36:9)
+WARNING: [HLS 207-5575] '#pragma HLS unroll' can only be applied inside loop body (fir_filter.cpp:54:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.26 seconds. CPU system time: 0.53 seconds. Elapsed time: 5.9 seconds; current allocated memory: 209.488 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 579 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 94 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 55 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 70 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10fir_filterP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES2_S3_E9shift_reg': Complete partitioning on dimension 1. (fir_filter.cpp:26:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.3 seconds. CPU system time: 0.37 seconds. Elapsed time: 8.3 seconds; current allocated memory: 211.238 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 211.238 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 211.547 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 211.625 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_37_1' (fir_filter.cpp:37) in function 'fir_filter' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_55_2' (fir_filter.cpp:55) in function 'fir_filter' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 233.465 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 242.746 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir_filter' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_filter_Pipeline_VITIS_LOOP_37_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_37_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_37_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.08 seconds; current allocated memory: 244.332 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 244.332 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_filter_Pipeline_VITIS_LOOP_55_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln57) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_55_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_55_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 244.762 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 244.762 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 245.117 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 245.117 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_filter_Pipeline_VITIS_LOOP_37_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_1' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'mux_4_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_filter_Pipeline_VITIS_LOOP_37_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 245.117 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_filter_Pipeline_VITIS_LOOP_55_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fir_filter_Pipeline_VITIS_LOOP_55_2' pipeline 'VITIS_LOOP_55_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_26ns_26_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_4_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_filter_Pipeline_VITIS_LOOP_55_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 246.180 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/y' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/x' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir_filter' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_filter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 247.504 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.29 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.32 seconds; current allocated memory: 251.449 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.33 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.37 seconds; current allocated memory: 260.418 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir_filter.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir_filter.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 271.15 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 10.16 seconds. CPU system time: 1.07 seconds. Elapsed time: 16.02 seconds; current allocated memory: 51.855 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./fir_filter/fir_filter_soln/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name fir_filter fir_filter 
+INFO: [HLS 200-1510] Running: csim_design -clean -profile -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 5.53 seconds. CPU system time: 0.44 seconds. Elapsed time: 6.46 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./fir_filter/fir_filter_soln/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name fir_filter fir_filter 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 208.785 MB.
+INFO: [HLS 200-10] Analyzing design file 'fir_filter.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.15 seconds. CPU system time: 0.49 seconds. Elapsed time: 5.81 seconds; current allocated memory: 209.426 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 580 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 190 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 57 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 63 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_28_2' (fir_filter.cpp:28:22) in function 'fir_filter' completely with a factor of 4 (fir_filter.cpp:3:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_19_1' (fir_filter.cpp:19:19) in function 'fir_filter' completely with a factor of 3 (fir_filter.cpp:3:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10fir_filterP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES2_S3_E9shift_reg': Complete partitioning on dimension 1. (fir_filter.cpp:10:0)
+INFO: [HLS 214-248] Applying array_partition to 'h': Complete partitioning on dimension 1. (fir_filter.cpp:3:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.41 seconds. CPU system time: 0.37 seconds. Elapsed time: 8.52 seconds; current allocated memory: 211.242 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 211.242 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 211.492 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 211.492 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 232.168 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 222.914 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir_filter' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln30_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln30_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln30_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 223.621 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 223.621 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/y' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/x' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir_filter' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_2' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_24ns_24_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_24_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_filter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 223.621 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.23 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.26 seconds; current allocated memory: 227.938 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.31 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.35 seconds; current allocated memory: 236.543 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir_filter.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir_filter.
+INFO: [HLS 200-789] **** Estimated Fmax: 179.21 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 9.56 seconds. CPU system time: 0.97 seconds. Elapsed time: 15.5 seconds; current allocated memory: 27.875 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./fir_filter/fir_filter_soln/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name fir_filter fir_filter 
+INFO: [HLS 200-1510] Running: csim_design -clean -profile -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 5.48 seconds. CPU system time: 0.42 seconds. Elapsed time: 6.33 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./fir_filter/fir_filter_soln/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name fir_filter fir_filter 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 208.785 MB.
+INFO: [HLS 200-10] Analyzing design file 'fir_filter.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.29 seconds. CPU system time: 0.54 seconds. Elapsed time: 5.91 seconds; current allocated memory: 209.410 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 580 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 190 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 57 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 64 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_22_2' is marked as complete unroll implied by the pipeline pragma (fir_filter.cpp:22:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_15_1' is marked as complete unroll implied by the pipeline pragma (fir_filter.cpp:15:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_22_2' (fir_filter.cpp:22:22) in function 'fir_filter' completely with a factor of 4 (fir_filter.cpp:3:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_15_1' (fir_filter.cpp:15:19) in function 'fir_filter' completely with a factor of 3 (fir_filter.cpp:3:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10fir_filterP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES2_S3_E9shift_reg': Complete partitioning on dimension 1. (fir_filter.cpp:11:0)
+INFO: [HLS 214-248] Applying array_partition to 'h': Complete partitioning on dimension 1. (fir_filter.cpp:3:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.44 seconds. CPU system time: 0.32 seconds. Elapsed time: 8.37 seconds; current allocated memory: 211.270 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 211.270 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 211.520 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 211.520 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 232.188 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 222.934 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir_filter' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln24_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln24_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln24_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'fir_filter'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, function 'fir_filter'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 223.695 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 223.695 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/y' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/x' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir_filter' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_2' is power-on initialization.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fir_filter' pipeline 'fir_filter' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_24ns_24_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_24_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_filter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 223.695 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.33 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.35 seconds; current allocated memory: 228.086 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.32 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.35 seconds; current allocated memory: 236.688 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir_filter.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir_filter.
+INFO: [HLS 200-789] **** Estimated Fmax: 179.21 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 9.84 seconds. CPU system time: 0.96 seconds. Elapsed time: 15.51 seconds; current allocated memory: 28.020 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./fir_filter/fir_filter_soln/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name fir_filter fir_filter 
+INFO: [HLS 200-1510] Running: csim_design -clean -profile -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 5.05 seconds. CPU system time: 0.48 seconds. Elapsed time: 7.01 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./fir_filter/fir_filter_soln/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name fir_filter fir_filter 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.12 seconds; current allocated memory: 175.055 MB.
+INFO: [HLS 200-10] Analyzing design file 'fir_filter.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.15 seconds. CPU system time: 0.55 seconds. Elapsed time: 6.85 seconds; current allocated memory: 175.676 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 580 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 190 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 57 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 64 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_53_2' is marked as complete unroll implied by the pipeline pragma (fir_filter.cpp:53:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_38_1' is marked as complete unroll implied by the pipeline pragma (fir_filter.cpp:38:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_53_2' (fir_filter.cpp:53:22) in function 'fir_filter' completely with a factor of 4 (fir_filter.cpp:3:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_38_1' (fir_filter.cpp:38:19) in function 'fir_filter' completely with a factor of 3 (fir_filter.cpp:3:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10fir_filterP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES2_S3_E9shift_reg': Complete partitioning on dimension 1. (fir_filter.cpp:25:0)
+INFO: [HLS 214-248] Applying array_partition to 'h': Complete partitioning on dimension 1. (fir_filter.cpp:3:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.42 seconds. CPU system time: 0.35 seconds. Elapsed time: 9.18 seconds; current allocated memory: 177.551 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 177.551 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.3 seconds; current allocated memory: 177.801 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 177.801 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 198.457 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 189.203 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir_filter' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln55_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln55_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln55_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'fir_filter'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, function 'fir_filter'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.23 seconds; current allocated memory: 190.031 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 190.031 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/y' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/x' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_filter/h_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir_filter' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'fir_filter_ap_fixed_ap_fixed_ap_fixed_16_8_5_3_0_shift_reg_2' is power-on initialization.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fir_filter' pipeline 'fir_filter' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_24ns_24_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_24_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_filter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 190.031 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.31 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.44 seconds; current allocated memory: 194.352 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.39 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.51 seconds; current allocated memory: 202.941 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir_filter.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir_filter.
+INFO: [HLS 200-789] **** Estimated Fmax: 179.21 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 9.74 seconds. CPU system time: 1.05 seconds. Elapsed time: 18.2 seconds; current allocated memory: 28.020 MB.

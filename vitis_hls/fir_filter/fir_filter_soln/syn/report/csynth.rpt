@@ -1,0 +1,118 @@
+
+
+================================================================
+== Synthesis Summary Report of 'fir_filter'
+================================================================
++ General Information: 
+    * Date:           Thu Aug 13 14:08:52 2026
+    * Version:        2023.1 (Build 3854077 on May  4 2023)
+    * Project:        fir_filter
+    * Solution:       fir_filter_soln (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z010i-clg225-1L
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------+------+------+---------+--------+----------+---------+------+----------+------+--------+-----------+----------+-----+
+    |    Modules   | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |        |           |          |     |
+    |    & Loops   | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |     FF    |    LUT   | URAM|
+    +--------------+------+------+---------+--------+----------+---------+------+----------+------+--------+-----------+----------+-----+
+    |+ fir_filter  |     -|  1.72|        5|  50.000|         -|        1|     -|       yes|     -|  4 (5%)|  187 (~0%)|  46 (~0%)|    -|
+    +--------------+------+------+---------+--------+----------+---------+------+----------+------+--------+-----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------+---------+-----------+----------+
+| Port | Mode    | Direction | Bitwidth |
++------+---------+-----------+----------+
+| h_0  | ap_none | in        | 16       |
+| h_1  | ap_none | in        | 16       |
+| h_2  | ap_none | in        | 16       |
+| h_3  | ap_none | in        | 16       |
+| x    | ap_vld  | in        | 16       |
+| y    | ap_vld  | out       | 16       |
++------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------------------------------+
+| Argument | Direction | Datatype                             |
++----------+-----------+--------------------------------------+
+| y        | out       | ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>* |
+| x        | in        | ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>  |
+| h        | in        | ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>* |
++----------+-----------+--------------------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| y        | y            | port    |
+| y        | y_ap_vld     | port    |
+| x        | x_ap_vld     | port    |
+| x        | x            | port    |
+| h        | h_0          | port    |
+| h        | h_1          | port    |
+| h        | h_2          | port    |
+| h        | h_3          | port    |
++----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------+-----+--------+------------+-----+-------+---------+
+| Name                                | DSP | Pragma | Variable   | Op  | Impl  | Latency |
++-------------------------------------+-----+--------+------------+-----+-------+---------+
+| + fir_filter                        | 4   |        |            |     |       |         |
+|   mul_16s_16s_24_1_1_U1             | 1   |        | mul_ln55   | mul | auto  | 0       |
+|   mac_muladd_16s_16s_24ns_24_4_1_U2 | 1   |        | mul_ln55_1 | mul | dsp48 | 3       |
+|   mac_muladd_16s_16s_24ns_24_4_1_U2 | 1   |        | add_ln55   | add | dsp48 | 3       |
+|   mac_muladd_16s_16s_24ns_24_4_1_U3 | 1   |        | mul_ln55_2 | mul | dsp48 | 3       |
+|   mac_muladd_16s_16s_24ns_24_4_1_U3 | 1   |        | add_ln55_1 | add | dsp48 | 3       |
+|   mac_muladd_16s_16s_24ns_24_4_1_U4 | 1   |        | mul_ln55_3 | mul | dsp48 | 3       |
+|   mac_muladd_16s_16s_24ns_24_4_1_U4 | 1   |        | add_ln55_2 | add | dsp48 | 3       |
++-------------------------------------+-----+--------+------------+-----+-------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-----------------------------+--------------------------------------------+
+| Type            | Options                     | Location                                   |
++-----------------+-----------------------------+--------------------------------------------+
+| interface       | mode=ap_vld port=y          | fir_filter.cpp:6 in fir_filter, y          |
+| interface       | mode=ap_vld port=x          | fir_filter.cpp:7 in fir_filter, x          |
+| interface       | mode=ap_none port=h         | fir_filter.cpp:12 in fir_filter, h         |
+| interface       | mode=ap_ctrl_hs port=return | fir_filter.cpp:21 in fir_filter, return    |
+| pipeline        | II=1                        | fir_filter.cpp:23 in fir_filter            |
+| array_partition | variable=shift_reg complete | fir_filter.cpp:29 in fir_filter, shift_reg |
+| array_partition | variable=h complete         | fir_filter.cpp:32 in fir_filter, h         |
+| unroll          |                             | fir_filter.cpp:41 in fir_filter            |
+| unroll          |                             | fir_filter.cpp:54 in fir_filter            |
++-----------------+-----------------------------+--------------------------------------------+
+
+

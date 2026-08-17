@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="auto" LATENCY="0" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_24_1_1_U1" SOURCE="fir_filter.cpp:55" VARIABLE="mul_ln55" MODULE="fir_filter" LOOP="" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp48" LATENCY="3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_24ns_24_4_1_U2" SOURCE="fir_filter.cpp:55" VARIABLE="mul_ln55_1" MODULE="fir_filter" LOOP="" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="dsp48" LATENCY="3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_24ns_24_4_1_U2" SOURCE="fir_filter.cpp:55" VARIABLE="add_ln55" MODULE="fir_filter" LOOP="" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp48" LATENCY="3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_24ns_24_4_1_U3" SOURCE="fir_filter.cpp:55" VARIABLE="mul_ln55_2" MODULE="fir_filter" LOOP="" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="dsp48" LATENCY="3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_24ns_24_4_1_U3" SOURCE="fir_filter.cpp:55" VARIABLE="add_ln55_1" MODULE="fir_filter" LOOP="" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp48" LATENCY="3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_24ns_24_4_1_U4" SOURCE="fir_filter.cpp:55" VARIABLE="mul_ln55_3" MODULE="fir_filter" LOOP="" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="dsp48" LATENCY="3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_24ns_24_4_1_U4" SOURCE="fir_filter.cpp:55" VARIABLE="add_ln55_2" MODULE="fir_filter" LOOP="" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+</BindInfo>

@@ -57,8 +57,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/lnx64/tools/systemc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/home/ipad/HLS_Thesis/vitis_hls"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/include/etc"/>
@@ -92,8 +90,6 @@
                                     <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/lnx64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/lnx64/tools/systemc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/ipad/HLS_Thesis/vitis_hls"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/include"/>
                                     									
@@ -161,9 +157,39 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.963163642.959099982" name="fir_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/fir_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1746897863.1433448622">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1746897863.1433448622" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1746897863">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1375837959" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1808658736" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/lnx64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/ipad/HLS_Thesis/vitis_hls"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/include/etc"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.222400643" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1762881293" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
                     <sourceEntries>
                         						
-                        <entry excluding=".apc|.settings|fir_filter_soln|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding=".apc|.reference|.settings|fir_filter_soln|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -229,8 +255,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/lnx64/tools/systemc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/home/ipad/HLS_Thesis/vitis_hls"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/include/etc"/>
@@ -254,8 +278,6 @@
                                     <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/lnx64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/lnx64/tools/systemc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/ipad/HLS_Thesis/vitis_hls"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/include"/>
                                     									
@@ -313,9 +335,39 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.920646679.44351537" name="fir_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/fir_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.132918076.344213415">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.132918076.344213415" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.132918076">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1766143207" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1277887208" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/lnx64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/ipad/HLS_Thesis/vitis_hls"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/ipad/Vivado/Vitis_HLS/2023.1/include/etc"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.2086780745" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1778379945" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
                     <sourceEntries>
                         						
-                        <entry excluding=".apc|.settings|fir_filter_soln|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding=".apc|.reference|.settings|fir_filter_soln|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -366,5 +418,9 @@
     </storageModule>
     	
     <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    	
+    <storageModule moduleId="refreshScope"/>
+    	
+    <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
     
 </cproject>

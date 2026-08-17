@@ -1,0 +1,67 @@
+---
+MainSourceFile:  /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/.autopilot/db/fir_filter.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1213_1:  '
+    FileOffset:      1213
+    FilePath:        /home/ipad/Vivado/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/.autopilot/db/fir_filter.pp.0.cpp
+        Offset:          55789
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1213_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /home/ipad/Vivado/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/.autopilot/db/fir_filter.pp.0.cpp
+        Offset:          283309
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /home/ipad/Vivado/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/.autopilot/db/fir_filter.pp.0.cpp
+        Offset:          283773
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /home/ipad/Vivado/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/.autopilot/db/fir_filter.pp.0.cpp
+        Offset:          284238
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /home/ipad/Vivado/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/.autopilot/db/fir_filter.pp.0.cpp
+        Offset:          566729
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_38_1:  '
+    FileOffset:      38
+    FilePath:        fir_filter.cpp
+    Replacements:    
+      - FilePath:        /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/.autopilot/db/fir_filter.pp.0.cpp
+        Offset:          935508
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_38_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_53_2:  '
+    FileOffset:      53
+    FilePath:        fir_filter.cpp
+    Replacements:    
+      - FilePath:        /home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/.autopilot/db/fir_filter.pp.0.cpp
+        Offset:          935651
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_53_2: '
+...

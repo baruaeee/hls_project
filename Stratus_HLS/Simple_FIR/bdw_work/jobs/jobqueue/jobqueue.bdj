@@ -1,0 +1,12 @@
+299275		// ppid
+299276		// pid
+exotic	// host name
+-		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+1		// background
+1786969196	// start time: Mon Aug 17 14:19:56 2026
+1786969197	// end time:   Mon Aug 17 14:19:57 2026
+/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/bin/bdw_job_q_mgr project.tcl
+-

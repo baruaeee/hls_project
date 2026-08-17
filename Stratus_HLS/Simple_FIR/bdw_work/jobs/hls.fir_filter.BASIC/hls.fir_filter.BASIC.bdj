@@ -1,0 +1,12 @@
+172941		// ppid
+172942		// pid
+exotic	// host name
+bdw_work/trace/hls.fir_filter.BASIC.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+2		// exit status
+1		// quiet
+1		// background
+1786795072	// start time: Sat Aug 15 13:57:52 2026
+1786795072	// end time:   Sat Aug 15 13:57:52 2026
+make CWBExec_hls=1 hls_fir_filter_BASIC
+-

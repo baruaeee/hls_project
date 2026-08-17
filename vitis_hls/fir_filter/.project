@@ -37,11 +37,6 @@
 			<location>/home/ipad/HLS_Thesis/vitis_hls/fir_filter/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/ap_fixed.h</name>
-			<type>1</type>
-			<location>/home/ipad/Vivado/Vitis_HLS/2023.1/include/ap_fixed.h</location>
-		</link>
-		<link>
 			<name>fir_filter_soln/constraints</name>
 			<type>2</type>
 			<location>/home/ipad/HLS_Thesis/vitis_hls/fir_filter/fir_filter_soln/.tcls</location>
