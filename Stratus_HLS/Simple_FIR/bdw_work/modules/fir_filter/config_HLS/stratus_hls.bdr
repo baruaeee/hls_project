@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<tool_log>
+	<phase>
+		<name>init</name>
+		<path>bdr/init.phase.bdr</path>
+		<required_file>bdr/init.phase.bdr</required_file>
+		<required_file>bdr/init.snapshot.bdr</required_file>
+	</phase>
+	<pid>66852</pid>
+</tool_log>

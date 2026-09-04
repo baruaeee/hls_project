@@ -1,0 +1,45 @@
+
+V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V
+
+Application: /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/bin/64bit/.stratus_vlg
+Version: 24.01-p001
+PID: 36605
+No signal noted
+
+Date
+Thu Sep  3 18:19:09 UTC 2026
+Thu Sep  3 20:19:09 CEST 2026
+
+Process Data
+%MEM    VSZ %CPU     TIME
+ 0.4 308128  0.0 00:00:00
+
+Call Stack
+[New LWP 36606]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x00007f00000da38f in wait4 () from /lib64/libc.so.6
+#0  0x00007f00000da38f in wait4 () from /lib64/libc.so.6
+#1  0x00007f000004f383 in do_system () from /lib64/libc.so.6
+#2  0x00007f0000f939b8 in dumpStack () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/lib/64bit/libbdw_st.so
+#3  0x00007f0000e2076e in msgAbortChk () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/lib/64bit/libbdw_st.so
+#4  0x0000000000624c99 in vatMsgLoc(void*, MsgId, MsgLimVal const&, MsgLimVal, __va_list_tag*) ()
+#5  0x0000000000624f66 in msgl(MsgId, ...) ()
+#6  0x000000000064ff9b in C2init(int) ()
+#7  0x0000000000416c98 in main ()
+$1 = 0
+$2 = 0
+#0  0x00007f00000da38f in wait4 () from /lib64/libc.so.6
+#1  0x00007f000004f383 in do_system () from /lib64/libc.so.6
+#2  0x00007f0000f939b8 in dumpStack () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/lib/64bit/libbdw_st.so
+#3  0x00007f0000e2076e in msgAbortChk () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/lib/64bit/libbdw_st.so
+#4  0x0000000000624c99 in vatMsgLoc(void*, MsgId, MsgLimVal const&, MsgLimVal, __va_list_tag*) ()
+#5  0x0000000000624f66 in msgl(MsgId, ...) ()
+#6  0x000000000064ff9b in C2init(int) ()
+#7  0x0000000000416c98 in main ()
+A debugging session is active.
+
+	Inferior 1 [process 36605] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+[Inferior 1 (process 36605) detached]

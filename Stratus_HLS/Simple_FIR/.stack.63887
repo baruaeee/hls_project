@@ -1,0 +1,79 @@
+
+V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V
+
+Application: /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/ide/bin/stratus_ide
+Version: 24.01-p001
+PID: 63887
+Received signal, 11 (Segmentation fault)
+
+Date
+Thu Sep  3 22:32:58 UTC 2026
+Fri Sep  4 00:32:58 CEST 2026
+
+Process Data
+%MEM    VSZ %CPU     TIME
+ 2.4 2429092 2.3 00:00:11
+
+Call Stack
+[New LWP 63891]
+[New LWP 63892]
+[New LWP 63893]
+[New LWP 63894]
+[New LWP 63895]
+[New LWP 63896]
+[New LWP 63897]
+[New LWP 63947]
+[New LWP 63948]
+[New LWP 63960]
+[New LWP 63976]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x00007f39e96da38f in wait4 () from /lib64/libc.so.6
+#0  0x00007f39e96da38f in wait4 () from /lib64/libc.so.6
+#1  0x00007f39e964f383 in do_system () from /lib64/libc.so.6
+#2  0x00007f39c63939b8 in dumpStack () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/lib/64bit/libbdw_st.so
+#3  0x00007f39c7ab4eef in StratusIDE::Internal::ourSigHandler (sig=11) at ../cynthProjInterface/stratusideplugin.cpp:269
+#4  <signal handler called>
+#5  0x00007f39d2070310 in ProjectExplorer::Project::document() const () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/ide/lib/qtcreator/plugins/libProjectExplorer.so
+#6  0x00007f39d1f94b83 in ProjectExplorer::ProjectExplorerPlugin::unloadProject(ProjectExplorer::Project*) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/ide/lib/qtcreator/plugins/libProjectExplorer.so
+#7  0x00007f39c7ab68e3 in StratusIDE::Internal::StratusIDEPlugin::closeCynthProject (this=this@entry=0x11d5d70) at ../cynthProjInterface/stratusideplugin.cpp:1209
+#8  0x00007f39c7ab6aa3 in StratusIDE::Internal::StratusIDEPlugin::refreshProjectSlot (this=0x11d5d70) at ../cynthProjInterface/stratusideplugin.cpp:1278
+#9  0x00007f39c7afe3f3 in StratusIDE::Internal::StratusIDEPlugin::qt_static_metacall (_o=0x11d5d70, _c=<optimized out>, _id=<optimized out>, _a=<optimized out>) at .moc/release-shared/moc_stratusideplugin.cpp:594
+#10 0x00007f39ea0d35c2 in QObject::event(QEvent*) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#11 0x00007f39ead7c5e2 in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Widgets.so.5
+#12 0x00007f39ead859da in QApplication::notify(QObject*, QEvent*) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Widgets.so.5
+#13 0x00007f39ea0a9fca in QCoreApplication::notifyInternal2(QObject*, QEvent*) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#14 0x00007f39ea0ac6ec in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#15 0x00007f39ea0fb433 in ?? () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#16 0x00007f39e9d1afbf in g_main_context_dispatch () from /lib64/libglib-2.0.so.0
+#17 0x00007f39e9d70428 in g_main_context_iterate.constprop () from /lib64/libglib-2.0.so.0
+#18 0x00007f39e9d18783 in g_main_context_iteration () from /lib64/libglib-2.0.so.0
+#19 0x00007f39ea0faa81 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+$1 = 0
+$2 = 0
+#3  0x00007f39c7ab4eef in StratusIDE::Internal::ourSigHandler (sig=11) at ../cynthProjInterface/stratusideplugin.cpp:269
+#4  <signal handler called>
+#5  0x00007f39d2070310 in ProjectExplorer::Project::document() const () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/ide/lib/qtcreator/plugins/libProjectExplorer.so
+#6  0x00007f39d1f94b83 in ProjectExplorer::ProjectExplorerPlugin::unloadProject(ProjectExplorer::Project*) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/ide/lib/qtcreator/plugins/libProjectExplorer.so
+#7  0x00007f39c7ab68e3 in StratusIDE::Internal::StratusIDEPlugin::closeCynthProject (this=this@entry=0x11d5d70) at ../cynthProjInterface/stratusideplugin.cpp:1209
+#8  0x00007f39c7ab6aa3 in StratusIDE::Internal::StratusIDEPlugin::refreshProjectSlot (this=0x11d5d70) at ../cynthProjInterface/stratusideplugin.cpp:1278
+#9  0x00007f39c7afe3f3 in StratusIDE::Internal::StratusIDEPlugin::qt_static_metacall (_o=0x11d5d70, _c=<optimized out>, _id=<optimized out>, _a=<optimized out>) at .moc/release-shared/moc_stratusideplugin.cpp:594
+#10 0x00007f39ea0d35c2 in QObject::event(QEvent*) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#11 0x00007f39ead7c5e2 in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Widgets.so.5
+#12 0x00007f39ead859da in QApplication::notify(QObject*, QEvent*) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Widgets.so.5
+#13 0x00007f39ea0a9fca in QCoreApplication::notifyInternal2(QObject*, QEvent*) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#14 0x00007f39ea0ac6ec in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#15 0x00007f39ea0fb433 in ?? () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#16 0x00007f39e9d1afbf in g_main_context_dispatch () from /lib64/libglib-2.0.so.0
+#17 0x00007f39e9d70428 in g_main_context_iterate.constprop () from /lib64/libglib-2.0.so.0
+#18 0x00007f39e9d18783 in g_main_context_iteration () from /lib64/libglib-2.0.so.0
+#19 0x00007f39ea0faa81 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#20 0x00007f39ea0a8a5b in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#21 0x00007f39ea0b021e in QCoreApplication::exec() () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#22 0x00000000004151c4 in main ()
+A debugging session is active.
+
+	Inferior 1 [process 63887] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+[Inferior 1 (process 63887) detached]

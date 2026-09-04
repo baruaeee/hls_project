@@ -1,5 +1,4 @@
-2026/08/17 14:19:52 System is not a supported distribution
-2026/08/17 14:19:52 An error occurred. We don't recognize OS 
-2026/08/17 14:19:52 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/08/17 14:19:52 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
-WARNING: define_system_module: Source file 'tb.cc' specified for define_system_module basic_tb, does not exist!
+2026/09/04 00:42:17 System is not a supported distribution
+2026/09/04 00:42:17 An error occurred. We don't recognize OS 
+2026/09/04 00:42:17 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/09/04 00:42:17 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>

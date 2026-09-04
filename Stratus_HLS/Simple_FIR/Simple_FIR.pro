@@ -17,13 +17,13 @@ INCLUDEPATH += ./bdw_work/wrappers
 INCLUDEPATH += ./
 
 SOURCES += \ 
-		fir_filter.cc \ 
-		fir_tb.cc \ 
-		tb.cc \ 
+		fir_filter.cpp \ 
+		main.cpp \ 
+		tb.cpp \ 
 
 HEADERS += \ 
-		defines.h \ 
 		fir_filter.h \ 
+		tb.h \ 
 
 OTHER_FILES += \ 
 		Makefile \ 

@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<source_file>
+    <path>bdw_work/wrappers/fir_filter_extract.bdr</path>
+        <module>
+        <name>fir_filter</name>
+        <id>3352</id>
+        <source_path>fir_filter.h</source_path>
+        <source_line>15</source_line>
+        <source_column>1</source_column>
+        <port>
+            <name>clk</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>clk</rtl_port_name>
+            <clock>pos</clock>
+        </port>
+        <port>
+            <name>rst</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>rst</rtl_port_name>
+        </port>
+        <port>
+            <name>x_vld</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>x_vld</rtl_port_name>
+        </port>
+        <port>
+            <name>x</name>
+            <direction>in</direction>
+            <datatype>
+                <name>cynw_fixed &lt;(int)16, (int)8, (sc_dt::sc_q_mode)0, (sc_dt::sc_o_mode)0, (int)0 &gt;</name>
+                <packed_size>16</packed_size>
+                <id>3414</id>
+                <required_file>
+                    <path>/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h</path>
+                    <order>465</order>
+                    <source_path>cynw_fixed.h</source_path>
+                </required_file>
+                <member>
+                    <name>value</name>
+                    <datatype W="16">sc_int</datatype>
+                    <rtl_port_name>x_value</rtl_port_name>
+                    <packed_offset>0</packed_offset>
+                    <packed_size>16</packed_size>
+                </member>
+            </datatype>
+            <struct_rtl_port_name>x</struct_rtl_port_name>
+        </port>
+        <port>
+            <name>y_vld</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>y_vld</rtl_port_name>
+        </port>
+        <port>
+            <name>y</name>
+            <direction>out</direction>
+            <datatype>
+                <name>cynw_fixed &lt;(int)16, (int)8, (sc_dt::sc_q_mode)0, (sc_dt::sc_o_mode)0, (int)0 &gt;</name>
+                <packed_size>16</packed_size>
+                <id>3414</id>
+                <required_file>
+                    <path>/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h</path>
+                    <order>465</order>
+                    <source_path>cynw_fixed.h</source_path>
+                </required_file>
+                <member>
+                    <name>value</name>
+                    <datatype W="16">sc_int</datatype>
+                    <rtl_port_name>y_value</rtl_port_name>
+                    <packed_offset>0</packed_offset>
+                    <packed_size>16</packed_size>
+                </member>
+            </datatype>
+            <struct_rtl_port_name>y</struct_rtl_port_name>
+        </port>
+        <port>
+            <name>h</name>
+            <direction>in</direction>
+            <datatype>
+                <array>4</array>
+                <datatype>
+                    <name>cynw_fixed &lt;(int)16, (int)8, (sc_dt::sc_q_mode)0, (sc_dt::sc_o_mode)0, (int)0 &gt;</name>
+                    <packed_size>16</packed_size>
+                    <id>3414</id>
+                    <required_file>
+                        <path>/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h</path>
+                        <order>465</order>
+                        <source_path>cynw_fixed.h</source_path>
+                    </required_file>
+                    <member>
+                        <name>value</name>
+                        <datatype W="16">sc_int</datatype>
+                        <rtl_port_name>h_value_[4]</rtl_port_name>
+                        <packed_offset>0</packed_offset>
+                        <packed_size>16</packed_size>
+                    </member>
+                </datatype>
+            </datatype>
+        </port>
+        <ctor_params>
+            <param>
+                <name/>
+                <unsupported_type/>
+                <datatype>
+                    <name>sc_core::sc_module_name</name>
+                    <id>3337</id>
+                </datatype>
+                <rtl_port_name/>
+            </param>
+        </ctor_params>
+    </module>
+	<exit_status>0</exit_status>
+</source_file>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<lib_catalogue>
+	<name>cachelib</name>
+	<lib_type>NONE</lib_type>
+	<cache_lib/>
+	<param_table>
+		<build_formal>
+			<name>pname</name>
+			<datatype>char*</datatype>
+			<param_kind>build</param_kind>
+		</build_formal>
+		<build_formal>
+			<name>techlibs</name>
+			<datatype>file</datatype>
+			<param_kind>build</param_kind>
+		</build_formal>
+		<build_actual>
+			<name>pname</name>
+			<value>stratus_saved_unit_module</value>
+		</build_actual>
+		<build_actual>
+			<name>techlibs</name>
+			<path>${STRATUS_HOME}/share/stratus/techlibs/GPDK045/gsclib045_svt/timing/slow_vdd1v2_basicCells.lib</path>
+			<crc>-1035968622</crc>
+		</build_actual>
+	</param_table>
+	<module>
+		<name>stratus_saved_unit_module</name>
+		<crc>0</crc>
+		<resource_kind>UNKNOWN</resource_kind>
+		<module_origin>ESTIMATE</module_origin>
+		<delay>0</delay>
+		<setup_time>0</setup_time>
+		<slack>0</slack>
+		<pipelined>0</pipelined>
+		<stallable>0</stallable>
+		<word_count>0</word_count>
+		<build_realized/>
+		<options></options>
+		<build_formal_list>0 1</build_formal_list>
+		<build_actual_list>0 1</build_actual_list>
+		<user_data>
+			<ud_elements>
+				<ud_element>
+					<ud_key>timing_units</ud_key>
+					<ud_value>ns</ud_value>
+				</ud_element>
+			</ud_elements>
+		</user_data>
+	</module>
+</lib_catalogue>

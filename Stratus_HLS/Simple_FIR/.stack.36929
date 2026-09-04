@@ -1,0 +1,54 @@
+
+V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V
+
+Application: /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/bin/64bit/.stratus_vlg
+Version: 24.01-p001
+PID: 36929
+No signal noted
+
+Date
+Thu Sep  3 18:23:03 UTC 2026
+Thu Sep  3 20:23:03 CEST 2026
+
+Process Data
+%MEM    VSZ %CPU     TIME
+ 0.4 537524 90.0 00:00:00
+
+Call Stack
+[New LWP 36931]
+[New LWP 36938]
+[New LWP 36939]
+[New LWP 36962]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x00007fbf9d4da38f in wait4 () from /lib64/libc.so.6
+#0  0x00007fbf9d4da38f in wait4 () from /lib64/libc.so.6
+#1  0x00007fbf9d44f383 in do_system () from /lib64/libc.so.6
+#2  0x00007fbf9e3939b8 in dumpStack () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/lib/64bit/libbdw_st.so
+#3  0x00007fbf9e22076e in msgAbortChk () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/lib/64bit/libbdw_st.so
+#4  0x000000000042dafe in edg::stratus_finish_msg(edg::a_diagnostic*) ()
+#5  0x000000000042e996 in edg::wrap_up_diagnostic(edg::a_diagnostic*) ()
+#6  0x00000000004316aa in edg::file_open_error(edg::an_error_severity, edg::an_error_code, char const*, edg::an_open_file_result*) ()
+#7  0x00000000004da73d in edg::open_file_and_push_input_stack(char const*, int, int, int, int, int, int, int, int, int*) ()
+#8  0x000000000043df62 in edg::fe_init_part_2() ()
+#9  0x0000000000608ddd in edg::process_translation_unit(char const*, int, edg::an_exported_template_file*) ()
+#10 0x0000000000416d1d in main ()
+$1 = 0
+$2 = 0
+#0  0x00007fbf9d4da38f in wait4 () from /lib64/libc.so.6
+#1  0x00007fbf9d44f383 in do_system () from /lib64/libc.so.6
+#2  0x00007fbf9e3939b8 in dumpStack () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/lib/64bit/libbdw_st.so
+#3  0x00007fbf9e22076e in msgAbortChk () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/lib/64bit/libbdw_st.so
+#4  0x000000000042dafe in edg::stratus_finish_msg(edg::a_diagnostic*) ()
+#5  0x000000000042e996 in edg::wrap_up_diagnostic(edg::a_diagnostic*) ()
+#6  0x00000000004316aa in edg::file_open_error(edg::an_error_severity, edg::an_error_code, char const*, edg::an_open_file_result*) ()
+#7  0x00000000004da73d in edg::open_file_and_push_input_stack(char const*, int, int, int, int, int, int, int, int, int*) ()
+#8  0x000000000043df62 in edg::fe_init_part_2() ()
+#9  0x0000000000608ddd in edg::process_translation_unit(char const*, int, edg::an_exported_template_file*) ()
+#10 0x0000000000416d1d in main ()
+A debugging session is active.
+
+	Inferior 1 [process 36929] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+[Inferior 1 (process 36929) detached]
