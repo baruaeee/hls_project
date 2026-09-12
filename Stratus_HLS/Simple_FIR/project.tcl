@@ -1,8 +1,8 @@
 ###############################################################################
 # 1. Technology Library Configuration (From your sample template)
 ###############################################################################
-# set LIB_PATH "[get_install_path]/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing"
-# use_tech_lib "$LIB_PATH/slow_vdd1v2_basicCells.lib"
+#set LIB_PATH "[get_install_path]/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing"
+#use_tech_lib "$LIB_PATH/slow_vdd1v2_basicCells.lib"
 
 use_tech_lib "$env(GPDK)/gsclib045/timing/slow_vdd1v2_basicCells.lib"
 
@@ -50,3 +50,16 @@ foreach config [find -hls_config *] {
   define_sim_config ${cname}_B "fir_filter BEH $cname"
   define_sim_config ${cname}_V "fir_filter RTL_V $cname"
 }
+
+
+
+# =============================================================================
+# Force Environment Variable Bypasses to Inherit down to Genus Server Child Jobs
+# =============================================================================
+set ::env(CDN_SYNTH_SKIP_OS_CHECK)      1
+set ::env(STRATUS_DISABLE_OS_CHECK)     1
+set ::env(Wcl_DISABLE_OS_CHECK)         1
+set ::env(AM_DISABLE_OS_CHECK)          1
+set ::env(FORCE_GENUS_RUN)              1
+set ::env(W3264_NO_HOST_CHECK)          1
+set ::env(CDS_SKIP_OS_CHECK_ON_STARTUP) 1

@@ -436,7 +436,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>tech_lib</name>
-			<value>/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib</value>
+			<value>/run/media/exotic/Cadence/PDK/gpdk045_all_v4.4/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>timing_aggression</name>
@@ -456,7 +456,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>unroll_loops</name>
-			<value>off</value>
+			<value>on</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>Xwrite_intermed_vlg</name>

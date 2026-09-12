@@ -1,0 +1,12 @@
+2727		// ppid
+2740		// pid
+exotic	// host name
+bdw_work/trace/hlsv.fir_filter.config_HLS.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1789125654	// start time: Fri Sep 11 11:20:54 2026
+1789125655	// end time:   Fri Sep 11 11:20:55 2026
+make --no-print-directory -f Makefile CWBExec_hlsv=1 hlsv_fir_filter_config_HLS
+-

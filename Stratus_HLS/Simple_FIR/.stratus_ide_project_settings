@@ -72,4 +72,4 @@ OpenLibTypes=Memories, Interfaces, Resources
 OpenLibs=@Invalid()
 OpenModules=fir_filter
 OpenTopLevel=Modules, Config Groups, Sim Configs, Logic Synth Configs, PnR Configs, Power Configs, Analysis Configs, Equiv Configs, Coverage Configs, Libraries
-Selection=Simple_FIR
+Selection=

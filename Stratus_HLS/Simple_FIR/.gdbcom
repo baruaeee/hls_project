@@ -1,0 +1,7 @@
+attach 202312
+bt 20
+print 0
+print 0
+bt -20
+quit
+yes

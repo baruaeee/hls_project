@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<tool_log>
+	<message>
+		<code_num>1727</code_num>
+		<severity>NOTE</severity>
+		<message_text>Using Genus 22.14-s059_1.</message_text>
+		<phase>read</phase>
+		<order>1</order>
+	</message>
+	<time_units>ns</time_units>
+	<message>
+		<code_num>1277</code_num>
+		<severity>NOTE</severity>
+		<message_text>Using a clock period of 9.000ns (10.000ns less 1.000ns slack).</message_text>
+		<phase>read</phase>
+		<order>2</order>
+	</message>
+	<cycle_time>10.0000</cycle_time>
+	<cycle_slack>1.0000</cycle_slack>
+	<message>
+		<code_num>190</code_num>
+		<severity>NOTE</severity>
+		<message_text>The HLS_PIPELINE_LOOP directive is not at the beginning of a block. It applies to the block beginning with the statement at fir_filter.cpp line 21.</message_text>
+		<source_path>fir_filter.cpp</source_path>
+		<source_line>29</source_line>
+		<phase>read</phase>
+		<order>3</order>
+	</message>
+	<message>
+		<code_num>1037</code_num>
+		<severity>NOTE</severity>
+		<message_text>Characterizing multiplexors up to 1 bits by 33 inputs.</message_text>
+		<phase>read</phase>
+		<order>4</order>
+	</message>
+	<message>
+		<code_num>860</code_num>
+		<severity>NOTE</severity>
+		<message_text>Long int data types are being implemented with 64 bits.</message_text>
+		<phase>read</phase>
+		<order>5</order>
+	</message>
+	<create_ops/>
+	<snapshot>
+		<path>bdr/read.snapshot.bdr</path>
+		<name>read</name>
+	</snapshot>
+	<phase_complete>read</phase_complete>
+</tool_log>

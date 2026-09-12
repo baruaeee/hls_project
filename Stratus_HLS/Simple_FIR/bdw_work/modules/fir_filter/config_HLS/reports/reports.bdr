@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<report_catalogue>
+	<report_file>
+		<report_def>
+			<name>scheduler</name>
+			<summary>Reports all of the operations scheduled in each thread.</summary>
+			<unprintable/>
+			<node_kind>hls_config</node_kind>
+		</report_def>
+		<path>scheduler.rpt</path>
+		<object>hls_config:Simple_FIR/fir_filter/config_HLS</object>
+		<silent/>
+		<time>Fri Sep 11 11:20:53 2026</time>
+		<hostname>exotic</hostname>
+		<user>root</user>
+		<version>24.01-p001</version>
+	</report_file>
+</report_catalogue>

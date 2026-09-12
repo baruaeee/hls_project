@@ -1,0 +1,12 @@
+1845		// ppid
+1846		// pid
+exotic	// host name
+-		// log file
+1		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+1		// background
+1789125620	// start time: Fri Sep 11 11:20:20 2026
+1789240690	// end time:   Sat Sep 12 19:18:10 2026
+bdw_shell -bdw_server
+-

@@ -3,7 +3,7 @@
     <path>bdw_work/wrappers/fir_filter_extract.bdr</path>
         <module>
         <name>fir_filter</name>
-        <id>3352</id>
+        <id>3355</id>
         <source_path>fir_filter.h</source_path>
         <source_line>15</source_line>
         <source_column>1</source_column>
@@ -32,10 +32,10 @@
             <datatype>
                 <name>cynw_fixed &lt;(int)16, (int)8, (sc_dt::sc_q_mode)0, (sc_dt::sc_o_mode)0, (int)0 &gt;</name>
                 <packed_size>16</packed_size>
-                <id>3414</id>
+                <id>3417</id>
                 <required_file>
                     <path>/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h</path>
-                    <order>465</order>
+                    <order>443</order>
                     <source_path>cynw_fixed.h</source_path>
                 </required_file>
                 <member>
@@ -60,10 +60,10 @@
             <datatype>
                 <name>cynw_fixed &lt;(int)16, (int)8, (sc_dt::sc_q_mode)0, (sc_dt::sc_o_mode)0, (int)0 &gt;</name>
                 <packed_size>16</packed_size>
-                <id>3414</id>
+                <id>3417</id>
                 <required_file>
                     <path>/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h</path>
-                    <order>465</order>
+                    <order>443</order>
                     <source_path>cynw_fixed.h</source_path>
                 </required_file>
                 <member>
@@ -84,10 +84,10 @@
                 <datatype>
                     <name>cynw_fixed &lt;(int)16, (int)8, (sc_dt::sc_q_mode)0, (sc_dt::sc_o_mode)0, (int)0 &gt;</name>
                     <packed_size>16</packed_size>
-                    <id>3414</id>
+                    <id>3417</id>
                     <required_file>
                         <path>/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h</path>
-                        <order>465</order>
+                        <order>443</order>
                         <source_path>cynw_fixed.h</source_path>
                     </required_file>
                     <member>
@@ -106,7 +106,7 @@
                 <unsupported_type/>
                 <datatype>
                     <name>sc_core::sc_module_name</name>
-                    <id>3337</id>
+                    <id>3340</id>
                 </datatype>
                 <rtl_port_name/>
             </param>

@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<snapshot>
+	<name>sched</name>
+	<port>
+		<name>clk</name>
+		<source_loc>930</source_loc>
+		<clock/>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>rst</name>
+		<source_loc>931</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>x_vld</name>
+		<source_loc>932</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>x_value</name>
+		<source_loc>16402</source_loc>
+		<direction>in</direction>
+		<datatype W="16">sc_int</datatype>
+	</port>
+	<port>
+		<name>y_vld</name>
+		<source_loc>987</source_loc>
+		<direction>out</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>y_value</name>
+		<source_loc>16399</source_loc>
+		<direction>out</direction>
+		<datatype W="16">sc_int</datatype>
+	</port>
+	<port>
+		<name>h_value_0</name>
+		<source_loc>17081</source_loc>
+		<direction>in</direction>
+		<datatype W="16">sc_int</datatype>
+	</port>
+	<port>
+		<name>h_value_1</name>
+		<source_loc>17082</source_loc>
+		<direction>in</direction>
+		<datatype W="16">sc_int</datatype>
+	</port>
+	<port>
+		<name>h_value_2</name>
+		<source_loc>17083</source_loc>
+		<direction>in</direction>
+		<datatype W="16">sc_int</datatype>
+	</port>
+	<port>
+		<name>h_value_3</name>
+		<source_loc>17084</source_loc>
+		<direction>in</direction>
+		<datatype W="16">sc_int</datatype>
+	</port>
+	<ios>
+		<thread>filter_thread</thread>
+		<port>
+			<name>x_value</name>
+			<source_loc>16402</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_int</datatype>
+			<ns_attrib>
+				<name>input_delay</name>
+				<value>2</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+		<port>
+			<name>h_value_0</name>
+			<source_loc>17081</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_int</datatype>
+			<ns_attrib>
+				<name>input_delay</name>
+				<value>2</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+		<port>
+			<name>h_value_1</name>
+			<source_loc>17082</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_int</datatype>
+			<ns_attrib>
+				<name>input_delay</name>
+				<value>2</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+		<port>
+			<name>x_vld</name>
+			<source_loc>932</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+			<ns_attrib>
+				<name>input_delay</name>
+				<value>2</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+		<port>
+			<name>h_value_2</name>
+			<source_loc>17083</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_int</datatype>
+			<ns_attrib>
+				<name>input_delay</name>
+				<value>2</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+		<port>
+			<name>h_value_3</name>
+			<source_loc>17084</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_int</datatype>
+			<ns_attrib>
+				<name>input_delay</name>
+				<value>2</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+		<port>
+			<name>clk</name>
+			<source_loc>930</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+			<ns_attrib>
+				<name>input_delay</name>
+				<value>0.114</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+		<port>
+			<name>rst</name>
+			<source_loc>931</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+			<ns_attrib>
+				<name>input_delay</name>
+				<value>2</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+		<port>
+			<name>y_value</name>
+			<source_loc>16399</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_int</datatype>
+			<ns_attrib>
+				<name>output_options</name>
+				<value>SYNC_HOLD</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+		<port>
+			<name>y_vld</name>
+			<source_loc>987</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+			<ns_attrib>
+				<name>output_options</name>
+				<value>SYNC_HOLD</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+	</ios>
+</snapshot>

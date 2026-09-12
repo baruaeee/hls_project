@@ -1,0 +1,14 @@
+set BDW_UPF_fir_filter_INPUT_PORTS {
+	clk
+	rst
+	x_vld
+	x_value
+	h_value_0
+	h_value_1
+	h_value_2
+	h_value_3
+}
+set BDW_UPF_fir_filter_OUTPUT_PORTS {
+	y_vld
+	y_value
+}

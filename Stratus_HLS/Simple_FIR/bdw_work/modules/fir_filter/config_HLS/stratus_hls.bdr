@@ -6,5 +6,42 @@
 		<required_file>bdr/init.phase.bdr</required_file>
 		<required_file>bdr/init.snapshot.bdr</required_file>
 	</phase>
-	<pid>66852</pid>
+	<phase>
+		<name>read</name>
+		<path>bdr/read.phase.bdr</path>
+		<required_file>bdr/read.phase.bdr</required_file>
+		<required_file>bdr/read.snapshot.bdr</required_file>
+	</phase>
+	<phase>
+		<name>elab</name>
+		<path>bdr/elab.phase.bdr</path>
+		<required_file>bdr/elab.phase.bdr</required_file>
+		<required_file>bdr/elab.snapshot.bdr</required_file>
+	</phase>
+	<phase>
+		<name>optim</name>
+		<path>bdr/optim.phase.bdr</path>
+		<required_file>bdr/optim.phase.bdr</required_file>
+		<required_file>bdr/optim.snapshot.bdr</required_file>
+	</phase>
+	<phase>
+		<name>parts</name>
+		<path>bdr/parts.phase.bdr</path>
+		<required_file>bdr/parts.phase.bdr</required_file>
+	</phase>
+	<phase>
+		<name>sched</name>
+		<path>bdr/sched.phase.bdr</path>
+		<required_file>bdr/filter_thread.sched.phase.bdr</required_file>
+		<required_file>bdr/post_sched.snapshot.bdr</required_file>
+		<required_file>bdr/pre_sched.snapshot.bdr</required_file>
+		<required_file>bdr/sched.phase.bdr</required_file>
+		<required_file>bdr/sched.snapshot.bdr</required_file>
+	</phase>
+	<phase>
+		<name>rtl</name>
+		<path>bdr/rtl.phase.bdr</path>
+		<required_file>bdr/rtl.phase.bdr</required_file>
+	</phase>
+	<pid>2608</pid>
 </tool_log>

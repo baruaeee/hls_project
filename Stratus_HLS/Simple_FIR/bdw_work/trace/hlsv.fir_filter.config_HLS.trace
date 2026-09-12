@@ -1,0 +1,1 @@
+/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/bin/bdw_makegen project.tcl -scsim builtin -lib bdw_work/modules/fir_filter/config_HLS -o bdw_work/modules/fir_filter/config_HLS/Makefile -module fir_filter -cynthconfig config_HLS   

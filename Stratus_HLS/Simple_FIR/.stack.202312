@@ -1,0 +1,67 @@
+
+V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V
+
+Application: /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/ide/bin/stratus_ide
+Version: 24.01-p001
+PID: 202312
+Received signal, 1 (Hangup)
+
+Date
+Sun Sep  6 23:04:02 UTC 2026
+Mon Sep  7 01:04:02 CEST 2026
+
+Process Data
+%MEM    VSZ %CPU     TIME
+ 2.3 2264188 2.3 00:00:09
+
+Call Stack
+[New LWP 202316]
+[New LWP 202317]
+[New LWP 202318]
+[New LWP 202319]
+[New LWP 202320]
+[New LWP 202321]
+[New LWP 202322]
+[New LWP 202372]
+[New LWP 202384]
+[New LWP 202409]
+[New LWP 203386]
+[New LWP 203387]
+[New LWP 203388]
+[New LWP 203389]
+[New LWP 203391]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x00007f0989ada38f in wait4 () from /lib64/libc.so.6
+#0  0x00007f0989ada38f in wait4 () from /lib64/libc.so.6
+#1  0x00007f0989a4f383 in do_system () from /lib64/libc.so.6
+#2  0x00007f095b9939b8 in dumpStack () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/lib/64bit/libbdw_st.so
+#3  0x00007f095d0b4eef in StratusIDE::Internal::ourSigHandler (sig=1) at ../cynthProjInterface/stratusideplugin.cpp:269
+#4  <signal handler called>
+#5  0x00007f0989b0345f in poll () from /lib64/libc.so.6
+#6  0x00007f098a1703bc in g_main_context_iterate.constprop () from /lib64/libglib-2.0.so.0
+#7  0x00007f098a118783 in g_main_context_iteration () from /lib64/libglib-2.0.so.0
+#8  0x00007f098a4faa81 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#9  0x00007f098a4a8a5b in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#10 0x00007f098a4b021e in QCoreApplication::exec() () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#11 0x00000000004151c4 in main ()
+$1 = 0
+$2 = 0
+#0  0x00007f0989ada38f in wait4 () from /lib64/libc.so.6
+#1  0x00007f0989a4f383 in do_system () from /lib64/libc.so.6
+#2  0x00007f095b9939b8 in dumpStack () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/lib/64bit/libbdw_st.so
+#3  0x00007f095d0b4eef in StratusIDE::Internal::ourSigHandler (sig=1) at ../cynthProjInterface/stratusideplugin.cpp:269
+#4  <signal handler called>
+#5  0x00007f0989b0345f in poll () from /lib64/libc.so.6
+#6  0x00007f098a1703bc in g_main_context_iterate.constprop () from /lib64/libglib-2.0.so.0
+#7  0x00007f098a118783 in g_main_context_iteration () from /lib64/libglib-2.0.so.0
+#8  0x00007f098a4faa81 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#9  0x00007f098a4a8a5b in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#10 0x00007f098a4b021e in QCoreApplication::exec() () from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libcdsQt5Core.so.5
+#11 0x00000000004151c4 in main ()
+A debugging session is active.
+
+	Inferior 1 [process 202312] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+[Inferior 1 (process 202312) detached]

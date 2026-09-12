@@ -1,12 +1,12 @@
-66715		// ppid
-66728		// pid
+2446		// ppid
+2459		// pid
 exotic	// host name
 bdw_work/trace/hls.fir_filter.config_HLS.s.trace		// log file
 2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
-2		// exit status
+0		// exit status
 0		// quiet
 0		// background
-1788475350	// start time: Fri Sep  4 00:42:30 2026
-1788475366	// end time:   Fri Sep  4 00:42:46 2026
+1789125644	// start time: Fri Sep 11 11:20:44 2026
+1789125653	// end time:   Fri Sep 11 11:20:53 2026
 make --no-print-directory -f Makefile -j1 CWBExec_hlsc=1 bdw_work/modules/fir_filter/config_HLS/fir_filter_rtl.cpp bdw_work/modules/fir_filter/config_HLS/fir_filter_rtl.v bdw_work/modules/fir_filter/config_HLS/stratus_hls.bdr
 -

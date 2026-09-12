@@ -1,15 +1,3 @@
-2026/09/04 00:42:30 System is not a supported distribution
-2026/09/04 00:42:30 An error occurred. We don't recognize OS 
-2026/09/04 00:42:30 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/04 00:42:30 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
-2026/09/04 00:42:31 System is not a supported distribution
-2026/09/04 00:42:31 An error occurred. We don't recognize OS 
-2026/09/04 00:42:31 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/04 00:42:31 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
-2026/09/04 00:42:32 System is not a supported distribution
-2026/09/04 00:42:32 An error occurred. We don't recognize OS 
-2026/09/04 00:42:32 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/04 00:42:32 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
 BDW_HLS_CONFIG=config_HLS BDW_CYNTH_CONFIG=config_HLS \
 	BDW_VRTL_FILE=bdw_work/modules/fir_filter/config_HLS/fir_filter_rtl.v \
 	BDW_CRTL_FILE=bdw_work/modules/fir_filter/config_HLS/fir_filter_rtl.cpp \
@@ -18,7 +6,7 @@ BDW_HLS_CONFIG=config_HLS BDW_CYNTH_CONFIG=config_HLS \
 	BDW_CYNTH_CONFIG_DIR=bdw_work/modules/fir_filter/config_HLS \
 	BDW_HLS_CONFIG=config_HLS \
 	BDW_HLS_CONFIG_DIR=bdw_work/modules/fir_filter/config_HLS \
-stratus_hls --logfile=stratus_hls.log -I. -Ibdw_work/wrappers --c++14  --tl=/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib --clock_period=10.000 --cycle_slack=1.000 --default_input_delay=2.000 --flatten_arrays=all --message_detail=1 --verilog_dialect=systemverilog -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -Dconfig_HLS=1 -DBDW_RTL_fir_filter_config_HLS=1  \
+stratus_hls --logfile=stratus_hls.log -I. -Ibdw_work/wrappers --c++14  --tl=/run/media/exotic/Cadence/PDK/gpdk045_all_v4.4/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib --clock_period=10.000 --cycle_slack=1.000 --default_input_delay=2.000 --flatten_arrays=all --message_detail=1 --unroll_loops=on --verilog_dialect=systemverilog -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -Dconfig_HLS=1 -DBDW_RTL_fir_filter_config_HLS=1  \
 	-d bdw_work/modules/fir_filter/config_HLS -o fir_filter_rtl.cpp \
 	--hls_module=fir_filter --hls_config=config_HLS --project=project.tcl \
 	 \
@@ -27,18 +15,6 @@ stratus_hls --logfile=stratus_hls.log -I. -Ibdw_work/wrappers --c++14  --tl=/run
 	 \
 	 \
 	 fir_filter.cpp
-2026/09/04 00:42:32 System is not a supported distribution
-2026/09/04 00:42:32 An error occurred. We don't recognize OS 
-2026/09/04 00:42:32 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/04 00:42:32 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
-2026/09/04 00:42:33 System is not a supported distribution
-2026/09/04 00:42:33 An error occurred. We don't recognize OS 
-2026/09/04 00:42:33 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/04 00:42:33 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
-2026/09/04 00:42:34 System is not a supported distribution
-2026/09/04 00:42:34 An error occurred. We don't recognize OS 
-2026/09/04 00:42:34 WARNING This OS does not appear to be a Cadence supported Linux configuration.
-2026/09/04 00:42:34 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
 
 stratus_hls 24.01-p001  (101462.130542)
 Copyright (c) 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
@@ -159,13 +135,14 @@ Copyright (c) 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
         00481: --switch_optimizer is set to "on".
         00481: --synthesize_asserts is set to "off".
         00481: --synthesize_probes is set to "off".
-        00481: --tech_lib is set to "/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib".
+        00481: --tech_lib is set to "/run/media/exotic/Cadence/PDK/gpdk045_all_v4.4/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib".
         00481: --trim_interstatement_sign is set to "on".
         00481: --undef_func is set to "warn".
-        00481: --unroll_loops is set to "off".
+        00481: --unroll_loops is set to "on".
         00481: --unsupported_lib_func is set to "error".
         00481: --verilog_dialect is set to "systemverilog".
         00481: --wireload is not set.
+   NOTE 01727: Using Genus 22.14-s059_1.
 
         01425: Loading design and library files:
         02788:       Using cached results for stratus_saved_unit_module
@@ -178,7 +155,539 @@ Copyright (c) 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
         01824:     Physical estimation options:
         01825:       interconnect_mode .......... wireload
         01825:       techlib ....................
-        01825.         /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib
+        01825.         /run/media/exotic/Cadence/PDK/gpdk045_all_v4.4/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib
         00967:   Processing library
-   NOTE 02776:     Obtaining register metrics for techlib...
-make[2]: *** [Makefile.prj:1478: bdw_work/modules/fir_filter/config_HLS/fir_filter_rtl.cpp] Error 139
+        02788:       Using cached results for cyn_reg_estimate
+        01472:       Register Metrics:
+        01440:          Register Type          Area              Delay (ns)
+        01440.         --------------   -------------------   ---------------
+        01440.         EN SS SC AS AC   Total   Comb    Seq     Prop    Setup
+        01440.         -- -- -- -- --   -----  -----  -----   ------   ------
+        01438:          0  0  0  0  0     5.5    0.0    5.5    0.114    0.066
+        01438:          0  0  0  0  1     6.2    0.0    6.2    0.131    0.067
+        01438:          0  0  0  1  0     6.5    0.0    6.5    0.127    0.067
+        01438:          0  0  0  1  1    12.0    0.7   11.3    0.141    0.098
+        01438:          0  0  1  0  0     6.8    1.4    5.5    0.114    0.123
+        01438:          0  0  1  0  1     7.5    1.4    6.2    0.131    0.125
+        01438:          0  0  1  1  0     7.9    1.0    6.8    0.161    0.089
+        01438:          0  0  1  1  1    12.3    1.0   11.3    0.141    0.106
+        01438:          0  1  0  0  0     6.8    1.4    5.5    0.114    0.104
+        01438:          0  1  0  0  1     7.5    1.4    6.2    0.131    0.105
+        01438:          0  1  0  1  0     7.9    1.0    6.8    0.161    0.100
+        01438:          0  1  0  1  1    12.3    1.0   11.3    0.141    0.115
+        01438:          0  1  1  0  0     7.5    2.1    5.5    0.114    0.147
+        01438:          0  1  1  0  1     8.2    2.1    6.2    0.131    0.149
+        01438:          0  1  1  1  0     8.6    1.7    6.8    0.161    0.111
+        01438:          0  1  1  1  1    13.0    1.7   11.3    0.141    0.127
+        01438:          1  0  0  0  0     7.5    0.0    7.5    0.112    0.122
+        01438:          1  0  0  0  1     8.2    0.0    8.2    0.134    0.110
+        01438:          1  0  0  1  0     8.9    2.4    6.5    0.129    0.143
+        01438:          1  0  0  1  1    13.7    2.4   11.3    0.143    0.133
+        01438:          1  0  1  0  0     8.9    1.4    7.5    0.112    0.177
+        01438:          1  0  1  0  1     9.6    1.4    8.2    0.134    0.169
+        01438:          1  0  1  1  0     9.9    1.7    8.2    0.153    0.131
+        01438:          1  0  1  1  1    14.4    1.7   12.7    0.149    0.164
+        01438:          1  1  0  0  0     8.9    1.4    7.5    0.112    0.158
+        01438:          1  1  0  0  1     9.6    1.4    8.2    0.134    0.150
+        01438:          1  1  0  1  0     9.9    1.7    8.2    0.153    0.145
+        01438:          1  1  0  1  1    14.4    1.7   12.7    0.149    0.175
+        01438:          1  1  1  0  0     9.6    2.1    7.5    0.112    0.202
+        01438:          1  1  1  0  1    10.3    2.1    8.2    0.134    0.192
+        01438:          1  1  1  1  0    10.6    2.4    8.2    0.153    0.156
+        01438:          1  1  1  1  1    15.0    2.4   12.7    0.149    0.187
+   NOTE 01037:     Characterizing multiplexors up to 1 bits by 33 inputs.
+        02788:       Using cached results for cyn_mux_estimate
+
+        00148: Normalization and optimization:
+   NOTE 00860:   Long int data types are being implemented with 64 bits.
+        02923:   Dissolving function boundaries.
+        02924:   Dissolved 97 function calls.
+        01351:   at fir_filter.cpp line 3
+        01351.     Preprocessing thread fir_filter::filter_thread
+        00116:   at fir_filter.cpp line 3
+        00116.     Optimizing thread fir_filter::filter_thread
+        00305:     313 nodes
+        00306:     Optimize: pass 1..
+        00305:     295 nodes
+        00306:     Optimize: pass 2.
+        00305:     297 nodes
+        00306:     Optimize: pass 3...
+        00305:     298 nodes
+        00306:     Optimize: pass 4.
+        00288:     at fir_filter.cpp line 11
+        00288.       Unrolling loop 4 times because the unroll_loops option was
+        00288.       set.
+        00288:     at fir_filter.cpp line 35
+        00288.       Unrolling loop 4 times because it is inside a pipeline.
+        00305:     814 nodes
+        00306:     Optimize: pass 5...
+        00305:     515 nodes
+        00306:     Optimize: pass 6.
+        00258:       at /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h
+        00258.         line 3196
+        00258.         Array h.value, 4 words x 16 bits (64 total bits), HAS
+        00258.         been flattened into 4, 16 bit scalar variables because
+        00258.         --flatten_array is not set to "none".
+        00258:       at /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h
+        00258.         line 3196
+        00258.         Array shift_reg.value, 4 words x 16 bits (64 total
+        00258.         bits), HAS been flattened into 4, 16 bit scalar
+        00258.         variables because this array has a HLS_FLATTEN_ARRAY
+        00258.         directive at fir_filter.cpp line 10.
+        00305:     469 nodes
+        00306:     Optimize: pass 7..
+        00305:     447 nodes
+        00306:     Optimize: pass 8.
+        00305:     447 nodes
+        00306:     Optimize: pass 9.
+   HINT 00301:       at unknown location
+   HINT 00301.         This design may benefit from lsb variable trimming. Try
+   HINT 00301.         using --lsb_trimming=on
+        00305:     447 nodes
+        00306:     Optimize: pass 10.
+        00305:     452 nodes
+        00306:     Optimize: pass 11..
+        00305:     410 nodes
+        00306:     Optimize: pass 12.
+        00305:     415 nodes
+        00306:     Optimize: pass 13..
+        00305:     385 nodes
+        00306:     Optimize: pass 14.
+        02831:       at fir_filter.cpp line 21
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     429 nodes
+        00306:     Optimize: pass 15...
+        00305:     405 nodes
+        00306:     Optimize: pass 16.
+        00305:     397 nodes
+        00306:     Optimize: pass 17..
+        00305:     394 nodes
+        00306:     Optimize: pass 18.
+        00305:     375 nodes
+        00306:     Optimize: pass 19..
+        00305:     351 nodes
+        00306:     Optimize: pass 20.
+        00305:     347 nodes
+        00306:     Optimize: pass 21..
+        00305:     344 nodes
+        00306:     Optimize: pass 22.
+        00305:     349 nodes
+        00306:     Optimize: pass 23..
+        00305:     334 nodes
+        00306:     Optimize: pass 24.
+        00305:     334 nodes
+        00306:     Optimize: pass 25..
+        00305:     334 nodes
+        00306:     Optimize: pass 26.
+        00305:     334 nodes
+        00306:     Optimize: pass 27.
+        00289:       at fir_filter.cpp line 19
+        00289.         This loop is not being unrolled because it has been
+        00289.         pipelined.
+        01352:   at fir_filter.cpp line 3
+        01352.     Postprocessing thread fir_filter::filter_thread
+
+        00182: Initial resource mapping:
+   NOTE 01037:     Characterizing multiplexors up to 33 bits by 33 inputs.
+        02788:       Using cached results for cyn_mux_estimate_0
+        00968:   Matching resources
+        02788:       Using cached results for fir_filter_Add_16Sx1U_16S_4
+        02790:         Area =    64.30  Latency = 0  Delay =    0.892ns
+        00205:         Logic levels = 8
+        02788:       Using cached results for fir_filter_N_Mux_16_2_4_4
+        02790:         Area =     0.68  Latency = 0  Delay =    0.119ns
+        00205:         Logic levels = 1
+        02788:       Using cached results for fir_filter_Equal_16Sx15U_1U_4
+        02790:         Area =    45.14  Latency = 0  Delay =    0.337ns
+        00205:         Logic levels = 3
+        02788:       Using cached results for fir_filter_OrReduction_2U_1U_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.070ns
+        00205:         Logic levels = 1
+        02788:       Using cached results for fir_filter_AndReduction_2U_1U_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.071ns
+        00205:         Logic levels = 1
+        02788:       Using cached results for fir_filter_OrReduction_7U_1U_4
+        02790:         Area =     4.10  Latency = 0  Delay =    0.286ns
+        00205:         Logic levels = 2
+        02788:       Using cached results for fir_filter_Add_32Sx26S_33S_4
+        02790:         Area =   302.33  Latency = 0  Delay =    1.099ns
+        00205:         Logic levels = 15
+        02788:       Using cached results for fir_filter_N_Mux_20_2_3_4
+        02790:         Area =    47.88  Latency = 0  Delay =    0.090ns
+        00205:         Logic levels = 1
+        02788:       Using cached results for fir_filter_Add_20Sx1U_20S_4
+        02790:         Area =    81.40  Latency = 0  Delay =    0.911ns
+        00205:         Logic levels = 8
+        02788:       Using cached results for fir_filter_N_Mux_1_2_2_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.063ns
+        00205:         Logic levels = 1
+        02788:       Using cached results for fir_filter_N_Mux_20_2_1_4
+        02790:         Area =     0.68  Latency = 0  Delay =    0.145ns
+        00205:         Logic levels = 1
+        02788:       Using cached results for fir_filter_Or_1Ux1U_1U_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.070ns
+        00205:         Logic levels = 1
+        02788:       Using cached results for fir_filter_And_1Ux1U_1U_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.071ns
+        00205:         Logic levels = 1
+        02788:       Using cached results for fir_filter_Not_1U_1U_4
+        02790:         Area =     0.68  Latency = 0  Delay =    0.029ns
+        00205:         Logic levels = 1
+        02788:       Using cached results for fir_filter_Equal_20Sx19U_1U_4
+        02790:         Area =    57.46  Latency = 0  Delay =    0.445ns
+        00205:         Logic levels = 4
+        02788:       Using cached results for fir_filter_OrReduction_6S_1U_4
+        02790:         Area =     3.76  Latency = 0  Delay =    0.152ns
+        00205:         Logic levels = 2
+        02788:       Using cached results for fir_filter_AndReduction_7U_1U_4
+        02790:         Area =     4.79  Latency = 0  Delay =    0.285ns
+        00205:         Logic levels = 2
+        02788:       Using cached results for fir_filter_N_Mux_16_2_0_4
+        02790:         Area =    38.30  Latency = 0  Delay =    0.090ns
+        00205:         Logic levels = 1
+        02788:       Using cached results for fir_filter_Mul_16Sx16S_32S_4
+        02790:         Area =  1434.69  Latency = 0  Delay =    1.984ns
+        00205:         Logic levels = 23
+        02788:       Using cached results for fir_filter_Add_16Sx1U_16S_1
+        02790:         Area =   118.30  Latency = 0  Delay =    0.257ns
+        00205:         Logic levels = 6
+        02788:       Using cached results for fir_filter_N_Mux_16_2_4_1
+        02790:         Area =     4.10  Latency = 0  Delay =    0.028ns
+        00205:         Logic levels = 1
+        02788:       Using cached results for fir_filter_Equal_16Sx15U_1U_1
+        02790:         Area =    84.68  Latency = 0  Delay =    0.215ns
+        00205:         Logic levels = 6
+        02788:       Using cached results for fir_filter_OrReduction_2U_1U_1
+        02790:         Area =     4.45  Latency = 0  Delay =    0.051ns
+        00205:         Logic levels = 2
+        02788:       Using cached results for fir_filter_AndReduction_2U_1U_1
+        02790:         Area =     8.89  Latency = 0  Delay =    0.046ns
+        00205:         Logic levels = 2
+        02788:       Using cached results for fir_filter_OrReduction_7U_1U_1
+        02790:         Area =    12.65  Latency = 0  Delay =    0.122ns
+        00205:         Logic levels = 4
+        02788:       Using cached results for fir_filter_Add_32Sx26S_33S_1
+        02790:         Area =   547.32  Latency = 0  Delay =    0.399ns
+        00205:         Logic levels = 12
+        02788:       Using cached results for fir_filter_N_Mux_20_2_3_1
+        02790:         Area =   234.95  Latency = 0  Delay =    0.060ns
+        00205:         Logic levels = 2
+        02788:       Using cached results for fir_filter_Add_20Sx1U_20S_1
+        02790:         Area =   145.71  Latency = 0  Delay =    0.278ns
+        00205:         Logic levels = 6
+        02788:       Using cached results for fir_filter_N_Mux_1_2_2_1
+        02790:         Area =     7.18  Latency = 0  Delay =    0.039ns
+        00205:         Logic levels = 2
+        02788:       Using cached results for fir_filter_N_Mux_20_2_1_1
+        02790:         Area =     9.92  Latency = 0  Delay =    0.029ns
+        00205:         Logic levels = 1
+        02788:       Using cached results for fir_filter_Or_1Ux1U_1U_1
+        02790:         Area =     4.45  Latency = 0  Delay =    0.051ns
+        00205:         Logic levels = 2
+        02788:       Using cached results for fir_filter_And_1Ux1U_1U_1
+        02790:         Area =     8.89  Latency = 0  Delay =    0.046ns
+        00205:         Logic levels = 2
+        02788:       Using cached results for fir_filter_Not_1U_1U_1
+        02790:         Area =     4.10  Latency = 0  Delay =    0.019ns
+        00205:         Logic levels = 1
+        02788:       Using cached results for fir_filter_Equal_20Sx19U_1U_1
+        02790:         Area =    76.73  Latency = 0  Delay =    0.276ns
+        00205:         Logic levels = 5
+        02788:       Using cached results for fir_filter_OrReduction_6S_1U_1
+        02790:         Area =    11.63  Latency = 0  Delay =    0.093ns
+        00205:         Logic levels = 2
+        02788:       Using cached results for fir_filter_AndReduction_7U_1U_1
+        02790:         Area =    18.47  Latency = 0  Delay =    0.116ns
+        00205:         Logic levels = 4
+        02788:       Using cached results for fir_filter_N_Mux_16_2_0_1
+        02790:         Area =   187.96  Latency = 0  Delay =    0.060ns
+        00205:         Logic levels = 2
+        02788:       Using cached results for fir_filter_Mul_16Sx16S_32S_1
+        02790:         Area =  2231.02  Latency = 0  Delay =    1.117ns
+        00205:         Logic levels = 19
+
+        00969: Scheduling:
+   NOTE 01437:   at fir_filter.cpp line 3
+   NOTE 01437.     Using global default input delay value of 2.000ns.
+   NOTE 03654: at fir_filter.cpp line 19
+   NOTE 03654.   Pipelined loop does not contains a stall.
+               .
+        01171:   Scheduling thread fir_filter::filter_thread
+
+WARNING 01165: at fir_filter.cpp line 14
+WARNING 01165.   Ignoring wait statement outside of a protocol block
+
+WARNING 01165: at fir_filter.cpp line 48
+WARNING 01165.   Ignoring wait statement outside of a protocol block
+
+        01161:     at fir_filter.cpp line 29
+        01161.       Scheduling "filter_pipeline" with initiation interval of
+        01161.       1.
+        02080:       sched_asap            off
+        02080:       sched_effort          medium
+        02080:       sharing_effort_parts  high
+        02080:       sharing_effort_regs   high
+        02080:       relax_timing          off
+        02080:       power_clock_gating    off
+        02080:       sched_optim_slack     none
+        02080:       timing_analysis       on
+
+WARNING 01177: at fir_filter.cpp line 7 (in y_vld())
+WARNING 01177.     called from fir_filter.h line 23
+WARNING 01177.   Reference to I/O signal, y_vld, is not in a protocol block.
+
+WARNING 01177: at fir_filter.cpp line 8 (in value())
+WARNING 01177.     called from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h
+WARNING 01177.   line 3196 (in y())
+WARNING 01177.     called from fir_filter.h line 24
+WARNING 01177.   Reference to I/O signal, y.value, is not in a protocol block.
+
+WARNING 01179: at fir_filter.cpp line 41 (in operator=())
+WARNING 01179.     called from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h
+WARNING 01179.   line 4934 (in operator+())
+WARNING 01179.     called from line 2995 (in operator+=())
+WARNING 01179.     called from fir_filter.cpp line 41 (in [0]())
+WARNING 01179.     called from line 35 (in h())
+WARNING 01179.     called from fir_filter.h line 27
+WARNING 01179.   Reference to I/O signal, h.value[3], is not in a protocol
+WARNING 01179.   block.
+
+WARNING 01179: at fir_filter.cpp line 21
+WARNING 01179.     called from line 21 (in operator=())
+WARNING 01179.     called from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h
+WARNING 01179.   line 1407 (in operator=())
+WARNING 01179.     called from fir_filter.cpp line 39 (in [1]())
+WARNING 01179.     called from line 35 (in x_vld())
+WARNING 01179.     called from fir_filter.h line 21
+WARNING 01179.   Reference to I/O signal, x_vld, is not in a protocol block.
+
+WARNING 01179: at fir_filter.cpp line 41
+WARNING 01179.     called from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h
+WARNING 01179.   line 5268 (in operator*())
+WARNING 01179.     called from fir_filter.cpp line 41 (in [1]())
+WARNING 01179.     called from line 35 (in h())
+WARNING 01179.     called from fir_filter.h line 27
+WARNING 01179.   Reference to I/O signal, h.value[2], is not in a protocol
+WARNING 01179.   block.
+
+WARNING 01179: at fir_filter.cpp line 21
+WARNING 01179.     called from line 21 (in operator=())
+WARNING 01179.     called from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h
+WARNING 01179.   line 1407 (in operator=())
+WARNING 01179.     called from fir_filter.cpp line 39 (in [2]())
+WARNING 01179.     called from line 35 (in x_vld())
+WARNING 01179.     called from fir_filter.h line 21
+WARNING 01179.   Reference to I/O signal, x_vld, is not in a protocol block.
+
+WARNING 01179: at fir_filter.cpp line 41
+WARNING 01179.     called from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h
+WARNING 01179.   line 5268 (in operator*())
+WARNING 01179.     called from fir_filter.cpp line 41 (in [2]())
+WARNING 01179.     called from line 35 (in h())
+WARNING 01179.     called from fir_filter.h line 27
+WARNING 01179.   Reference to I/O signal, h.value[1], is not in a protocol
+WARNING 01179.   block.
+
+WARNING 01179: at fir_filter.cpp line 21
+WARNING 01179.     called from line 21 (in operator=())
+WARNING 01179.     called from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h
+WARNING 01179.   line 1407 (in operator=())
+WARNING 01179.     called from fir_filter.cpp line 37 (in [3]())
+WARNING 01179.     called from line 35 (in x_vld())
+WARNING 01179.     called from fir_filter.h line 21
+WARNING 01179.   Reference to I/O signal, x_vld, is not in a protocol block.
+
+WARNING 01179: at /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h
+WARNING 01179.   line 1407
+WARNING 01179.     called from fir_filter.cpp line 21 (in operator=())
+WARNING 01179.     called from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h
+WARNING 01179.   line 1407 (in operator=())
+WARNING 01179.     called from fir_filter.cpp line 37 (in [3]())
+WARNING 01179.     called from line 35 (in x())
+WARNING 01179.     called from fir_filter.h line 22
+WARNING 01179.   Reference to I/O signal, x.value, is not in a protocol block.
+
+WARNING 01179: at fir_filter.cpp line 41
+WARNING 01179.     called from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h
+WARNING 01179.   line 5268 (in operator*())
+WARNING 01179.     called from fir_filter.cpp line 41 (in [3]())
+WARNING 01179.     called from line 35 (in h())
+WARNING 01179.     called from fir_filter.h line 27
+WARNING 01179.   Reference to I/O signal, h.value[0], is not in a protocol
+WARNING 01179.   block.
+
+WARNING 01179: at /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h
+WARNING 01179.   line 1407
+WARNING 01179.     called from line 5268 (in operator*())
+WARNING 01179.     called from fir_filter.cpp line 41 (in [3]())
+WARNING 01179.     called from line 35 (in x())
+WARNING 01179.     called from fir_filter.h line 22
+WARNING 01179.   Reference to I/O signal, x.value, is not in a protocol block.
+
+WARNING 01179: at fir_filter.cpp line 21
+WARNING 01179.     called from line 21 (in write())
+WARNING 01179.     called from line 45 (in x_vld())
+WARNING 01179.     called from fir_filter.h line 21
+WARNING 01179.   Reference to I/O signal, x_vld, is not in a protocol block.
+
+WARNING 01177: at fir_filter.cpp line 21 (in write())
+WARNING 01177.     called from line 45 (in value())
+WARNING 01177.     called from /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include/cynw_fixed.h
+WARNING 01177.   line 3196 (in y())
+WARNING 01177.     called from fir_filter.h line 24
+WARNING 01177.   Reference to I/O signal, y.value, is not in a protocol block.
+
+WARNING 01179: at fir_filter.cpp line 21
+WARNING 01179.     called from line 21 (in write())
+WARNING 01179.     called from line 22 (in write())
+WARNING 01179.     called from line 46 (in x_vld())
+WARNING 01179.     called from fir_filter.h line 21
+WARNING 01179.   Reference to I/O signal, x_vld, is not in a protocol block.
+
+WARNING 01177: at fir_filter.cpp line 21 (in write())
+WARNING 01177.     called from line 22 (in write())
+WARNING 01177.     called from line 46 (in y_vld())
+WARNING 01177.     called from fir_filter.h line 23
+WARNING 01177.   Reference to I/O signal, y_vld, is not in a protocol block.
+
+        00907:      ....................................................................
+        00907:      .                                                                  .
+        00907:      . Loop carried dependency report for "filter_pipeline"             .
+        00907:      .                                                                  .
+        00907:      . ID    Source                Loop Carried Variable     Use/Def    .
+        00907:      . --    ---------             ------------------------  ---------- .
+        00907:      . OP12  fir_filter.cpp:21:9   shift_reg.value[2]        Use        .
+        00907:      . OP9   fir_filter.cpp:41:17  shift_reg.value[2]        Use        .
+        00907:      . OP12  fir_filter.cpp:21:9   shift_reg.value[2]        Def        .
+        00907:      .------------------------------------------------------------------.
+        00907:      . OP32  fir_filter.cpp:21:9   shift_reg.value[1]        Use        .
+        00907:      . OP28  fir_filter.cpp:41:33  shift_reg.value[1]        Use        .
+        00907:      . OP12  fir_filter.cpp:21:9   shift_reg.value[1]        Use        .
+        00907:      . OP32  fir_filter.cpp:21:9   shift_reg.value[1]        Def        .
+        00907:      .------------------------------------------------------------------.
+        00907:      . OP53  fir_filter.cpp:21:9   shift_reg.value[0]        Use        .
+        00907:      . OP48  fir_filter.cpp:41:33  shift_reg.value[0]        Use        .
+        00907:      . OP32  fir_filter.cpp:21:9   shift_reg.value[0]        Use        .
+        00907:      . OP53  fir_filter.cpp:21:9   shift_reg.value[0]        Def        .
+        00907:      .------------------------------------------------------------------.
+        00907:      .                                                                  .
+        00907:      . Total loop carried dependencies: 3                               .
+        00907:      ....................................................................
+        02098:     Total op count: 106
+        03257:     Sharable op count: 34
+        01170:     Unsharable op count: 72
+        01166:     Estimated intrinsic mux area: 1759
+        01159:     Constraint Check Complete
+        01117:     Initialized resource counts
+        01251:     Scheduler => Increasing resource :
+        01251.       fir_filter_Add_16Sx1U_16S_1 instances: 1 -> 1
+        01251:     Scheduler => Increasing resource :
+        01251.       fir_filter_Add_16Sx1U_16S_1 instances: 1 -> 2
+        03643:     An upper limit for resource counts has been found.
+        03641:     Scheduler => Decreasing resource :
+        03641.       fir_filter_Add_16Sx1U_16S_1 instances: 2 -> 1
+        03641:     Scheduler => Decreasing resource : fir_filter_And_1Ux1U_1U_1
+        03641.       instances: 11 -> 10
+        03641:     Scheduler => Decreasing resource : fir_filter_Not_1U_1U_1
+        03641.       instances: 11 -> 10
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.....
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        02974:     Generated 0 gate enable expressions for 0 operations
+        02973:     Optimize clock gating - process completed
+   NOTE 03453: at fir_filter.cpp line 29
+   NOTE 03453.   This HLS_PIPELINE_LOOP directive will be ignored because the
+   NOTE 03453.   loop latency <= initiation interval of the pipeline.
+        01218:     Scheduling Resources:
+        01219:                              Resource Quantity
+        01220:             fir_filter_And_1Ux1U_1U_1       15
+        01220:                fir_filter_Not_1U_1U_1       12
+        01220:              fir_filter_Or_1Ux1U_1U_1        6
+        01220:              fir_filter_N_Mux_1_2_2_1        5
+        01220:           fir_filter_Add_20Sx1U_20S_1        4
+        01220:       fir_filter_AndReduction_7U_1U_1        4
+        01220:         fir_filter_Equal_20Sx19U_1U_1        4
+        01220:          fir_filter_Mul_16Sx16S_32S_4        4
+        01220:             fir_filter_N_Mux_16_2_0_4        4
+        01220:             fir_filter_N_Mux_20_2_1_1        4
+        01220:             fir_filter_N_Mux_20_2_3_4        4
+        01220:          fir_filter_Add_32Sx26S_33S_4        3
+        01220:        fir_filter_OrReduction_7U_1U_1        3
+        01220:           fir_filter_Add_16Sx1U_16S_1        1
+        01220:       fir_filter_AndReduction_2U_1U_1        1
+        01220:         fir_filter_Equal_16Sx15U_1U_1        1
+        01220:             fir_filter_N_Mux_16_2_4_1        1
+        01220:        fir_filter_OrReduction_2U_1U_1        1
+        01220:        fir_filter_OrReduction_6S_1U_1        1
+
+        02918: RTL Generation & Optimization:
+        02917:   Preparing thread fir_filter::filter_thread for final RTL
+        02917.     output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+        01677:     Building RTL structures, pass 3
+        00971:   Cleaning up
+        00144:     Global optimizations.........................................
+        00144:     Global optimizations.....................
+
+               +---------------------------------------------------------------------------+
+               |                                                                           |
+        00804: | Allocation Report:                                                        |
+        00805: |                                               Area/Instance               |
+        00805: |                                         ------------------------    Total |
+        00805: |                        Resource  Count    Seq(#FF)    Comb    BB     Area |
+        00805: | -------------------------------  -----  ----------  ------  ----  ------- |
+        00807: |    fir_filter_Mul_16Sx16S_32S_4      4              1434.7         5738.8 |
+        00807: |    fir_filter_Add_32Sx26S_33S_4      3               302.3          907.0 |
+        00807: |     fir_filter_Add_20Sx1U_20S_1      4               145.7          582.8 |
+        00807: |   fir_filter_Equal_20Sx19U_1U_1      4                76.7          306.9 |
+        00807: |       fir_filter_N_Mux_20_2_3_4      4                47.9          191.5 |
+        00807: |       fir_filter_N_Mux_16_2_0_4      4                38.3          153.2 |
+        00807: |     fir_filter_Add_16Sx1U_16S_1      1               118.3          118.3 |
+        00807: |   fir_filter_Equal_16Sx15U_1U_1      1                84.7           84.7 |
+        00807: | fir_filter_AndReduction_7U_1U_4      4                 4.8           19.2 |
+        00807: |        fir_filter_N_Mux_1_2_2_1      2                 7.2           14.4 |
+        00807: |       fir_filter_And_1Ux1U_1U_4     10                 1.4           13.7 |
+        00807: |  fir_filter_OrReduction_7U_1U_4      3                 4.1           12.3 |
+        00807: |          fir_filter_Not_1U_1U_4     10                 0.7            6.8 |
+        00807: |        fir_filter_Or_1Ux1U_1U_4      5                 1.4            6.8 |
+        00807: |        fir_filter_N_Mux_1_2_2_4      3                 1.4            4.1 |
+        00807: |  fir_filter_OrReduction_6S_1U_4      1                 3.8            3.8 |
+        00807: |       fir_filter_N_Mux_20_2_1_4      4                 0.7            2.7 |
+        00807: | fir_filter_AndReduction_2U_1U_4      1                 1.4            1.4 |
+        00807: |  fir_filter_OrReduction_2U_1U_4      1                 1.4            1.4 |
+        00807: |       fir_filter_N_Mux_16_2_4_4      1                 0.7            0.7 |
+        00808: |                       registers      7                                    |
+        01442: |               Reg bits by type:                                           |
+        01442. |                  EN SS SC AS AC                                           |
+        00809: |                   0  0  0  0  0     32    5.5(1)       0.0                |
+        00809: |                   0  0  1  0  0     49    5.5(1)       1.4                |
+        00809: |                   1  0  1  0  0     16    7.5(1)       1.4                |
+        00809: |               all register bits     97    5.8(1)       0.9          652.5 |
+        02604: |                 estimated cntrl      1                 0.0            0.0 |
+        00811: | ------------------------------------------------------------------------- |
+        00812: |                      Total Area         563.6(97)   8259.3   0.0   8823.0 |
+               |                                                                           |
+               +---------------------------------------------------------------------------+
+
+
+
+        00195: Writing RTL files:
+        01766:   bdw_work/modules/fir_filter/config_HLS/fir_filter_rtl.h
+        01767:   bdw_work/modules/fir_filter/config_HLS/fir_filter_rtl.cpp
+        01768:   bdw_work/modules/fir_filter/config_HLS/fir_filter_rtl.v
+
+        01445: Summary of messages of severity WARNING or greater:
+        01193:   SEVERITY MSGID CNT
+        01198:    WARNING 01165   2
+        01198:    WARNING 01177   4
+        01198:    WARNING 01179  11
+
+stratus_hls succeeded with 0 errors and 17 warnings.
+
+make[2]: 'bdw_work/modules/fir_filter/config_HLS/fir_filter_rtl.v' is up to date.
+make[2]: 'bdw_work/modules/fir_filter/config_HLS/stratus_hls.bdr' is up to date.

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<tool_log>
+	<include>bdr/filter_thread.sched.phase.bdr</include>
+	<snapshot>
+		<path>bdr/sched.snapshot.bdr</path>
+		<name>sched</name>
+	</snapshot>
+	<stable_time>
+		<name>y_vld</name>
+		<time> 0.114</time>
+	</stable_time>
+	<stable_time>
+		<name>y_value</name>
+		<time> 0.114</time>
+	</stable_time>
+	<stable_time>
+		<name>h_value_3</name>
+		<time> 2.000</time>
+	</stable_time>
+	<input_delay>
+		<name>h_value_3</name>
+		<time> 2.000</time>
+	</input_delay>
+	<stable_time>
+		<name>x_vld</name>
+		<time> 2.000</time>
+	</stable_time>
+	<input_delay>
+		<name>x_vld</name>
+		<time> 2.000</time>
+	</input_delay>
+	<stable_time>
+		<name>h_value_2</name>
+		<time> 2.000</time>
+	</stable_time>
+	<input_delay>
+		<name>h_value_2</name>
+		<time> 2.000</time>
+	</input_delay>
+	<stable_time>
+		<name>h_value_1</name>
+		<time> 2.000</time>
+	</stable_time>
+	<input_delay>
+		<name>h_value_1</name>
+		<time> 2.000</time>
+	</input_delay>
+	<stable_time>
+		<name>x_value</name>
+		<time> 2.000</time>
+	</stable_time>
+	<input_delay>
+		<name>x_value</name>
+		<time> 2.000</time>
+	</input_delay>
+	<stable_time>
+		<name>h_value_0</name>
+		<time> 2.000</time>
+	</stable_time>
+	<input_delay>
+		<name>h_value_0</name>
+		<time> 2.000</time>
+	</input_delay>
+	<stable_time>
+		<name>rst</name>
+		<time> 2.000</time>
+	</stable_time>
+	<input_delay>
+		<name>rst</name>
+		<time> 2.000</time>
+	</input_delay>
+	<phase_complete>sched</phase_complete>
+	<phase_summary>
+		<phase_complete>sched</phase_complete>
+		<summary>Scheduling and allocation complete: 1 threads, 108 ops.</summary>
+	</phase_summary>
+</tool_log>

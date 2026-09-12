@@ -1,0 +1,12 @@
+xkbcommon: ERROR: failed to add default include path /usr/share/X11/xkb
+Qt: Failed to create XKB context!
+Use QT_XKB_CONFIG_ROOT environmental variable to provide an additional search path, add ':' as separator to provide several search paths and/or make sure that XKB configuration data directory contains recent enough contents, to update please see http://cgit.freedesktop.org/xkeyboard-config/ .
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtCore.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtNetwork.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtSql.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtXml.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtDesigner.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtUiTools.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtHelp.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtTest.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtDesignerComponents.prl', because it cannot be opened (No such file or directory).

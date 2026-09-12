@@ -2,13 +2,13 @@
 <tool_log>
 	<tool_kind>BehavioralSynthesis</tool_kind>
 	<tool_name>stratus_hls</tool_name>
-	<gen_time>Fri Sep  4 00:42:35 2026</gen_time>
+	<gen_time>Fri Sep 11 11:20:46 2026</gen_time>
 	<version>24.01-p001  (101462.130542)</version>
 	<hostname>exotic</hostname>
-	<uname>Linux exotic 5.14.0-687.42.1.el9_8.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Aug 26 12:55:43 UTC 2026 x86_64</uname>
-	<user>exotic</user>
+	<uname>Linux exotic 5.14.0-687.44.1.el9_8.x86_64 #1 SMP PREEMPT_DYNAMIC Fri Sep 4 17:00:48 UTC 2026 x86_64</uname>
+	<user>root</user>
 	<cwd>/home/ipad/HLS_Thesis/Stratus_HLS/Simple_FIR</cwd>
-	<tech_lib>/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib</tech_lib>
+	<tech_lib>/run/media/exotic/Cadence/PDK/gpdk045_all_v4.4/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib</tech_lib>
 	<env_var>
 		<name>STRATUS_HOME</name>
 		<value>/run/media/exotic/Cadence/Installed/STRATUS_24.01.001</value>
@@ -62,7 +62,7 @@
 	</option>
 	<option>
 		<name>tech_lib</name>
-		<value>/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib</value>
+		<value>/run/media/exotic/Cadence/PDK/gpdk045_all_v4.4/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib</value>
 	</option>
 	<option>
 		<name>clock_period</name>
@@ -83,6 +83,10 @@
 	<option>
 		<name>message_detail</name>
 		<value>1</value>
+	</option>
+	<option>
+		<name>unroll_loops</name>
+		<value>on</value>
 	</option>
 	<option>
 		<name>verilog_dialect</name>
