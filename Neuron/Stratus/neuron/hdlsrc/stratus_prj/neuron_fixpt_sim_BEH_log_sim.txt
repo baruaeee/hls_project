@@ -1,0 +1,406 @@
+2026/10/05 11:30:40 System is not a supported distribution
+2026/10/05 11:30:40 An error occurred. We don't recognize OS 
+2026/10/05 11:30:40 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:40 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+Created makefile: Makefile.prj
+2026/10/05 11:30:42 System is not a supported distribution
+2026/10/05 11:30:42 An error occurred. We don't recognize OS 
+2026/10/05 11:30:42 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:42 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:30:42 System is not a supported distribution
+2026/10/05 11:30:42 An error occurred. We don't recognize OS 
+2026/10/05 11:30:42 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:42 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:30:42 System is not a supported distribution
+2026/10/05 11:30:42 An error occurred. We don't recognize OS 
+2026/10/05 11:30:42 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:42 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:30:43 System is not a supported distribution
+2026/10/05 11:30:43 An error occurred. We don't recognize OS 
+2026/10/05 11:30:43 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:43 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:30:43 System is not a supported distribution
+2026/10/05 11:30:43 An error occurred. We don't recognize OS 
+2026/10/05 11:30:43 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:43 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:30:44 System is not a supported distribution
+2026/10/05 11:30:44 An error occurred. We don't recognize OS 
+2026/10/05 11:30:44 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:44 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:30:44 System is not a supported distribution
+2026/10/05 11:30:44 An error occurred. We don't recognize OS 
+2026/10/05 11:30:44 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:44 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:30:45 System is not a supported distribution
+2026/10/05 11:30:45 An error occurred. We don't recognize OS 
+2026/10/05 11:30:45 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:45 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:30:45 System is not a supported distribution
+2026/10/05 11:30:45 An error occurred. We don't recognize OS 
+2026/10/05 11:30:45 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:45 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:30:45 System is not a supported distribution
+2026/10/05 11:30:45 An error occurred. We don't recognize OS 
+2026/10/05 11:30:45 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:45 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:30:46 System is not a supported distribution
+2026/10/05 11:30:46 An error occurred. We don't recognize OS 
+2026/10/05 11:30:46 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:46 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:30:46 System is not a supported distribution
+2026/10/05 11:30:46 An error occurred. We don't recognize OS 
+2026/10/05 11:30:46 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:46 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+Generating dependencies for system config TLM of tb.cc
+2026/10/05 11:30:46 System is not a supported distribution
+2026/10/05 11:30:46 An error occurred. We don't recognize OS 
+2026/10/05 11:30:46 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:46 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+Generating dependencies for system config TLM of system.cc
+2026/10/05 11:30:50 System is not a supported distribution
+2026/10/05 11:30:50 An error occurred. We don't recognize OS 
+2026/10/05 11:30:50 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:50 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+Generating dependencies for system config TLM of main.cc
+2026/10/05 11:30:51 System is not a supported distribution
+2026/10/05 11:30:51 An error occurred. We don't recognize OS 
+2026/10/05 11:30:51 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:51 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+Generating dependencies for HLS config TLM of neuron_fixpt.cc
+2026/10/05 11:30:52 System is not a supported distribution
+2026/10/05 11:30:52 An error occurred. We don't recognize OS 
+2026/10/05 11:30:52 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:52 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+bdw_wrapgen -project project.tcl -module neuron_fixpt "-Ibdw_work/wrappers  -Imemlib/c_parts -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS  "
+2026/10/05 11:30:53 System is not a supported distribution
+2026/10/05 11:30:53 An error occurred. We don't recognize OS 
+2026/10/05 11:30:53 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:53 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/bin/bdw_tracegen -module neuron_fixpt  
+2026/10/05 11:31:08 System is not a supported distribution
+2026/10/05 11:31:08 An error occurred. We don't recognize OS 
+2026/10/05 11:31:08 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:08 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:08 System is not a supported distribution
+2026/10/05 11:31:08 An error occurred. We don't recognize OS 
+2026/10/05 11:31:08 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:08 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:09 System is not a supported distribution
+2026/10/05 11:31:09 An error occurred. We don't recognize OS 
+2026/10/05 11:31:09 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:09 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:09 System is not a supported distribution
+2026/10/05 11:31:09 An error occurred. We don't recognize OS 
+2026/10/05 11:31:09 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:09 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:10 System is not a supported distribution
+2026/10/05 11:31:10 An error occurred. We don't recognize OS 
+2026/10/05 11:31:10 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:10 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:10 System is not a supported distribution
+2026/10/05 11:31:10 An error occurred. We don't recognize OS 
+2026/10/05 11:31:10 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:10 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:10 System is not a supported distribution
+2026/10/05 11:31:10 An error occurred. We don't recognize OS 
+2026/10/05 11:31:10 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:10 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:11 System is not a supported distribution
+2026/10/05 11:31:11 An error occurred. We don't recognize OS 
+2026/10/05 11:31:11 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:11 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+make[4]: Nothing to be done for 'bdw_work/wrappers/neuron_fixpt_wrap.h'.
+2026/10/05 11:31:11 System is not a supported distribution
+2026/10/05 11:31:11 An error occurred. We don't recognize OS 
+2026/10/05 11:31:11 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:11 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+Created makefile: Makefile.prj
+2026/10/05 11:31:12 System is not a supported distribution
+2026/10/05 11:31:12 An error occurred. We don't recognize OS 
+2026/10/05 11:31:12 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:12 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:12 System is not a supported distribution
+2026/10/05 11:31:12 An error occurred. We don't recognize OS 
+2026/10/05 11:31:12 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:12 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:13 System is not a supported distribution
+2026/10/05 11:31:13 An error occurred. We don't recognize OS 
+2026/10/05 11:31:13 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:13 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:13 System is not a supported distribution
+2026/10/05 11:31:13 An error occurred. We don't recognize OS 
+2026/10/05 11:31:13 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:13 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:13 System is not a supported distribution
+2026/10/05 11:31:13 An error occurred. We don't recognize OS 
+2026/10/05 11:31:13 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:13 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:14 System is not a supported distribution
+2026/10/05 11:31:14 An error occurred. We don't recognize OS 
+2026/10/05 11:31:14 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:14 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+make[4]: Nothing to be done for 'bdw_work/wrappers/neuron_fixpt_wrap.h'.
+2026/10/05 11:31:14 System is not a supported distribution
+2026/10/05 11:31:14 An error occurred. We don't recognize OS 
+2026/10/05 11:31:14 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:14 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:14 System is not a supported distribution
+2026/10/05 11:31:14 An error occurred. We don't recognize OS 
+2026/10/05 11:31:14 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:14 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:15 System is not a supported distribution
+2026/10/05 11:31:15 An error occurred. We don't recognize OS 
+2026/10/05 11:31:15 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:15 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/bin/bdw_shell /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/tcl/bdw_siminfo.tcl project.tcl BEH
+2026/10/05 11:31:15 System is not a supported distribution
+2026/10/05 11:31:15 An error occurred. We don't recognize OS 
+2026/10/05 11:31:15 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:15 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:16 System is not a supported distribution
+2026/10/05 11:31:16 An error occurred. We don't recognize OS 
+2026/10/05 11:31:16 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:16 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:16 System is not a supported distribution
+2026/10/05 11:31:16 An error occurred. We don't recognize OS 
+2026/10/05 11:31:16 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:16 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:16 System is not a supported distribution
+2026/10/05 11:31:16 An error occurred. We don't recognize OS 
+2026/10/05 11:31:16 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:16 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+Generating dependencies for neuron_fixpt.cc 
+2026/10/05 11:31:17 System is not a supported distribution
+2026/10/05 11:31:17 An error occurred. We don't recognize OS 
+2026/10/05 11:31:17 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:17 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:18 System is not a supported distribution
+2026/10/05 11:31:18 An error occurred. We don't recognize OS 
+2026/10/05 11:31:18 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:18 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:18 System is not a supported distribution
+2026/10/05 11:31:18 An error occurred. We don't recognize OS 
+2026/10/05 11:31:18 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:18 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:18 System is not a supported distribution
+2026/10/05 11:31:18 An error occurred. We don't recognize OS 
+2026/10/05 11:31:18 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:18 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:19 System is not a supported distribution
+2026/10/05 11:31:19 An error occurred. We don't recognize OS 
+2026/10/05 11:31:19 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:19 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:19 System is not a supported distribution
+2026/10/05 11:31:19 An error occurred. We don't recognize OS 
+2026/10/05 11:31:19 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:19 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:19 System is not a supported distribution
+2026/10/05 11:31:19 An error occurred. We don't recognize OS 
+2026/10/05 11:31:19 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:19 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+make[5]: Nothing to be done for 'bdw_work/wrappers/neuron_fixpt_wrap.h'.
+2026/10/05 11:31:19 System is not a supported distribution
+2026/10/05 11:31:19 An error occurred. We don't recognize OS 
+2026/10/05 11:31:19 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:19 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:20 System is not a supported distribution
+2026/10/05 11:31:20 An error occurred. We don't recognize OS 
+2026/10/05 11:31:20 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:20 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:20 System is not a supported distribution
+2026/10/05 11:31:20 An error occurred. We don't recognize OS 
+2026/10/05 11:31:20 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:20 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/bin/64bit/xmsc -COMPILEONLY  -64bit -cdslib bdw_work/cds.lib -hdlvar bdw_work/hdl.var -nolog -manual  -CFlags " -Ibdw_work/modules/neuron_fixpt/TLM -I./ -I./ -Ibdw_work/wrappers  -DBDW_CC_SPEC=1 -Ibdw_work/modules/neuron_fixpt/TLM/c_parts  -DioConfig_TLM -D_p_ioConfig_TLM -DioConfig=TLM -D_wrap_ioConfig=TLM   -Imemlib/c_parts  -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/neuron_fixpt/TLM/xcelium/neuron_fixpt_beh.o " bdw_work/wrappers/neuron_fixpt_wrap.cc
+xmsc(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+xmsc: /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/cdsgcc/gcc/9.3/bin/g++ -DNCSC -DCADENCE  -DLNX86 -D_GLIBCXX_USE_CXX11_ABI=1 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include_pch/64bit  -Ibdw_work/modules/neuron_fixpt/TLM -I./ -I./ -Ibdw_work/wrappers  -DBDW_CC_SPEC=1 -Ibdw_work/modules/neuron_fixpt/TLM/c_parts  -DioConfig_TLM -D_p_ioConfig_TLM -DioConfig=TLM -D_wrap_ioConfig=TLM   -Imemlib/c_parts  -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/neuron_fixpt/TLM/xcelium/neuron_fixpt_beh.o   bdw_work/wrappers/neuron_fixpt_wrap.cc
+/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/bin/64bit/xmsc -COMPILEONLY  -64bit -cdslib bdw_work/cds.lib -hdlvar bdw_work/hdl.var -nolog -manual  -CFlags " -Ibdw_work/modules/main/TLM -I./ -I./ -Ibdw_work/wrappers -Imemlib/c_parts   -DioConfig_TLM -D_p_ioConfig_TLM -DioConfig=TLM -D_wrap_ioConfig=TLM   -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/main/TLM/xcelium/main_beh.o " main.cc
+xmsc(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+xmsc: /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/cdsgcc/gcc/9.3/bin/g++ -DNCSC -DCADENCE  -DLNX86 -D_GLIBCXX_USE_CXX11_ABI=1 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include_pch/64bit  -Ibdw_work/modules/main/TLM -I./ -I./ -Ibdw_work/wrappers -Imemlib/c_parts   -DioConfig_TLM -D_p_ioConfig_TLM -DioConfig=TLM -D_wrap_ioConfig=TLM   -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/main/TLM/xcelium/main_beh.o   main.cc
+/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/bin/64bit/xmsc -COMPILEONLY  -64bit -cdslib bdw_work/cds.lib -hdlvar bdw_work/hdl.var -nolog -manual  -CFlags " -Ibdw_work/modules/system/TLM -I./ -I./ -Ibdw_work/wrappers -Imemlib/c_parts   -DioConfig_TLM -D_p_ioConfig_TLM -DioConfig=TLM -D_wrap_ioConfig=TLM   -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/system/TLM/xcelium/system_beh.o " system.cc
+xmsc(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+xmsc: /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/cdsgcc/gcc/9.3/bin/g++ -DNCSC -DCADENCE  -DLNX86 -D_GLIBCXX_USE_CXX11_ABI=1 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include_pch/64bit  -Ibdw_work/modules/system/TLM -I./ -I./ -Ibdw_work/wrappers -Imemlib/c_parts   -DioConfig_TLM -D_p_ioConfig_TLM -DioConfig=TLM -D_wrap_ioConfig=TLM   -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/system/TLM/xcelium/system_beh.o   system.cc
+/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/bin/64bit/xmsc -COMPILEONLY  -64bit -cdslib bdw_work/cds.lib -hdlvar bdw_work/hdl.var -nolog -manual  -CFlags " -Ibdw_work/modules/tb/TLM -I./ -I./ -Ibdw_work/wrappers -Imemlib/c_parts   -DioConfig_TLM -D_p_ioConfig_TLM -DioConfig=TLM -D_wrap_ioConfig=TLM   -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/tb/TLM/xcelium/tb_beh.o " tb.cc
+xmsc(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+xmsc: /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/cdsgcc/gcc/9.3/bin/g++ -DNCSC -DCADENCE  -DLNX86 -D_GLIBCXX_USE_CXX11_ABI=1 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include_pch/64bit  -Ibdw_work/modules/tb/TLM -I./ -I./ -Ibdw_work/wrappers -Imemlib/c_parts   -DioConfig_TLM -D_p_ioConfig_TLM -DioConfig=TLM -D_wrap_ioConfig=TLM   -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/tb/TLM/xcelium/tb_beh.o   tb.cc
+2026/10/05 11:31:41 System is not a supported distribution
+2026/10/05 11:31:41 An error occurred. We don't recognize OS 
+2026/10/05 11:31:41 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:41 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:41 System is not a supported distribution
+2026/10/05 11:31:41 An error occurred. We don't recognize OS 
+2026/10/05 11:31:41 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:41 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:42 System is not a supported distribution
+2026/10/05 11:31:42 An error occurred. We don't recognize OS 
+2026/10/05 11:31:42 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:42 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:42 System is not a supported distribution
+2026/10/05 11:31:42 An error occurred. We don't recognize OS 
+2026/10/05 11:31:42 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:42 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/bin/bdw_makegen  -scsim xcelium -lib memlib -o bdw_work/libs/memlib/xcelium/Makefile -module  -cynthconfig    -project project.tcl
+/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/bin/64bit/xmsc -COMPILEONLY  -64bit -cdslib bdw_work/cds.lib -hdlvar bdw_work/hdl.var -nolog -manual  -CFlags " -I./ -Ibdw_work/wrappers  -Imemlib/c_parts  -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/libesc/xcelium/libesc.o " /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/source/libesc.cc
+/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/bin/64bit/xmsc -COMPILEONLY  -64bit -cdslib bdw_work/cds.lib -hdlvar bdw_work/hdl.var -nolog -manual  -CFlags " -I./ -Ibdw_work/wrappers  -Imemlib/c_parts  -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/libesc/xcelium/esc_elab.o " /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/source/esc_elab.cc
+/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/bin/64bit/xmsc -COMPILEONLY  -64bit -cdslib bdw_work/cds.lib -hdlvar bdw_work/hdl.var -nolog -manual  -CFlags " -I./ -Ibdw_work/wrappers  -Imemlib/c_parts  -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/libesc/xcelium/esc_cleanup.o " /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/source/esc_cleanup.cc
+2026/10/05 11:31:43 System is not a supported distribution
+2026/10/05 11:31:43 An error occurred. We don't recognize OS 
+2026/10/05 11:31:43 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:43 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+xmsc(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+xmsc(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+xmsc(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+xmsc: /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/cdsgcc/gcc/9.3/bin/g++ -DNCSC -DCADENCE  -DLNX86 -D_GLIBCXX_USE_CXX11_ABI=1 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include_pch/64bit  -I./ -Ibdw_work/wrappers  -Imemlib/c_parts  -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/libesc/xcelium/esc_cleanup.o   /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/source/esc_cleanup.cc
+xmsc: /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/cdsgcc/gcc/9.3/bin/g++ -DNCSC -DCADENCE  -DLNX86 -D_GLIBCXX_USE_CXX11_ABI=1 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include_pch/64bit  -I./ -Ibdw_work/wrappers  -Imemlib/c_parts  -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/libesc/xcelium/esc_elab.o   /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/source/esc_elab.cc
+xmsc: /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/cdsgcc/gcc/9.3/bin/g++ -DNCSC -DCADENCE  -DLNX86 -D_GLIBCXX_USE_CXX11_ABI=1 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include_pch/64bit  -I./ -Ibdw_work/wrappers  -Imemlib/c_parts  -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/libesc/xcelium/libesc.o   /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/source/libesc.cc
+2026/10/05 11:31:43 System is not a supported distribution
+2026/10/05 11:31:43 An error occurred. We don't recognize OS 
+2026/10/05 11:31:43 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:43 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+make objs/libmemlib.a
+2026/10/05 11:31:44 System is not a supported distribution
+2026/10/05 11:31:44 An error occurred. We don't recognize OS 
+2026/10/05 11:31:44 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:44 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/bin/64bit/xmsc -COMPILEONLY  -64bit -cdslib cds.lib -hdlvar hdl.var -nolog -manual  -CFlags " -I../../../..//memlib/c_parts  -c -I. -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -DBDW_RT=1 -DBDW_HUB  -o objs/SPRAM.o " ../../../..//memlib/c_parts/SPRAM.cc
+/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/bin/64bit/xmsc -COMPILEONLY  -64bit -cdslib cds.lib -hdlvar hdl.var -nolog -manual  -CFlags " -I../../../..//memlib/c_parts  -c -I. -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -DBDW_RT=1 -DBDW_HUB  -o objs/DPRAM.o " ../../../..//memlib/c_parts/DPRAM.cc
+xmsc(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+xmsc: *N,DLWTLK: Pausing until a exclusive lock can be established on library 'memlib_worklib'.  Another process may be accessing the library.  Process will resume when the lock is established.
+xmsc(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+xmsc: /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/cdsgcc/gcc/9.3/bin/g++ -DNCSC -DCADENCE  -DLNX86 -D_GLIBCXX_USE_CXX11_ABI=1 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include_pch/64bit  -I../../../..//memlib/c_parts  -c -I. -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -DBDW_RT=1 -DBDW_HUB  -o objs/DPRAM.o   ../../../..//memlib/c_parts/DPRAM.cc
+xmsc: /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/cdsgcc/gcc/9.3/bin/g++ -DNCSC -DCADENCE  -DLNX86 -D_GLIBCXX_USE_CXX11_ABI=1 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include_pch/64bit  -I../../../..//memlib/c_parts  -c -I. -c -DCLOCK_PERIOD=100.0 -DCLOCK_UNIT=SC_NS    -fPIC -I/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/systemc/include/tlm2 -I/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/tbsc/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -DBDW_RT=1 -DBDW_HUB  -o objs/SPRAM.o   ../../../..//memlib/c_parts/SPRAM.cc
+/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/cdsgcc/gcc/bin/ar rc  objs/libmemlib.a objs/SPRAM.o objs/DPRAM.o 
+/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/cdsgcc/gcc/bin/ar rc  bdw_work/libesc/xcelium/libesc.a bdw_work/libesc/xcelium/libesc.o bdw_work/libesc/xcelium/esc_elab.o bdw_work/libesc/xcelium/esc_cleanup.o
+2026/10/05 11:31:54 System is not a supported distribution
+2026/10/05 11:31:54 An error occurred. We don't recognize OS 
+2026/10/05 11:31:54 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:54 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:54 System is not a supported distribution
+2026/10/05 11:31:54 An error occurred. We don't recognize OS 
+2026/10/05 11:31:54 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:54 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:54 System is not a supported distribution
+2026/10/05 11:31:54 An error occurred. We don't recognize OS 
+2026/10/05 11:31:54 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:54 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+make --no-print-directory -f Makefile ncsc
+2026/10/05 11:31:55 System is not a supported distribution
+2026/10/05 11:31:55 An error occurred. We don't recognize OS 
+2026/10/05 11:31:55 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:55 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:55 System is not a supported distribution
+2026/10/05 11:31:55 An error occurred. We don't recognize OS 
+2026/10/05 11:31:55 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:55 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:55 System is not a supported distribution
+2026/10/05 11:31:55 An error occurred. We don't recognize OS 
+2026/10/05 11:31:55 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:55 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:56 System is not a supported distribution
+2026/10/05 11:31:56 An error occurred. We don't recognize OS 
+2026/10/05 11:31:56 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:56 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/05 11:31:56 System is not a supported distribution
+2026/10/05 11:31:56 An error occurred. We don't recognize OS 
+2026/10/05 11:31:56 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:56 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/bin/bdw_shell /run/media/exotic/Cadence/Installed/STRATUS_24.01.001/share/stratus/tcl/bdw_siminfo.tcl -gen_ncsim_cmd project.tcl BEH
+2026/10/05 11:31:58 System is not a supported distribution
+2026/10/05 11:31:58 An error occurred. We don't recognize OS 
+2026/10/05 11:31:58 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:58 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+
+BDW_SIM_CONFIG_DIR=bdw_work/sims/BEH \
+bdw_exec -jobproject project.tcl -job sim.BEH.s \
+hub_ncsim \
+-work BEH -reflib worklib -reflib bdw_work/INCA_libs/bdw_worklib \
+-messages -64bit \
+ \
+  \
+ \
+-CFLAGS " "  \
+ \
+bdw_work/modules/neuron_fixpt/TLM/xcelium/neuron_fixpt_beh.o bdw_work/modules/main/TLM/xcelium/main_beh.o bdw_work/modules/system/TLM/xcelium/system_beh.o bdw_work/modules/tb/TLM/xcelium/tb_beh.o   \
+ \
+ \
+bdw_work/libesc/xcelium/libesc.a \
+bdw_work/libs/memlib/xcelium/objs/libmemlib.a \
+ \
+ \
+ \
+ \
+-file bdw_work/sims/BEH/siminfo \
+ \
+ \
+ \
+-input bdw_work/sims/BEH/ncsim_cmd.tcl \
+-top sc_main   \
+ \
+2>&1 | tee bdw_work/sims/BEH/bdw_sim.log
+2026/10/05 11:31:59 System is not a supported distribution
+2026/10/05 11:31:59 An error occurred. We don't recognize OS 
+2026/10/05 11:31:59 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:31:59 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+TOOL:	xrun(64)	24.03-s004: Started on Oct 05, 2026 at 11:31:59 CEST
+xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+xrun: *W,REFLIB: -reflib directory bdw_work/sims/BEH/xcelium.d/worklib does not exist. It will be created.
+$CDSROOT = /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004
+$TESTDIR = /mnt/windows_share/GitRepo/HLS_Thesis/Neuron/Stratus/neuron/hdlsrc/stratus_prj
+
+TOOL:	xmsc(64)	24.03-s004
+building library run.so
+
+NOTE: Cadence Design Systems Hub Simulation Platform : version 24.01-p001
+	Elaborating the design hierarchy:
+	Top level design units:
+		sc_main
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                 Instances  Unique
+		Simulation timescale:  1ps
+
+	SystemC Design Summary:
+		                  Instances
+		sc_modules:               6
+		sc_ports:                13
+		sc_signals:              20
+		sc_threads:               1
+		sc_cthreads:              3
+		sc_events:                2
+		sc other objects:         2
+	Writing initial simulation snapshot: BEH.sc_main:sc_module
+Loading snapshot BEH.sc_main:sc_module .................... Done
+NOTE: Cadence Design Systems Hub Simulation Platform : version 24.01-p001
+xcelium> database -open waves -shm -into bdw_work/sims/BEH/BEH.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm -all -variables -depth all
+SDI2 Transaction Recording API Version 24.03-s004
+
+Info: TRANSACTION_RECORDING_BEGUN: file = bdw_work/sims/BEH/BEH.shm
+Created probe 1
+xcelium> run
+symlink failed
+Traceback (most recent call last):
+  File "/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/bin/stackwalk.py", line 360, in <module>
+    stack_walk()
+  File "/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/bin/stackwalk.py", line 90, in stack_walk
+    os.symlink(sym_files, sym_exec_path + "/"+ os.path.basename(sym_files))
+PermissionError: [Errno 1] Operation not permitted: '/run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/xcelium/symbols/64bit/libsagegen.so.sym' -> '.bpad/symbols/libsagegen.so/29DC1262CCB8C32D48A482C4108E650A0/libsagegen.so.sym'
+Observed simulation time : 0 FS + 0
+xmsim: *F,INTERR: INTERNAL EXCEPTION
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	xmsim(64)	24.03-s004 (CL: 638556 )
+  HOSTNAME: exotic
+  OPERATING SYSTEM: Linux 5.14.0-687.53.1.el9_8.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 29 12:30:12 UTC 2026 x86_64
+  MESSAGE: T(0): sv_seghandler - trapno -1 addr(0x646cd8c)
+	Stream rts_xfer
+-----------------------------------------------------------------
+Stack trace information is captured in file /mnt/windows_share/GitRepo/HLS_Thesis/Neuron/Stratus/neuron/hdlsrc/stratus_prj/bpad_304342.err 
+csi-xmsim - CSI: Cadence Support Investigation, sending details to /mnt/windows_share/GitRepo/HLS_Thesis/Neuron/Stratus/neuron/hdlsrc/stratus_prj/xmsim_304342.err
+csi-xmsim - CSI: investigation complete, send /mnt/windows_share/GitRepo/HLS_Thesis/Neuron/Stratus/neuron/hdlsrc/stratus_prj/xmsim_304342.err to Cadence Support
+TOOL:	xrun(64)	24.03-s004: Exiting on Oct 05, 2026 at 11:32:36 CEST  (total: 00:00:37)
+

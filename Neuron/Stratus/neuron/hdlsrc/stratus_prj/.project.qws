@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QtCreatorSession>
+<!-- Written by Stratus IDE 4.6.2, 2026-10-05T13:19:48. -->
+<qtcreator>
+ <data>
+  <variable>CascadeSetActive</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>Color</variable>
+  <value type="QString">#666666</value>
+ </data>
+ <data>
+  <variable>EditorSettings</variable>
+  <value type="QByteArray">AAAAD0VkaXRvck1hbmFnZXJWNAAAAAEAAAC0AC8AbQBuAHQALwB3AGkAbgBkAG8AdwBzAF8AcwBoAGEAcgBlAC8ARwBpAHQAUgBlAHAAbwAvAEgATABTAF8AVABoAGUAcwBpAHMALwBOAGUAdQByAG8AbgAvAFMAdAByAGEAdAB1AHMALwBuAGUAdQByAG8AbgAvAGgAZABsAHMAcgBjAC8AcwB0AHIAYQB0AHUAcwBfAHAAcgBqAC8AcAByAG8AagBlAGMAdAAuAHQAYwBsAAAADAAAAAAYAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAALQALwBtAG4AdAAvAHcAaQBuAGQAbwB3AHMAXwBzAGgAYQByAGUALwBHAGkAdABSAGUAcABvAC8ASABMAFMAXwBUAGgAZQBzAGkAcwAvAE4AZQB1AHIAbwBuAC8AUwB0AHIAYQB0AHUAcwAvAG4AZQB1AHIAbwBuAC8AaABkAGwAcwByAGMALwBzAHQAcgBhAHQAdQBzAF8AcAByAGoALwBwAHIAbwBqAGUAYwB0AC4AdABjAGwAAAAWAHAAcgBvAGoAZQBjAHQALgB0AGMAbAAAABRDb3JlLlBsYWluVGV4dEVkaXRvcgAAAREAAAANY3VycmVudGVkaXRvcgAAALQALwBtAG4AdAAvAHcAaQBuAGQAbwB3AHMAXwBzAGgAYQByAGUALwBHAGkAdABSAGUAcABvAC8ASABMAFMAXwBUAGgAZQBzAGkAcwAvAE4AZQB1AHIAbwBuAC8AUwB0AHIAYQB0AHUAcwAvAG4AZQB1AHIAbwBuAC8AaABkAGwAcwByAGMALwBzAHQAcgBhAHQAdQBzAF8AcAByAGoALwBwAHIAbwBqAGUAYwB0AC4AdABjAGwAAAAoAEMAbwByAGUALgBQAGwAYQBpAG4AVABlAHgAdABFAGQAaQB0AG8AcgAAABgAAAABAAAAAAAAAAAAAAABAAAAAAAAAAA=</value>
+ </data>
+ <data>
+  <variable>ProjectDependencies</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+ <data>
+  <variable>ProjectList</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">/mnt/windows_share/GitRepo/HLS_Thesis/Neuron/Stratus/neuron/hdlsrc/stratus_prj/stratus_prj.pro</value>
+   <value type="QString">/mnt/windows_share/GitRepo/HLS_Thesis/Neuron/Stratus/neuron/hdlsrc/stratus_prj/project.tcl</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>StartupProject</variable>
+  <value type="QString">/mnt/windows_share/GitRepo/HLS_Thesis/Neuron/Stratus/neuron/hdlsrc/stratus_prj/project.tcl</value>
+ </data>
+ <data>
+  <variable>value-ActiveMode</variable>
+  <value type="QString">Edit</value>
+ </data>
+ <data>
+  <variable>value-Breakpoints</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>value-DefaultFormats</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+ <data>
+  <variable>value-IndividualFormats</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+ <data>
+  <variable>value-ProjectTree.ExpandData</variable>
+  <valuelist type="QVariantList">
+   <valuelist type="QVariantList">
+    <value type="QString">/mnt/windows_share/GitRepo/HLS_Thesis/Neuron/Stratus/neuron/hdlsrc/stratus_prj</value>
+    <value type="QString">stratus_prj</value>
+   </valuelist>
+  </valuelist>
+ </data>
+ <data>
+  <variable>value-Watchers</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>valueKeys</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">ActiveMode</value>
+   <value type="QString">Breakpoints</value>
+   <value type="QString">DefaultFormats</value>
+   <value type="QString">IndividualFormats</value>
+   <value type="QString">ProjectTree.ExpandData</value>
+   <value type="QString">Watchers</value>
+  </valuelist>
+ </data>
+</qtcreator>

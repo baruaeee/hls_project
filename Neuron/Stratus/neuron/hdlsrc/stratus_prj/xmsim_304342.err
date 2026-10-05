@@ -1,0 +1,126 @@
+csi-xmsim - CSI: Command line:
+xmsim
+    -f /mnt/windows_share/GitRepo/HLS_Thesis/Neuron/Stratus/neuron/hdlsrc/stratus_prj/bdw_work/sims/BEH/xcelium.d/run.lnx8664.24.03.d/exotic_304342/xmsim.args
+        +BDW_VLOG_DUMPFILE+
+        +libext+.v
+        +access+r
+        +define+BDW_NCSC
+        -amsdlibdir bdw_work/sims/BEH/xcelium.d/AMSD
+        -INPUT bdw_work/sims/BEH/ncsim_cmd.tcl
+        -MESSAGES
+        +EMGRLOG bdw_work/sims/BEH/xrun.log
+        -XLSTIME 1791192719
+        -XLKEEP
+        -XLMODE bdw_work/sims/BEH/xcelium.d/run.lnx8664.24.03.d
+        -RUNMODE
+        -CDSLIB bdw_work/sims/BEH/xcelium.d/run.lnx8664.24.03.d/cds.lib
+        -HDLVAR bdw_work/sims/BEH/xcelium.d/run.lnx8664.24.03.d/hdl.var
+        -XLNAME xrun
+        -XLVERSION TOOL:	xrun(64)	24.03-s004
+        -XLNAME ./bdw_work/sims/BEH/xcelium.d/run.lnx8664.24.03.d/exotic_304342
+    -CHECK_VERSION TOOL:	xrun(64)	24.03-s004
+    -LOG_FD 4
+    -LOG_FD_NAME bdw_work/sims/BEH/xrun.log
+    -cmdnopsim
+    -runlock /mnt/windows_share/GitRepo/HLS_Thesis/Neuron/Stratus/neuron/hdlsrc/stratus_prj/bdw_work/sims/BEH/xcelium.d/run.lnx8664.24.03.d/.xmlib.lock
+    -runscratch /mnt/windows_share/GitRepo/HLS_Thesis/Neuron/Stratus/neuron/hdlsrc/stratus_prj/bdw_work/sims/BEH/xcelium.d/run.lnx8664.24.03.d/exotic_304342
+Observed simulation time : 0 FS + 0
+
+csi-xmsim - CSI: *F,INTERR: INTERNAL EXCEPTION
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	xmsim(64)	24.03-s004 (CL: 638556 )
+  HOSTNAME: exotic
+  OPERATING SYSTEM: Linux 5.14.0-687.53.1.el9_8.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 29 12:30:12 UTC 2026 x86_64
+  MESSAGE: T(0): sv_seghandler - trapno -1 addr(0x646cd8c)
+	Stream rts_xfer
+-----------------------------------------------------------------
+
+csi-xmsim - CSI: Cadence Support Investigation, recording details
+External Code in function: <unavailable> offset -65477
+External Code in function: <unavailable> offset -65534
+External Code in function: <unavailable> offset -65536
+Simulator Snap Shot: gd (SSS_GD) in snapshot BEH.sc_main:sc_module (SSS)
+SystemC Syntax Tree: other declaration (CST_D_OTHER) in sc_module BEH.sc_main:sc_module (CST)
+	Scope: sc_main
+	Decompile: event_1
+SystemC Syntax Tree: other declaration (CST_D_OTHER) in sc_module BEH.TOP:sc_module (CST)
+	Scope: TOP
+	Decompile: $dhe
+SystemC Syntax Tree: overlay table (CST_OVERLAY_TABLE) in sc_module BEH.neuron_fixpt_wrapper:sc_module (SIG) <0x6b4df832>
+SystemC Syntax Tree: instance declaration (CST_D_INSTANCE) in sc_module BEH.neuron_fixpt_wrapper:sc_module (CST)
+	Scope: neuron_fixpt_wrapper
+	Decompile: neuron_fixpt
+SystemC Syntax Tree: port declaration (CST_D_PORT) in sc_module BEH.neuron_fixpt_wrapper:sc_module (CST)
+	Scope: neuron_fixpt_wrapper
+	Decompile: clk
+SystemC Syntax Tree: module declaration (CST_D_MODULE) in sc_module BEH.neuron_fixpt:sc_module (CST)
+	Decompile: neuron_fixpt
+SystemC Syntax Tree: other declaration (CST_D_OTHER) in sc_module BEH.TOP:sc_module (CST)
+	Scope: TOP
+	Decompile: co
+SystemC Syntax Tree: other declaration (CST_D_OTHER) in sc_module BEH.neuron_fixpt_wrapper:sc_module (CST)
+	Scope: neuron_fixpt_wrapper
+	Decompile: $dhe
+SystemC Syntax Tree: other declaration (CST_D_OTHER) in sc_module BEH.neuron_fixpt:sc_module (CST)
+	Scope: neuron_fixpt
+	Decompile: thread0
+SystemC Syntax Tree: signal declaration (CST_D_SIGNAL) in sc_module BEH.neuron_fixpt:sc_module (CST)
+	Scope: neuron_fixpt
+	Decompile: p_ifin_m_busy_in
+SystemC Syntax Tree: port declaration (CST_D_PORT) in sc_module BEH.neuron_fixpt:sc_module (CST)
+	Scope: neuron_fixpt
+	Decompile: clk
+SystemC Syntax Tree: port declaration (CST_D_PORT) in sc_module BEH.neuron_fixpt_wrapper:sc_module (CST)
+	Scope: neuron_fixpt_wrapper
+	Decompile: p_ifout
+SystemC Syntax Tree: other declaration (CST_D_OTHER) in sc_module BEH.neuron_fixpt:sc_module (CST)
+	Scope: neuron_fixpt
+	Decompile: $dhe
+SystemC Syntax Tree: overlay table (CST_OVERLAY_TABLE) in sc_module BEH.neuron_fixpt:sc_module (SIG) <0x156d07e8>
+SystemC Syntax Tree: other declaration (CST_D_OTHER) in sc_module BEH.neuron_fixpt:sc_module (CST)
+	Scope: neuron_fixpt.thread0
+	Decompile: $dhe
+SystemC Syntax Tree: instance declaration (CST_D_INSTANCE) in sc_module BEH.sc_main:sc_module (CST)
+	Scope: sc_main
+	Decompile: top
+SystemC Syntax Tree: signal declaration (CST_D_SIGNAL) in sc_module BEH.neuron_fixpt:sc_module (CST)
+	Scope: neuron_fixpt
+	Decompile: signal_7
+SystemC Syntax Tree: signal declaration (CST_D_SIGNAL) in sc_module BEH.neuron_fixpt:sc_module (CST)
+	Scope: neuron_fixpt
+	Decompile: signal_6
+External Code in function: <unavailable> offset -65392
+External Code in function: <unavailable> offset -65475
+External Code in function: <unavailable> offset -65523
+External Code in function: <unavailable> offset -65535
+Intermediate File: data block (IF_BLK) in snapshot BEH.sc_main:sc_module (SSS)
+Intermediate File: array of pointers (IF_PTRBLK) in snapshot BEH.sc_main:sc_module (SSS)
+SystemC Syntax Tree: instance declaration (CST_D_INSTANCE) in sc_module BEH.TOP:sc_module (CST)
+	Scope: TOP
+	Decompile: neuron_fixpt_wrapper
+SystemC Syntax Tree: instance declaration (CST_D_INSTANCE) in sc_module BEH.sc_main:sc_module (CST)
+	Scope: sc_main
+	Decompile: esc_hub
+SystemC Syntax Tree: module declaration (CST_D_MODULE) in sc_module BEH.TOP:sc_module (CST)
+	Decompile: TOP
+SystemC Syntax Tree: module declaration (CST_D_MODULE) in sc_module BEH.sc_main:sc_module (CST)
+	Decompile: sc_main
+Intermediate File: string (IF_STRING) in sc_module BEH.sc_main:sc_module (CST)
+	Decompile: event_1
+SystemC Syntax Tree: other declaration (CST_D_OTHER) in sc_module BEH.sc_main:sc_module (CST)
+	Scope: sc_main
+	Decompile: event_0
+SystemC Syntax Tree: module declaration (CST_D_MODULE) in sc_module BEH.neuron_fixpt_wrapper:sc_module (CST)
+	Decompile: neuron_fixpt_wrapper
+SystemC Syntax Tree: signal declaration (CST_D_SIGNAL) in sc_module BEH.TOP:sc_module (CST)
+	Scope: TOP
+	Decompile: clk
+SystemC Syntax Tree: overlay table (CST_OVERLAY_TABLE) in sc_module BEH.TOP:sc_module (SIG) <0x0011a8df>
+Intermediate File: string (IF_STRING) in sc_module BEH.sc_main:sc_module (CST)
+	Decompile: top
+User Code in function: <unavailable> offset 45088776
+csi-xmsim - CSI: investigation complete took 0.073 secs, send this file to Cadence Support

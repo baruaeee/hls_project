@@ -1,0 +1,9 @@
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtCore.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtNetwork.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtSql.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtXml.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtDesigner.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtUiTools.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtHelp.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtTest.prl', because it cannot be opened (No such file or directory).
+qDebug: Skipping prl file '/run/media/exotic/Cadence/Installed/STRATUS_24.01.001/tools.lnx86/stratus/OpenSourceIDEToolkit/Qt/lib/libQtDesignerComponents.prl', because it cannot be opened (No such file or directory).

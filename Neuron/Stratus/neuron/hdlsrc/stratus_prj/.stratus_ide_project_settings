@@ -1,0 +1,12 @@
+[General]
+programVersionString=24.01-p001
+
+[analysis]
+%2B\NIL\context=(nil)
+
+[tree]
+OpenLibTypes=Memories, Interfaces, Resources
+OpenLibs=memlib
+OpenModules=neuron_fixpt
+OpenTopLevel=Modules, Config Groups, Sim Configs, Logic Synth Configs, PnR Configs, Power Configs, Analysis Configs, Equiv Configs, Coverage Configs, Libraries
+Selection=

@@ -1,0 +1,22 @@
+2026/10/05 11:30:24 System is not a supported distribution
+2026/10/05 11:30:24 An error occurred. We don't recognize OS 
+2026/10/05 11:30:24 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:24 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+INFO: Searching /run/media/exotic/Cadence/Installed/STRATUS_24.01.001 for template
+INFO: Processing template tb.cc
+INFO: Processing template tb.h
+INFO: Processing template neuron_fixpt.cc
+INFO: Processing template neuron_fixpt.h
+INFO: Processing template system.cc
+INFO: Processing template system.h
+INFO: Processing template project.tcl
+INFO: Generating memory library memlib.
+ERROR: Problem encountered generating memlib: 2026/10/05 11:30:38 System is not a supported distribution
+2026/10/05 11:30:38 An error occurred. We don't recognize OS 
+2026/10/05 11:30:38 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:38 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+ERROR: Problem encountered generating memlib: 2026/10/05 11:30:39 System is not a supported distribution
+2026/10/05 11:30:39 An error occurred. We don't recognize OS 
+2026/10/05 11:30:39 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/05 11:30:39 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+INFO: Import successful
