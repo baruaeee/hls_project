@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fixed-Point Report for neuron</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+	body { font-family: monospace; }
+	h2 { font-family: Arial, Helvetica, sans-serif; color: #990000; margin-top: 50px; }
+	table,th,td { border: 1px solid black; }
+	table { margin-top: 30px; }
+	th { align: center; font-weight: bold; }
+	tr.h { background-color: #99CCFF; }
+	tr.a { background-color: #EEEEFF; }
+	tr.b { background-color: #FFFFFF; }
+	tr.c { background-color: #FFA500; }
+	tr.a td, tr.b td { border-style: none; }
+	td.left { text-align: left; }
+	td.right { text-align: right; }
+	td.center { text-align: center; }
+	td.bold { font-weight: bold; }
+	pre { padding: 0px; margin: 0px; }
+	span { font-style: italic; }
+	.code, .code tr, .code th, .code td { border: none; border-collapse: collapse; }
+	.padd { padding-left: 5px; }
+	td.cov, th.cov { width: 50px; height: 20px; text-align: center; font-weight: bold; border-right: 2px solid black; cell-spacing: 0px; }
+	td.cov { vertical-align: top; }
+	td.black { color: #000000; font-weight: bold; padding-top: 4px; }
+	td.white { color: #FFFFFF; font-weight: bold; padding-top: 4px; }
+	.code th { font-weight: bold; border-bottom: 2px solid black; }
+</style>
+</head>
+<body>
+<h3>Generated on  2026-10-19 02:45:02</h3>
+<p>The following table shows fixed point instrumentation results</p>
+<h2>Fixed-Point Report <span>neuron<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function y = neuron(x, w, b)
+    % 1. Force complete block RAM partitioning so every element gets its own wire
+    coder.hdl.literaltext("#pragma HLS ARRAY_PARTITION variable=x complete dim=1");
+    coder.hdl.literaltext("#pragma HLS ARRAY_PARTITION variable=w complete dim=1");
+    %#pragma HLS BIND_OP: This is a Vitis HLS instruction that tells the synthesizer
+    % how to implement a specific arithmetic or logic operation in hardware.
+    % variable=y: Specifies that this binding rule applies to the variable
+    % y (the accumulator/output where the addition results are stored).
+    % op=add: Specifies that the target operation is addition (you can also bind
+    % multiplications using op=mul, etc.).
+    % impl=fabric: This is the most crucial part. It tells Vitis HLS to implement
+    % the addition using the FPGA's general-purpose logic fabric (LUTs and registers)
+    % rather than dedicated hardware blocks like DSP slices (which are configured
+    % as impl=dsp).
+    % only addition is used in fabric LUT beacause with mutliply logic it takes
+    % too manz HW resources and clock/speed performance will significantly be reduced
+    coder.hdl.literaltext("#pragma HLS BIND_OP variable=y op=add impl=fabric");
+
+    y = b;
+
+    % 2. Fully unroll the loop 
+    coder.hdl.loopspec('unroll');
+
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov black" style="background-color: rgb(255,160,118);">Once</TD>
+<TD class="padd"><pre>    for i = 1:numel(x)
+        % 3. Force expression to flatten into combinatorial logic without internal registers
+        y = y + (x(i) * w(i));
+    end</pre></TD>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 14)</th></TR><TR class="a">
+<TD class="left">b</TD><TD class="left">double</TD><TD class="right">0</TD><TD class="right">0</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 1, 0)</TD></TR>
+<TR class="b">
+<TD class="left">i</TD><TD class="left">double</TD><TD class="right">1</TD><TD class="right">4</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 3, 0)</TD></TR>
+<TR class="a">
+<TD class="left">w</TD><TD class="left">double 1 x 4 </TD><TD class="right">0.1</TD><TD class="right">0.5</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 14, 14)</TD></TR>
+<TR class="b">
+<TD class="left">x</TD><TD class="left">double 1 x 4 </TD><TD class="right">-1.3076882963052734</TD><TD class="right">0.3426244665386499</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 12)</TD></TR>
+<TR class="a">
+<TD class="left">y</TD><TD class="left">double</TD><TD class="right">-0.27628307119265993</TD><TD class="right">0.1593826199294904</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 14)</TD></TR>
+</TABLE>
+
+</body>
+</html>

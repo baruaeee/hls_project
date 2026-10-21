@@ -1,0 +1,44 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_fixptClass.hpp:32:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_fixpt" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_fixptClass.hpp:33:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_fixpt" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=w complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_fixptClass.hpp:48:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_fixpt" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=y op=add impl=fabric" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_fixptClass.hpp:56:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="neuron_fixpt_wrapper" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=neuron_fixpt_wrapper" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_fixptClass.hpp:32:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_fixpt" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_fixptClass.hpp:33:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_fixpt" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=w complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_fixptClass.hpp:48:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_fixpt" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=y op=add impl=fabric" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_fixptClass.hpp:56:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../neuron_fixptClass.hpp:24:0" msg_body="Unrolling loop 'L1' (../neuron_fixptClass.hpp:54:5) in function 'neuron_fixptClass::neuron_fixpt' completely with a factor of 4">
+        <args Factor="4" LoopLoc="../neuron_fixptClass.hpp:54:5" LoopName="L1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="../neuron_fixptClass.hpp:56:1" msg_body="unroll  false neuron_fixptClass::neuron_fixpt ../neuron_fixptClass.hpp:56:1">
+        <args PragmaFunction="neuron_fixptClass::neuron_fixpt" PragmaIsAuto="false" PragmaSrcLoc="../neuron_fixptClass.hpp:56:1" PragmaSrcLoc-DebugLoc="File ../neuron_fixptClass.hpp Line 56 Column 1" PragmaType="unroll"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../neuron_fixpt_wrapper.cpp:15:0" msg_body="Inlining function 'neuron_fixptClass::neuron_fixpt(ap_fixed&lt;14, 2, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_ufixed&lt;14, 0, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;1&gt;, ap_fixed&lt;14, 0, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'neuron_fixpt_wrapper(ap_fixed&lt;14, 2, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_ufixed&lt;14, 0, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;1&gt;, ap_fixed&lt;14, 0, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="neuron_fixptClass::neuron_fixpt(ap_fixed&lt;14, 2, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_ufixed&lt;14, 0, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;1&gt;, ap_fixed&lt;14, 0, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File ../neuron_fixptClass.hpp Line 24 Column 0" Caller="neuron_fixpt_wrapper(ap_fixed&lt;14, 2, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_ufixed&lt;14, 0, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;1&gt;, ap_fixed&lt;14, 0, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File ../neuron_fixpt_wrapper.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../neuron_fixpt_wrapper.cpp:15:0" msg_body="Applying array_partition to 'x': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="x"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../neuron_fixpt_wrapper.cpp:15:0" msg_body="Applying array_partition to 'w': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="w"/>
+    </msg>
+</xilinx:hls_fe_msgs>

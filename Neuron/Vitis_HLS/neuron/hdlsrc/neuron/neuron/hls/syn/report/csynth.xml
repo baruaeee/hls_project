@@ -1,0 +1,565 @@
+<profile>
+    <ReportVersion>
+        <Version>2026.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z010i-clg225-1L</Part>
+        <TopModelName>neuron_fixpt_wrapper</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>7.122</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>1</Best-caseLatency>
+            <Average-caseLatency>1</Average-caseLatency>
+            <Worst-caseLatency>1</Worst-caseLatency>
+            <Best-caseRealTimeLatency>10.000 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>10.000 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>10.000 ns</Worst-caseRealTimeLatency>
+            <Interval-min>2</Interval-min>
+            <Interval-max>2</Interval-max>
+            <PerformancePragma>-</PerformancePragma>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>../neuron_fixpt_wrapper.cpp:13</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <DSP>4</DSP>
+            <FF>94</FF>
+            <LUT>137</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>120</BRAM_18K>
+            <DSP>80</DSP>
+            <FF>35200</FF>
+            <LUT>17600</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>neuron_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>neuron_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>neuron_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>neuron_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>neuron_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>neuron_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>x_0</name>
+            <Object>x_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>14</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>x_1</name>
+            <Object>x_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>14</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>x_2</name>
+            <Object>x_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>14</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>x_3</name>
+            <Object>x_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>14</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>w_0</name>
+            <Object>w_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>14</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>w_1</name>
+            <Object>w_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>14</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>w_2</name>
+            <Object>w_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>14</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>w_3</name>
+            <Object>w_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>14</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>b</name>
+            <Object>b</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>y</name>
+            <Object>y</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>14</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>y_ap_vld</name>
+            <Object>y</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>neuron_fixpt_wrapper</ModuleName>
+            <BindInstances>mul_14ns_14s_26_1_1_U1 mul_14ns_14s_26_1_1_U2 add_ln59_fu_198_p2 mul_14ns_14s_26_1_1_U3 add_ln59_1_fu_221_p2 mul_14ns_14s_26_1_1_U4 add_ln59_2_fu_244_p2</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>neuron_fixpt_wrapper</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.122</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1</Best-caseLatency>
+                    <Average-caseLatency>1</Average-caseLatency>
+                    <Worst-caseLatency>1</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>10.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>10.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>10.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>2</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../neuron_fixpt_wrapper.cpp:13</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>4</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>5</UTIL_DSP>
+                    <FF>94</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>137</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_14ns_14s_26_1_1_U1" SOURCE="../neuron_fixptClass.hpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln59" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_14ns_14s_26_1_1_U2" SOURCE="../neuron_fixptClass.hpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln59_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="yes" RTLNAME="add_ln59_fu_198_p2" SOURCE="../neuron_fixptClass.hpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_14ns_14s_26_1_1_U3" SOURCE="../neuron_fixptClass.hpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln59_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="yes" RTLNAME="add_ln59_1_fu_221_p2" SOURCE="../neuron_fixptClass.hpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_14ns_14s_26_1_1_U4" SOURCE="../neuron_fixptClass.hpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln59_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="yes" RTLNAME="add_ln59_2_fu_244_p2" SOURCE="../neuron_fixptClass.hpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59_2" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_interface m_axi_alignment_size="1"/>
+        <config_rtl auto_prefix="1"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="x" index="0" direction="in" srcType="ap_fixed&lt;14, 2, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="x_0" name="x_0" usage="data" direction="in"/>
+                <hwRef type="port" interface="x_1" name="x_1" usage="data" direction="in"/>
+                <hwRef type="port" interface="x_2" name="x_2" usage="data" direction="in"/>
+                <hwRef type="port" interface="x_3" name="x_3" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="w" index="1" direction="in" srcType="ap_ufixed&lt;14, 0, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="w_0" name="w_0" usage="data" direction="in"/>
+                <hwRef type="port" interface="w_1" name="w_1" usage="data" direction="in"/>
+                <hwRef type="port" interface="w_2" name="w_2" usage="data" direction="in"/>
+                <hwRef type="port" interface="w_3" name="w_3" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="b" index="2" direction="in" srcType="ap_uint&lt;1&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="b" name="b" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="y" index="3" direction="out" srcType="ap_fixed&lt;14, 0, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="y" name="y" usage="data" direction="out"/>
+                <hwRef type="port" interface="y_ap_vld" name="y_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="x_0" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="14">
+            <portMaps>
+                <portMap portMapName="x_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>x_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="x"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="x_1" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="14">
+            <portMaps>
+                <portMap portMapName="x_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>x_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="x"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="x_2" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="14">
+            <portMaps>
+                <portMap portMapName="x_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>x_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="x"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="x_3" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="14">
+            <portMaps>
+                <portMap portMapName="x_3">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>x_3</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="x"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="w_0" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="14">
+            <portMaps>
+                <portMap portMapName="w_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>w_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="w"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="w_1" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="14">
+            <portMaps>
+                <portMap portMapName="w_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>w_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="w"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="w_2" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="14">
+            <portMaps>
+                <portMap portMapName="w_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>w_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="w"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="w_3" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="14">
+            <portMaps>
+                <portMap portMapName="w_3">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>w_3</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="w"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="b" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="b">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>b</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="b"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="y" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="14">
+            <portMaps>
+                <portMap portMapName="y">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>y</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="y"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="b">ap_none, in, 1</column>
+                    <column name="w_0">ap_none, in, 14</column>
+                    <column name="w_1">ap_none, in, 14</column>
+                    <column name="w_2">ap_none, in, 14</column>
+                    <column name="w_3">ap_none, in, 14</column>
+                    <column name="x_0">ap_none, in, 14</column>
+                    <column name="x_1">ap_none, in, 14</column>
+                    <column name="x_2">ap_none, in, 14</column>
+                    <column name="x_3">ap_none, in, 14</column>
+                    <column name="y">ap_vld, out, 14</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="x">in, ap_fixed&lt;14 2 (ap_q_mode)5 (ap_o_mode)3 0&gt;*</column>
+                    <column name="w">in, ap_ufixed&lt;14 0 (ap_q_mode)5 (ap_o_mode)3 0&gt;*</column>
+                    <column name="b">in, ap_uint&lt;1&gt;</column>
+                    <column name="y">out, ap_fixed&lt;14 0 (ap_q_mode)5 (ap_o_mode)3 0&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="x">x_0, port</column>
+                    <column name="x">x_1, port</column>
+                    <column name="x">x_2, port</column>
+                    <column name="x">x_3, port</column>
+                    <column name="w">w_0, port</column>
+                    <column name="w">w_1, port</column>
+                    <column name="w">w_2, port</column>
+                    <column name="w">w_3, port</column>
+                    <column name="b">b, port</column>
+                    <column name="y">y, port</column>
+                    <column name="y">y_ap_vld, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="array_partition" status="invalid" location="../neuron_fixptClass.hpp:32" parentFunction="neuron_fixpt" variable="x" isDirective="0" options="variable=x complete dim=1">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="array_partition" status="invalid" location="../neuron_fixptClass.hpp:33" parentFunction="neuron_fixpt" variable="w" isDirective="0" options="variable=w complete dim=1">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="bind_op" status="valid" location="../neuron_fixptClass.hpp:48" parentFunction="neuron_fixpt" variable="y" isDirective="0" options="variable=y op=add impl=fabric"/>
+        <Pragma type="unroll" status="valid" location="../neuron_fixptClass.hpp:56" parentFunction="neuron_fixpt" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" status="implemented" location="../neuron_fixptClass.hpp:56" parentFunction="neuron_fixptclass::neuron_fixpt" variable="" isDirective="0" options=""/>
+    </PragmaReport>
+</profile>

@@ -1,0 +1,32 @@
+
+
+set RtlHierarchyInfo {[
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4"],
+		"CDFG" : "neuron_fixpt_wrapper",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1", "EstimateLatencyMax" : "1",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
+			{"Name" : "x_0", "Type" : "None", "Direction" : "I"},
+			{"Name" : "x_1", "Type" : "None", "Direction" : "I"},
+			{"Name" : "x_2", "Type" : "None", "Direction" : "I"},
+			{"Name" : "x_3", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_0", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_1", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_2", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_3", "Type" : "None", "Direction" : "I"},
+			{"Name" : "b", "Type" : "None", "Direction" : "I"},
+			{"Name" : "y", "Type" : "Vld", "Direction" : "O"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_14ns_14s_26_1_1_U1", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_14ns_14s_26_1_1_U2", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_14ns_14s_26_1_1_U3", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_14ns_14s_26_1_1_U4", "Parent" : "0"}]}

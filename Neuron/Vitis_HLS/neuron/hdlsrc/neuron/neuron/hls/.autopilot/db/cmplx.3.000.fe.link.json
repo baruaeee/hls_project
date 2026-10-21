@@ -1,0 +1,71 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "4",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "neuron_fixpt_wrapper.cpp",
+    "fileloc": 13,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "neuron_fixpt_wrapper",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 746
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "3",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "neuron_fixpt_wrapper.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 3
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "1",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "neuron_fixpt_wrapper.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "",
+    "total_instructions": 5
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "neuron_fixptClass.hpp",
+    "fileloc": 18,
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "neuron_fixptClass",
+    "total_instructions": 1
+  },
+  "4": {
+    "basicblocks": 7,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 2,
+    "file": "neuron_fixptClass.hpp",
+    "fileloc": 22,
+    "instructions": 76,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 14,
+    "name": "neuron_fixpt",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 742
+  }
+}

@@ -1,0 +1,3 @@
+relativeroot=/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron
+original_argv=-c --mode hls --config /home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/hls_config.cfg --work_dir neuron 
+

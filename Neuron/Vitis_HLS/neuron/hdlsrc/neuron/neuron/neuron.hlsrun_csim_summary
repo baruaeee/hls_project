@@ -1,0 +1,161 @@
+<ENTRY>
+{
+ "thisFile": "/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/neuron.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Oct 19 04:55:32 2026",
+ "timestampMillis": "1792378532975",
+ "buildStep": {
+  "cmdId": "84144455-74be-4086-91d0-84d130baa437",
+  "name": "vitis-run",
+  "logFile": "/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/logs/neuron.steps.log",
+  "commandLine": "/home/exotic/Vivado/2026.1/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/hls_config.cfg --work_dir neuron ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/hls_config.cfg",
+   "--work_dir",
+   "neuron"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Oct 19 04:55:32 2026",
+ "timestampMillis": "1792378532975",
+ "status": {
+  "cmdId": "84144455-74be-4086-91d0-84d130baa437",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Oct 19 04:55:42 2026",
+ "timestampMillis": "1792378542515",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/ap_fixed_ostream.hpp",
+     "/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/hlsutils.hpp",
+     "/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron_fixptClass.hpp",
+     "/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron_fixpt_main.cpp",
+     "/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron_fixpt_wrapper.cpp",
+     "/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/rtwtypes.hpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2026.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Oct 19 04:55:42 2026",
+ "timestampMillis": "1792378542516",
+ "buildStep": {
+  "cmdId": "c49e0272-b44a-4a23-a553-f797e9576985",
+  "name": "",
+  "logFile": "/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Oct 19 04:55:42 2026",
+ "timestampMillis": "1792378542517",
+ "status": {
+  "cmdId": "c49e0272-b44a-4a23-a553-f797e9576985",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Oct 19 04:55:55 2026",
+ "timestampMillis": "1792378555094",
+ "status": {
+  "cmdId": "c49e0272-b44a-4a23-a553-f797e9576985",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Oct 19 04:55:55 2026",
+ "timestampMillis": "1792378555537",
+ "status": {
+  "cmdId": "84144455-74be-4086-91d0-84d130baa437",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Oct 19 04:55:55 2026",
+ "timestampMillis": "1792378555539",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Oct 19 04:55:55 2026",
+ "timestampMillis": "1792378555539",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

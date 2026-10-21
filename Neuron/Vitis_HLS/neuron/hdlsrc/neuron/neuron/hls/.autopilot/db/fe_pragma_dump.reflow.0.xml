@@ -1,0 +1,52 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<14, 0>::ap_fixed" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="operator+" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::operator long long" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<14, 2>::operator*" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<14, 0>::operator+" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<1, 1, false>::operator=" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<1, 1, false>::operator!" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<14, 0>::operator=" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<14, 0>::ap_fixed_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<1, 1, false>::ap_fixed_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<28, 2>::ap_fixed" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::operator<" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32>::operator!" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<28, 2>::ap_fixed_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<14, 0>::operator!" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<28, 2>::operator=" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<28, 2>::operator!" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<29, 3>::operator=" off="0" region="0" recursive="0"/>
+<pragma file="Vivado/2026.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<29, true>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<29, 3>::report" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<29, 3>::ap_fixed_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<29, 3>::ap_fixed_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<29, 3>::ap_fixed_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<29, 3>::ap_fixed" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<29, 3>::operator!" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<14, 0>::ap_fixed_base" off="0" region="0" recursive="0"/>
+<pragma file="Vivado/2026.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<14, true>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<14, 0>::report" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<33>::ap_int" off="0" region="0" recursive="0"/>
+<pragma file="Vivado/2026.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<33, true>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="operator<" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<14, 0>::ap_fixed" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<14, 0>::operator=" off="0" region="0" recursive="0"/>
+<pragma file="Vivado/2026.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="operator+" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<29, 3>::operator=" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<29, 3>::operator=" off="0" region="0" recursive="0"/>
+<pragma file="../neuron_fixptClass.hpp" line="56" pragmaType="unroll" parentfunction="neuron_fixptClass::neuron_fixpt" factor="-1" skip_exit_check="0"/>
+<pragma file="../neuron_fixptClass.hpp" line="32" pragmaType="array_partition" parentfunction="neuron_fixptClass::neuron_fixpt" dim="1" factor="0" mode="complete" dynamic="0" variable="x"/>
+<pragma file="../neuron_fixptClass.hpp" line="33" pragmaType="array_partition" parentfunction="neuron_fixptClass::neuron_fixpt" dim="1" factor="0" mode="complete" dynamic="0" variable="w"/>
+<pragma file="../neuron_fixptClass.hpp" line="48" pragmaType="bind_op" parentfunction="neuron_fixptClass::neuron_fixpt" op="8" impl="4" latency="-1"/>
+<pragma file="../neuron_fixptClass.hpp" line="48" pragmaType="bind_op" parentfunction="neuron_fixptClass::neuron_fixpt" op="8" impl="4" latency="-1"/>
+</pragmas>

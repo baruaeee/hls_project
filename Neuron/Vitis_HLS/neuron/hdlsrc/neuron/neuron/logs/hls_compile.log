@@ -1,0 +1,100 @@
+  **** HLS Build v2026.1 6493734
+INFO: [HLS 200-2005] Using work_dir /home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron'.
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../ap_fixed_ostream.hpp' from hls_config.cfg(6)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/ap_fixed_ostream.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../hlsutils.hpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/hlsutils.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../neuron_fixptClass.hpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron_fixptClass.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../neuron_fixpt_main.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron_fixpt_main.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../neuron_fixpt_wrapper.cpp' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron_fixpt_wrapper.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../rtwtypes.hpp' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/rtwtypes.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../neuron_fixptClass_tb.hpp' from hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file '/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron_fixptClass_tb.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=neuron_fixpt_wrapper' from hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z010iclg225-1L' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(4)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 7.09 seconds. CPU system time: 0.8 seconds. Elapsed time: 7.84 seconds; current allocated memory: 250.641 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file '../neuron_fixpt_wrapper.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../neuron_fixpt_main.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 27.14 seconds. CPU system time: 2.16 seconds. Elapsed time: 43.39 seconds; current allocated memory: 253.211 MB.
+INFO: [HLS 200-1995] There were 746 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-186] Unrolling loop 'L1' (../neuron_fixptClass.hpp:54:5) in function 'neuron_fixptClass::neuron_fixpt' completely with a factor of 4 (../neuron_fixptClass.hpp:24:0)
+INFO: [HLS 200-1995] There were 207 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 90 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-178] Inlining function 'neuron_fixptClass::neuron_fixpt(ap_fixed<14, 2, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<14, 0, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_uint<1>, ap_fixed<14, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'neuron_fixpt_wrapper(ap_fixed<14, 2, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<14, 0, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_uint<1>, ap_fixed<14, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (../neuron_fixpt_wrapper.cpp:15:0)
+INFO: [HLS 200-1995] There were 88 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 87 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-248] Applying array_partition to 'x': Complete partitioning on dimension 1. (../neuron_fixpt_wrapper.cpp:15:0)
+INFO: [HLS 214-248] Applying array_partition to 'w': Complete partitioning on dimension 1. (../neuron_fixpt_wrapper.cpp:15:0)
+INFO: [HLS 200-1995] There were 78 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 78 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 78 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 78 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 78 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 78 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 78 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 78 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 78 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 96 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 97 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.1 seconds. CPU system time: 0.85 seconds. Elapsed time: 30.42 seconds; current allocated memory: 255.324 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.324 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.88 seconds; current allocated memory: 255.664 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 256.953 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 279.176 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 271.172 MB.
+INFO: [HLS 200-2255] Checking Wire Delay Status: Wire Delay Mode is ON
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'neuron_fixpt_wrapper' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'neuron_fixpt_wrapper' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.45 seconds; current allocated memory: 271.789 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 271.789 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'neuron_fixpt_wrapper' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'neuron_fixpt_wrapper/x_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'neuron_fixpt_wrapper/x_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'neuron_fixpt_wrapper/x_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'neuron_fixpt_wrapper/x_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'neuron_fixpt_wrapper/w_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'neuron_fixpt_wrapper/w_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'neuron_fixpt_wrapper/w_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'neuron_fixpt_wrapper/w_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'neuron_fixpt_wrapper/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'neuron_fixpt_wrapper/y' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'neuron_fixpt_wrapper' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'neuron_fixpt_wrapper/b' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Generating core module 'mul_14ns_14s_26_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'neuron_fixpt_wrapper'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 271.789 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.43 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.62 seconds; current allocated memory: 273.195 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file /home/exotic/HLS_Thesis/Neuron/Vitis_HLS/neuron/hdlsrc/neuron/neuron/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.98 seconds. CPU system time: 0.11 seconds. Elapsed time: 1.15 seconds; current allocated memory: 275.090 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for neuron_fixpt_wrapper.
+INFO: [VLOG 209-307] Generating Verilog RTL for neuron_fixpt_wrapper.
+INFO: [HLS 200-789] **** Estimated Fmax: 140.42 MHz
+INFO: [HLS 200-112] Total CPU user time: 41.12 seconds. Total CPU system time: 4.08 seconds. Total elapsed time: 86.56 seconds; peak allocated memory: 279.176 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 32s
