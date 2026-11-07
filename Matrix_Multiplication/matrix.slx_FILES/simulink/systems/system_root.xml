@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[0, 0, 1366, 735]</P>
+  <P Name="Open">on</P>
+  <P Name="ZoomFactor">191</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">11</P>
+  <Block BlockType="Inport" Name="In1" SID="3">
+    <P Name="Position">[-40, 113, -10, 127]</P>
+    <P Name="ZOrder">364</P>
+  </Block>
+  <Block BlockType="Inport" Name="In2" SID="9">
+    <P Name="Position">[-40, 143, -10, 157]</P>
+    <P Name="ZOrder">369</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Reshape" Name="Reshape" SID="1">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[15, 108, 45, 132]</P>
+    <P Name="ZOrder">1</P>
+  </Block>
+  <Block BlockType="Reshape" Name="Reshape1" SID="10">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[15, 138, 45, 162]</P>
+    <P Name="ZOrder">368</P>
+  </Block>
+  <Block BlockType="Reshape" Name="Reshape2" SID="11">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[205, 123, 235, 147]</P>
+    <P Name="ZOrder">370</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Subsystem" SID="5">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[110, 105, 165, 165]</P>
+    <P Name="ZOrder">367</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_5"/>
+  </Block>
+  <Block BlockType="Outport" Name="Out1" SID="4">
+    <P Name="Position">[275, 128, 305, 142]</P>
+    <P Name="ZOrder">365</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">1#out:1</P>
+    <P Name="Dst">5#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">3#out:1</P>
+    <P Name="Dst">1#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">10#out:1</P>
+    <P Name="Dst">5#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">9#out:1</P>
+    <P Name="Dst">10#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">5#out:1</P>
+    <P Name="Dst">11#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">11#out:1</P>
+    <P Name="Dst">4#in:1</P>
+  </Line>
+</System>

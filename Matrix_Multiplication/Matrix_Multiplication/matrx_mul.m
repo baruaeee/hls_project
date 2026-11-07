@@ -1,0 +1,25 @@
+function y = matrx_mul(x, w)
+    % size(x) returns a vector containing the dimentions of the matrix 'x'
+    % '1' specify number of rows
+    M = size(x, 1);
+    N = size(x, 2);
+    P = size(w, 2);
+    y = zeros(M,P);
+
+    coder.hdl.literaltext("#pragma HLS ARRAY_PARTITION variable=x complete dim=1");
+    coder.hdl.literaltext("#pragma HLS ARRAY_PARTITION variable=x complete dim=2");
+    coder.hdl.literaltext("#pragma HLS ARRAY_PARTITION variable=w complete dim=1");
+    coder.hdl.literaltext("#pragma HLS ARRAY_PARTITION variable=w complete dim=2");
+    coder.hdl.literaltext("#pragma HLS ARRAY_PARTITION variable=y complete dim=1");
+    coder.hdl.literaltext("#pragma HLS ARRAY_PARTITION variable=y complete dim=2");
+    coder.hdl.literaltext("#pragma HLS BIND_OP variable=y op=add impl=fabric");
+
+    coder.hdl.loopspec('unroll');
+    for i = 1:M
+        for j = 1:P
+            for k = 1:N
+                y(i,j) = y(i,j) + x(i,k) * w(k, i); 
+            end
+        end
+    end
+end

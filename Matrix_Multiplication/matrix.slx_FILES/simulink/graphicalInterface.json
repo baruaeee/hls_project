@@ -1,0 +1,22 @@
+{
+    "GraphicalInterface":{
+        "PreCompExecutionDomainType":"Unset",
+        "RootInports":[
+            {
+                "Name":"In1",
+                "SampleTime":"-1"
+            },
+            {
+                "Name":"In2",
+                "SampleTime":"-1"
+            }
+        ],
+        "RootOutports":[
+            {
+                "Name":"Out1"
+            }
+        ],
+        "SimulinkSubDomainType":"Simulink",
+        "SolverName":"VariableStepAuto"
+    }
+}

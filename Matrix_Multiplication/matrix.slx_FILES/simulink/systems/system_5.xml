@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[0, 0, 0, 0]</P>
+  <Block BlockType="Inport" Name="In1" SID="6">
+    <P Name="Position">[20, 28, 50, 42]</P>
+    <P Name="ZOrder">364</P>
+  </Block>
+  <Block BlockType="Inport" Name="In2" SID="7">
+    <P Name="Position">[20, 48, 50, 62]</P>
+    <P Name="ZOrder">365</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Product" Name="Matrix Multiply" SID="2">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[70, 24, 125, 66]</P>
+    <P Name="ZOrder">363</P>
+    <P Name="Multiplication">Matrix(*)</P>
+  </Block>
+  <Block BlockType="Outport" Name="Out1" SID="8">
+    <P Name="Position">[145, 38, 175, 52]</P>
+    <P Name="ZOrder">366</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">6#out:1</P>
+    <P Name="Dst">2#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">7#out:1</P>
+    <P Name="Dst">2#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">2#out:1</P>
+    <P Name="Dst">8#in:1</P>
+  </Line>
+</System>

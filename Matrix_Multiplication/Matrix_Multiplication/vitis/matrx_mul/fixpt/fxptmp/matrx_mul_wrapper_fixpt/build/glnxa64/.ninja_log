@@ -1,0 +1,13 @@
+# ninja log v7
+6	422	1793971780000000000	build/glnxa64/rt_nonfinite.o	9c312b555985b87d
+19	513	1793971780000000000	build/glnxa64/cpp_mexapi_version.o	79f405981a05a1d
+16	886	1793971780000000000	build/glnxa64/_coder_matrx_mul_wrapper_fixpt_hdl_mex_info.o	b2e4c059db816b3d
+5	978	1793971780000000000	build/glnxa64/matrx_mul_wrapper_fixpt_hdl_mex_data.o	9cc37499e1b11af2
+11	1017	1793971780000000000	build/glnxa64/indexShapeCheck.o	7a84e25b2b2986fa
+14	1369	1793971780000000000	build/glnxa64/_coder_matrx_mul_wrapper_fixpt_hdl_mex_mex.o	8ae647bc76681552
+7	1445	1793971780000000000	build/glnxa64/matrx_mul_wrapper_fixpt_hdl_mex_initialize.o	c82cf1e6f03f319d
+7	1534	1793971780000000000	build/glnxa64/matrx_mul_wrapper_fixpt_hdl_mex_terminate.o	327479d007ff57b4
+12	1565	1793971780000000000	build/glnxa64/_coder_matrx_mul_wrapper_fixpt_hdl_mex_api.o	a6d952d61faf767c
+8	1576	1793971780000000000	build/glnxa64/matrx_mul_wrapper_fixpt.o	5e441a4174b7f408
+9	2000	1793971780000000000	build/glnxa64/matrx_mul_fixpt_logger.o	e36cc192ecda01cd
+2002	2278	1793971782000000000	matrx_mul_wrapper_fixpt_hdl_mex.mexa64	8e02ab9d08fd12a5
