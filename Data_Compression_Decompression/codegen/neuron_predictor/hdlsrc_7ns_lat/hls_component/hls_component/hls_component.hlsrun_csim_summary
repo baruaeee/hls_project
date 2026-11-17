@@ -1,0 +1,166 @@
+<ENTRY>
+{
+ "thisFile": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls_component.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Nov 17 05:37:30 2026",
+ "timestampMillis": "1794890250834",
+ "buildStep": {
+  "cmdId": "b05311a1-81c0-444a-b1c0-c6e96d1e2702",
+  "name": "vitis-run",
+  "logFile": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/logs/hls_component.steps.log",
+  "commandLine": "/home/exotic/Vivado/2026.1/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 17 05:37:30 2026",
+ "timestampMillis": "1794890250834",
+ "status": {
+  "cmdId": "b05311a1-81c0-444a-b1c0-c6e96d1e2702",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Nov 17 05:37:37 2026",
+ "timestampMillis": "1794890257774",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "neuron_predictor_fixpt_wrapper",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/ap_fixed_ostream.hpp",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hlsutils.hpp",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/neuron_predictor_fixptClass.hpp",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/neuron_predictor_fixpt_main.cpp",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/neuron_predictor_fixpt_wrapper.cpp",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/predicted_expected.dat",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/reset_rsvd.dat",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/residual_expected.dat",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/rt_defines.h",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/rtwtypes.hpp",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/x_in.dat"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2026.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Nov 17 05:37:37 2026",
+ "timestampMillis": "1794890257775",
+ "buildStep": {
+  "cmdId": "14a72fb4-268d-4c39-83da-48e7bb56eb56",
+  "name": "",
+  "logFile": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 17 05:37:37 2026",
+ "timestampMillis": "1794890257775",
+ "status": {
+  "cmdId": "14a72fb4-268d-4c39-83da-48e7bb56eb56",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 17 05:37:49 2026",
+ "timestampMillis": "1794890269371",
+ "status": {
+  "cmdId": "14a72fb4-268d-4c39-83da-48e7bb56eb56",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 17 05:37:49 2026",
+ "timestampMillis": "1794890269498",
+ "status": {
+  "cmdId": "b05311a1-81c0-444a-b1c0-c6e96d1e2702",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 17 05:37:49 2026",
+ "timestampMillis": "1794890269499",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 17 05:37:49 2026",
+ "timestampMillis": "1794890269499",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

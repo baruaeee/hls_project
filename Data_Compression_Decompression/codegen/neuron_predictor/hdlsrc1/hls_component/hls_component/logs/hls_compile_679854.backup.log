@@ -1,0 +1,51 @@
+  **** HLS Build v2026.1 6493734
+INFO: [HLS 200-2005] Using work_dir /home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component'.
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../ap_fixed_ostream.hpp' from hls_config.cfg(6)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/ap_fixed_ostream.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../hlsutils.hpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hlsutils.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../neuron_predictor_fixptClass.hpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/neuron_predictor_fixptClass.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../neuron_predictor_fixpt_main.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/neuron_predictor_fixpt_main.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../neuron_predictor_fixpt_wrapper.cpp' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/neuron_predictor_fixpt_wrapper.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../predicted_expected.dat' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/predicted_expected.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../reset_rsvd.dat' from hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/reset_rsvd.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../residual_expected.dat' from hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/residual_expected.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../rt_defines.h' from hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/rt_defines.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../rtwtypes.hpp' from hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/rtwtypes.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../x_in.dat' from hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/x_in.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../neuron_predictor_fixptClass_tb.hpp' from hls_config.cfg(17)
+INFO: [HLS 200-10] Adding test bench file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/neuron_predictor_fixptClass_tb.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=neuron_predictor_fixpt_wrapper' from hls_config.cfg(18)
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z010iclg225-1L' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(4)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/vitis-comp.json
+WARNING: [HLS 200-40] Skipped source file 'x_in.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'residual_expected.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'reset_rsvd.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'predicted_expected.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'x_in.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'residual_expected.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'reset_rsvd.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'predicted_expected.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 10.2 seconds. CPU system time: 1.02 seconds. Elapsed time: 11.72 seconds; current allocated memory: 251.664 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file '../neuron_predictor_fixpt_wrapper.cpp' ... 
+ERROR: [HLS 207-4637] use of undeclared identifier 'sum_01' (../neuron_predictor_fixptClass.hpp:75:30)
+WARNING: [HLS 207-7016] invalid variable expr  (../neuron_predictor_fixptClass.hpp:75:30)
+ERROR: [HLS 207-4637] use of undeclared identifier 'sum_23' (../neuron_predictor_fixptClass.hpp:76:30)
+WARNING: [HLS 207-7016] invalid variable expr  (../neuron_predictor_fixptClass.hpp:76:30)
+ERROR: syntax check failed.
+INFO: [HLS 200-112] Total CPU user time: 14.14 seconds. Total CPU system time: 1.45 seconds. Total elapsed time: 18.48 seconds; peak allocated memory: 252.926 MB.

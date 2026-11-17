@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fixed-Point Report for neuron_predictor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+	body { font-family: monospace; }
+	h2 { font-family: Arial, Helvetica, sans-serif; color: #990000; margin-top: 50px; }
+	table,th,td { border: 1px solid black; }
+	table { margin-top: 30px; }
+	th { align: center; font-weight: bold; }
+	tr.h { background-color: #99CCFF; }
+	tr.a { background-color: #EEEEFF; }
+	tr.b { background-color: #FFFFFF; }
+	tr.c { background-color: #FFA500; }
+	tr.a td, tr.b td { border-style: none; }
+	td.left { text-align: left; }
+	td.right { text-align: right; }
+	td.center { text-align: center; }
+	td.bold { font-weight: bold; }
+	pre { padding: 0px; margin: 0px; }
+	span { font-style: italic; }
+	.code, .code tr, .code th, .code td { border: none; border-collapse: collapse; }
+	.padd { padding-left: 5px; }
+	td.cov, th.cov { width: 50px; height: 20px; text-align: center; font-weight: bold; border-right: 2px solid black; cell-spacing: 0px; }
+	td.cov { vertical-align: top; }
+	td.black { color: #000000; font-weight: bold; padding-top: 4px; }
+	td.white { color: #FFFFFF; font-weight: bold; padding-top: 4px; }
+	.code th { font-weight: bold; border-bottom: 2px solid black; }
+</style>
+</head>
+<body>
+<h3>Generated on  2026-11-17 12:40:49</h3>
+<p>The following table shows fixed point instrumentation results</p>
+<h2>Fixed-Point Report <span>neuron_predictor<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function [residual, predicted] = neuron_predictor(x_in, reset)
+% NEURON_PREDICTOR Optimized LMS predictive coding neuron
+% Uses explicit parallel MAC tree + fabric adders for low latency &amp; positive slack.
+
+NUM_TAPS    = 4;
+SCALE_UP    = 4096;    % 2^12
+INV_SCALE   = 1/4096;  % 2^-12
+MU_STEP     = 1/1024; % 2^-14
+
+persistent x_hist w b;
+
+x_val = double(x_in);
+
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov black" style="background-color: rgb(255,160,118);">Once</TD>
+<TD class="padd"><pre>if isempty(x_hist) || reset
+    x_hist = zeros(NUM_TAPS, 1);
+    w = zeros(NUM_TAPS, 1);
+    w(1) = SCALE_UP; % 4096 (represents 1.0 in Q12)
+    b = 0;
+end</pre></TD>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>
+
+% --- HLS Synthesis Directives ---
+coder.hdl.literaltext("#pragma HLS ARRAY_PARTITION variable=x_hist complete dim=1");
+coder.hdl.literaltext("#pragma HLS ARRAY_PARTITION variable=w complete dim=1");
+
+% --- 1. Parallel Multiplication (Mapped to DSPs) ---
+prod = zeros(NUM_TAPS, 1);
+coder.hdl.literaltext("#pragma HLS ARRAY_PARTITION variable=prod complete dim=1");
+
+coder.hdl.loopspec('unroll');
+for i = 1:NUM_TAPS
+    prod(i) = x_hist(i) * w(i);
+    coder.hdl.literaltext("#pragma HLS BIND_OP variable=prod op=mul impl=dsp");
+end
+
+% --- 2. Balanced Parallel Adder Tree (Mapped to Fabric) ---
+sum_01 = prod(1) + prod(2);
+sum_23 = prod(3) + prod(4);
+acc    = b + (sum_01 + sum_23);
+coder.hdl.literaltext("#pragma HLS BIND_OP variable=acc op=add impl=fabric");
+
+predicted = floor(acc * INV_SCALE);
+
+% --- 3. Residual Error ---
+residual = x_val - predicted;
+
+% --- 4. Adaptive LMS Update (Power-of-2 scaling -&gt; bit-shifts) ---
+b = b + floor((residual * SCALE_UP) * MU_STEP);
+
+coder.hdl.loopspec('unroll');
+for i = 1:NUM_TAPS
+    grad = residual * x_hist(i);
+    coder.hdl.literaltext("#pragma HLS BIND_OP variable=grad op=mul impl=dsp");
+    w(i) = w(i) + floor(grad * MU_STEP);
+end
+
+% --- 5. Update Delay Line ---
+coder.hdl.loopspec('unroll');
+for i = NUM_TAPS:-1:2
+    x_hist(i) = x_hist(i-1);
+end
+x_hist(1) = x_val;
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 14)</th></TR><TR class="a">
+<TD class="left">INV_SCALE</TD><TD class="left">double</TD><TD class="right">0.000244140625</TD><TD class="right">0.000244140625</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 14, 25)</TD></TR>
+<TR class="b">
+<TD class="left">MU_STEP</TD><TD class="left">double</TD><TD class="right">0.0009765625</TD><TD class="right">0.0009765625</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 14, 23)</TD></TR>
+<TR class="a">
+<TD class="left">NUM_TAPS</TD><TD class="left">double</TD><TD class="right">4</TD><TD class="right">4</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 3, 0)</TD></TR>
+<TR class="b">
+<TD class="left">SCALE_UP</TD><TD class="left">double</TD><TD class="right">4096</TD><TD class="right">4096</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 13, 0)</TD></TR>
+<TR class="a">
+<TD class="left">acc</TD><TD class="left">double</TD><TD class="right">-4169458</TD><TD class="right">4325542</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 24, 0)</TD></TR>
+<TR class="b">
+<TD class="left">b</TD><TD class="left">double</TD><TD class="right">-2592</TD><TD class="right">3584</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 13, 0)</TD></TR>
+<TR class="a">
+<TD class="left">grad</TD><TD class="left">double</TD><TD class="right">-120094</TD><TD class="right">188470</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 19, 0)</TD></TR>
+<TR class="b">
+<TD class="left">i</TD><TD class="left">double</TD><TD class="right">1</TD><TD class="right">4</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 3, 0)</TD></TR>
+<TR class="a">
+<TD class="left">predicted</TD><TD class="left">double</TD><TD class="right">-1018</TD><TD class="right">1056</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 12, 0)</TD></TR>
+<TR class="b">
+<TD class="left">prod</TD><TD class="left">double 4 x 1 </TD><TD class="right">-5072460</TD><TD class="right">5064550</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 24, 0)</TD></TR>
+<TR class="a">
+<TD class="left">reset</TD><TD class="left">logical</TD><TD class="right">0</TD><TD class="right">1</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 1, 0)</TD></TR>
+<TR class="b">
+<TD class="left">residual</TD><TD class="left">double</TD><TD class="right">-235</TD><TD class="right">324</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 10, 0)</TD></TR>
+<TR class="a">
+<TD class="left">sum_01</TD><TD class="left">double</TD><TD class="right">-5199076</TD><TD class="right">5194960</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 24, 0)</TD></TR>
+<TR class="b">
+<TD class="left">sum_23</TD><TD class="left">double</TD><TD class="right">-1793120</TD><TD class="right">1815297</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 22, 0)</TD></TR>
+<TR class="a">
+<TD class="left">w</TD><TD class="left">double 4 x 1 </TD><TD class="right">-1209</TD><TD class="right">4979</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 14, 0)</TD></TR>
+<TR class="b">
+<TD class="left">x_hist</TD><TD class="left">double 4 x 1 </TD><TD class="right">-1020</TD><TD class="right">1018</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 11, 0)</TD></TR>
+<TR class="a">
+<TD class="left">x_in</TD><TD class="left">double</TD><TD class="right">-1020</TD><TD class="right">1018</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 11, 0)</TD></TR>
+<TR class="b">
+<TD class="left">x_val</TD><TD class="left">double</TD><TD class="right">-1020</TD><TD class="right">1018</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 11, 0)</TD></TR>
+</TABLE>
+
+</body>
+</html>

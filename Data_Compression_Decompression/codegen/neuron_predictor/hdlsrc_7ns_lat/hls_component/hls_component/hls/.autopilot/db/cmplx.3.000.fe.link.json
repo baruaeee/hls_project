@@ -1,0 +1,86 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "3",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "neuron_predictor_fixpt_wrapper.cpp",
+    "fileloc": 13,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "neuron_predictor_fixpt_wrapper",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4870
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "5",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "neuron_predictor_fixptClass.hpp",
+    "fileloc": 23,
+    "instructions": 5,
+    "memory_accesses": 0,
+    "name": "neuron_predictor_fixptClass",
+    "total_instructions": 8
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "1",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "neuron_predictor_fixpt_wrapper.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 10
+  },
+  "3": {
+    "basicblocks": 28,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 3,
+    "file": "neuron_predictor_fixptClass.hpp",
+    "fileloc": 33,
+    "instructions": 432,
+    "loads": {
+      "L": 19
+    },
+    "memory_accesses": 56,
+    "name": "neuron_predictor_fixpt",
+    "stores": {
+      "L": 19
+    },
+    "total_instructions": 4866
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "2",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "neuron_predictor_fixpt_wrapper.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "",
+    "total_instructions": 12
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "neuron_predictor_fixptClass.hpp",
+    "fileloc": 28,
+    "instructions": 3,
+    "memory_accesses": 0,
+    "name": "neuron_predictor_fixpt_initialize",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "1": {
+        "name": "neuron_predictor_fixpt",
+        "file": "..\/neuron_predictor_fixptClass.hpp",
+        "fileloc": "33",
+        "instructions": "84",
+        "total_instructions": "84",
+        "calls": "",
+        "basicblocks": "3",
+        "memory_accesses": "22",
+        "control_depth": "1",
+        "def_use_depth": "11",
+        "loads": {
+            "G": "10"
+        },
+        "stores": {
+            "G": "10"
+        }
+    },
+    "0": {
+        "name": "neuron_predictor_fixpt_wrapper",
+        "file": "neuron_predictor_fixpt_wrapper.cpp",
+        "fileloc": "13",
+        "instructions": "17",
+        "total_instructions": "101",
+        "calls": "1",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "3"
+    }
+}

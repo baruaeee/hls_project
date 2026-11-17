@@ -1,0 +1,214 @@
+
+
+================================================================
+== Vitis HLS Report for 'neuron_predictor_fixpt'
+================================================================
+* Date:           Tue Nov 17 03:18:22 2026
+
+* Version:        2026.1 (Build 6493734 on Jun 16 2026)
+* Project:        hls_component
+* Solution:       hls
+* Product family: zynq
+* Target device:  xc7z010i-clg225-1L
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  10.00 ns|  21.593 ns|     2.70 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        1|        1|  10.000 ns|  10.000 ns|    2|    2|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 2, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 2, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.45>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specpipeline_ln75 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_0" [../neuron_predictor_fixptClass.hpp:75]   --->   Operation 3 'specpipeline' 'specpipeline_ln75' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%reset_rsvd_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %reset_rsvd" [../neuron_predictor_fixptClass.hpp:33]   --->   Operation 4 'read' 'reset_rsvd_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%x_in_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %x_in" [../neuron_predictor_fixptClass.hpp:33]   --->   Operation 5 'read' 'x_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%inst_x_hist_not_empty_load = load i1 %inst_x_hist_not_empty" [../neuron_predictor_fixptClass.hpp:58]   --->   Operation 6 'load' 'inst_x_hist_not_empty_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns) (grouped into LUT with out node or_ln58)   --->   "%xor_ln58 = xor i1 %inst_x_hist_not_empty_load, i1 1" [../neuron_predictor_fixptClass.hpp:58]   --->   Operation 7 'xor' 'xor_ln58' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (0.97ns) (out node of the LUT)   --->   "%or_ln58 = or i1 %reset_rsvd_read, i1 %xor_ln58" [../neuron_predictor_fixptClass.hpp:58]   --->   Operation 8 'or' 'or_ln58' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%inst_x_hist_0_load = load i11 %inst_x_hist_0" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 9 'load' 'inst_x_hist_0_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%inst_x_hist_1_load = load i11 %inst_x_hist_1" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 10 'load' 'inst_x_hist_1_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%inst_x_hist_2_load = load i11 %inst_x_hist_2" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 11 'load' 'inst_x_hist_2_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%inst_x_hist_3_load = load i11 %inst_x_hist_3" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 12 'load' 'inst_x_hist_3_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%inst_w_1_load = load i14 %inst_w_1" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 13 'load' 'inst_w_1_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%inst_w_2_load = load i14 %inst_w_2" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 14 'load' 'inst_w_2_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%inst_w_3_load = load i14 %inst_w_3" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 15 'load' 'inst_w_3_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%inst_w_0_load = load i14 %inst_w_0" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 16 'load' 'inst_w_0_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%inst_b_load = load i13 %inst_b" [../neuron_predictor_fixptClass.hpp:78]   --->   Operation 17 'load' 'inst_b_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (1.58ns)   --->   "%br_ln58 = br i1 %or_ln58, void %if.end, void %if.then" [../neuron_predictor_fixptClass.hpp:58]   --->   Operation 18 'br' 'br_ln58' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%store_ln59 = store i1 1, i1 %inst_x_hist_not_empty" [../neuron_predictor_fixptClass.hpp:59]   --->   Operation 19 'store' 'store_ln59' <Predicate = (or_ln58)> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (1.58ns)   --->   "%br_ln70 = br void %if.end" [../neuron_predictor_fixptClass.hpp:70]   --->   Operation 20 'br' 'br_ln70' <Predicate = (or_ln58)> <Delay = 1.58>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%inst_x_hist_0_loc_0 = phi i11 0, void %if.then, i11 %inst_x_hist_0_load, void %entry" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 21 'phi' 'inst_x_hist_0_loc_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%inst_x_hist_3_loc_0 = phi i11 0, void %if.then, i11 %inst_x_hist_3_load, void %entry" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 22 'phi' 'inst_x_hist_3_loc_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%inst_w_3_loc_0 = phi i14 0, void %if.then, i14 %inst_w_3_load, void %entry" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 23 'phi' 'inst_w_3_loc_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%inst_w_0_loc_0 = phi i14 4096, void %if.then, i14 %inst_w_0_load, void %entry" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 24 'phi' 'inst_w_0_loc_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%sext_ln88 = sext i11 %inst_x_hist_0_loc_0" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 25 'sext' 'sext_ln88' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%sext_ln88_1 = sext i14 %inst_w_0_loc_0" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 26 'sext' 'sext_ln88_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [2/2] (3.89ns) (grouped into DSP with root node acc)   --->   "%mul_ln88 = mul i24 %sext_ln88_1, i24 %sext_ln88" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 27 'mul' 'mul_ln88' <Predicate = true> <Delay = 3.89> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 1> <II = 1> <Delay = 6.08> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%sext_ln88_7 = sext i11 %inst_x_hist_3_loc_0" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 28 'sext' 'sext_ln88_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%sext_ln88_8 = sext i14 %inst_w_3_loc_0" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 29 'sext' 'sext_ln88_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [2/2] (3.89ns) (grouped into DSP with root node add_ln88)   --->   "%mul_ln88_3 = mul i24 %sext_ln88_8, i24 %sext_ln88_7" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 30 'mul' 'mul_ln88_3' <Predicate = true> <Delay = 3.89> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 1> <II = 1> <Delay = 6.08> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%trunc_ln95 = trunc i11 %x_in_read" [../neuron_predictor_fixptClass.hpp:95]   --->   Operation 31 'trunc' 'trunc_ln95' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%store_ln64 = store i11 %inst_x_hist_0_loc_0, i11 %inst_x_hist_1" [../neuron_predictor_fixptClass.hpp:64]   --->   Operation 32 'store' 'store_ln64' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%store_ln64 = store i11 %x_in_read, i11 %inst_x_hist_0" [../neuron_predictor_fixptClass.hpp:64]   --->   Operation 33 'store' 'store_ln64' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 21.5>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%inst_x_hist_1_loc_0 = phi i11 0, void %if.then, i11 %inst_x_hist_1_load, void %entry" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 34 'phi' 'inst_x_hist_1_loc_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%inst_x_hist_2_loc_0 = phi i11 0, void %if.then, i11 %inst_x_hist_2_load, void %entry" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 35 'phi' 'inst_x_hist_2_loc_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%inst_w_1_loc_0 = phi i14 0, void %if.then, i14 %inst_w_1_load, void %entry" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 36 'phi' 'inst_w_1_loc_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%inst_w_2_loc_0 = phi i14 0, void %if.then, i14 %inst_w_2_load, void %entry" [../neuron_predictor_fixptClass.hpp:87]   --->   Operation 37 'phi' 'inst_w_2_loc_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%inst_b_loc_0 = phi i13 0, void %if.then, i13 %inst_b_load, void %entry" [../neuron_predictor_fixptClass.hpp:78]   --->   Operation 38 'phi' 'inst_b_loc_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/2] (0.00ns) (grouped into DSP with root node acc)   --->   "%mul_ln88 = mul i24 %sext_ln88_1, i24 %sext_ln88" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 39 'mul' 'mul_ln88' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 1> <II = 1> <Delay = 6.08> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%sext_ln88_2 = sext i13 %inst_b_loc_0" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 40 'sext' 'sext_ln88_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (3.02ns) (root node of the DSP)   --->   "%acc = add i24 %mul_ln88, i24 %sext_ln88_2" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 41 'add' 'acc' <Predicate = true> <Delay = 3.02> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 1> <II = 1> <Delay = 6.08> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%sext_ln88_3 = sext i11 %inst_x_hist_1_loc_0" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 42 'sext' 'sext_ln88_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%sext_ln88_4 = sext i14 %inst_w_1_loc_0" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 43 'sext' 'sext_ln88_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (3.36ns) (grouped into DSP with root node acc_1)   --->   "%mul_ln88_1 = mul i24 %sext_ln88_4, i24 %sext_ln88_3" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 44 'mul' 'mul_ln88_1' <Predicate = true> <Delay = 3.36> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 1> <II = 1> <Delay = 6.08> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 45 [1/1] (3.02ns) (root node of the DSP)   --->   "%acc_1 = add i24 %mul_ln88_1, i24 %acc" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 45 'add' 'acc_1' <Predicate = true> <Delay = 3.02> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 1> <II = 1> <Delay = 6.08> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%sext_ln88_5 = sext i11 %inst_x_hist_2_loc_0" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 46 'sext' 'sext_ln88_5' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%sext_ln88_6 = sext i14 %inst_w_2_loc_0" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 47 'sext' 'sext_ln88_6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (3.36ns) (grouped into DSP with root node acc_2)   --->   "%mul_ln88_2 = mul i24 %sext_ln88_6, i24 %sext_ln88_5" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 48 'mul' 'mul_ln88_2' <Predicate = true> <Delay = 3.36> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 1> <II = 1> <Delay = 6.08> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 49 [1/1] (3.02ns) (root node of the DSP)   --->   "%acc_2 = add i24 %mul_ln88_2, i24 %acc_1" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 49 'add' 'acc_2' <Predicate = true> <Delay = 3.02> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 1> <II = 1> <Delay = 6.08> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 50 [1/2] (0.00ns) (grouped into DSP with root node add_ln88)   --->   "%mul_ln88_3 = mul i24 %sext_ln88_8, i24 %sext_ln88_7" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 50 'mul' 'mul_ln88_3' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 1> <II = 1> <Delay = 6.08> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 51 [1/1] (3.02ns) (root node of the DSP)   --->   "%add_ln88 = add i24 %mul_ln88_3, i24 %acc_2" [../neuron_predictor_fixptClass.hpp:88]   --->   Operation 51 'add' 'add_ln88' <Predicate = true> <Delay = 3.02> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 1> <II = 1> <Delay = 6.08> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%predicted_write_assign = partselect i12 @_ssdm_op_PartSelect.i12.i24.i32.i32, i24 %add_ln88, i32 12, i32 23" [../neuron_predictor_fixptClass.hpp:92]   --->   Operation 52 'partselect' 'predicted_write_assign' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%trunc_ln95_1 = partselect i10 @_ssdm_op_PartSelect.i10.i24.i32.i32, i24 %add_ln88, i32 12, i32 21" [../neuron_predictor_fixptClass.hpp:95]   --->   Operation 53 'partselect' 'trunc_ln95_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (1.73ns)   --->   "%sub_ln95 = sub i10 %trunc_ln95, i10 %trunc_ln95_1" [../neuron_predictor_fixptClass.hpp:95]   --->   Operation 54 'sub' 'sub_ln95' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i10.i2, i10 %sub_ln95, i2 0" [../neuron_predictor_fixptClass.hpp:101]   --->   Operation 55 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%sext_ln100 = sext i12 %shl_ln" [../neuron_predictor_fixptClass.hpp:100]   --->   Operation 56 'sext' 'sext_ln100' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (1.67ns)   --->   "%add_ln100 = add i13 %inst_b_loc_0, i13 %sext_ln100" [../neuron_predictor_fixptClass.hpp:100]   --->   Operation 57 'add' 'add_ln100' <Predicate = true> <Delay = 1.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%sext_ln110 = sext i10 %sub_ln95" [../neuron_predictor_fixptClass.hpp:110]   --->   Operation 58 'sext' 'sext_ln110' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%sext_ln110_1 = sext i11 %inst_x_hist_0_loc_0" [../neuron_predictor_fixptClass.hpp:110]   --->   Operation 59 'sext' 'sext_ln110_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (5.63ns)   --->   "%mul_ln110 = mul i21 %sext_ln110_1, i21 %sext_ln110" [../neuron_predictor_fixptClass.hpp:110]   --->   Operation 60 'mul' 'mul_ln110' <Predicate = true> <Delay = 5.63> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 5.63> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%trunc_ln112_1 = partselect i9 @_ssdm_op_PartSelect.i9.i21.i32.i32, i21 %mul_ln110, i32 10, i32 18" [../neuron_predictor_fixptClass.hpp:112]   --->   Operation 61 'partselect' 'trunc_ln112_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%sext_ln112 = sext i9 %trunc_ln112_1" [../neuron_predictor_fixptClass.hpp:112]   --->   Operation 62 'sext' 'sext_ln112' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (1.81ns)   --->   "%add_ln112 = add i14 %inst_w_0_loc_0, i14 %sext_ln112" [../neuron_predictor_fixptClass.hpp:112]   --->   Operation 63 'add' 'add_ln112' <Predicate = true> <Delay = 1.81> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%sext_ln110_2 = sext i11 %inst_x_hist_1_loc_0" [../neuron_predictor_fixptClass.hpp:110]   --->   Operation 64 'sext' 'sext_ln110_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 65 [1/1] (5.63ns)   --->   "%mul_ln110_1 = mul i21 %sext_ln110_2, i21 %sext_ln110" [../neuron_predictor_fixptClass.hpp:110]   --->   Operation 65 'mul' 'mul_ln110_1' <Predicate = true> <Delay = 5.63> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 5.63> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%trunc_ln1 = partselect i9 @_ssdm_op_PartSelect.i9.i21.i32.i32, i21 %mul_ln110_1, i32 10, i32 18" [../neuron_predictor_fixptClass.hpp:112]   --->   Operation 66 'partselect' 'trunc_ln1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%sext_ln112_1 = sext i9 %trunc_ln1" [../neuron_predictor_fixptClass.hpp:112]   --->   Operation 67 'sext' 'sext_ln112_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 68 [1/1] (1.81ns)   --->   "%add_ln112_1 = add i14 %inst_w_1_loc_0, i14 %sext_ln112_1" [../neuron_predictor_fixptClass.hpp:112]   --->   Operation 68 'add' 'add_ln112_1' <Predicate = true> <Delay = 1.81> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 69 [1/1] (0.00ns)   --->   "%sext_ln110_3 = sext i11 %inst_x_hist_2_loc_0" [../neuron_predictor_fixptClass.hpp:110]   --->   Operation 69 'sext' 'sext_ln110_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 70 [1/1] (5.63ns)   --->   "%mul_ln110_2 = mul i21 %sext_ln110_3, i21 %sext_ln110" [../neuron_predictor_fixptClass.hpp:110]   --->   Operation 70 'mul' 'mul_ln110_2' <Predicate = true> <Delay = 5.63> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 5.63> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 71 [1/1] (0.00ns)   --->   "%trunc_ln112_2 = partselect i9 @_ssdm_op_PartSelect.i9.i21.i32.i32, i21 %mul_ln110_2, i32 10, i32 18" [../neuron_predictor_fixptClass.hpp:112]   --->   Operation 71 'partselect' 'trunc_ln112_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%sext_ln112_2 = sext i9 %trunc_ln112_2" [../neuron_predictor_fixptClass.hpp:112]   --->   Operation 72 'sext' 'sext_ln112_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 73 [1/1] (1.81ns)   --->   "%add_ln112_2 = add i14 %inst_w_2_loc_0, i14 %sext_ln112_2" [../neuron_predictor_fixptClass.hpp:112]   --->   Operation 73 'add' 'add_ln112_2' <Predicate = true> <Delay = 1.81> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%sext_ln110_4 = sext i11 %inst_x_hist_3_loc_0" [../neuron_predictor_fixptClass.hpp:110]   --->   Operation 74 'sext' 'sext_ln110_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 75 [1/1] (5.63ns)   --->   "%mul_ln110_3 = mul i21 %sext_ln110_4, i21 %sext_ln110" [../neuron_predictor_fixptClass.hpp:110]   --->   Operation 75 'mul' 'mul_ln110_3' <Predicate = true> <Delay = 5.63> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 5.63> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%trunc_ln112_3 = partselect i9 @_ssdm_op_PartSelect.i9.i21.i32.i32, i21 %mul_ln110_3, i32 10, i32 18" [../neuron_predictor_fixptClass.hpp:112]   --->   Operation 76 'partselect' 'trunc_ln112_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 77 [1/1] (0.00ns)   --->   "%sext_ln112_3 = sext i9 %trunc_ln112_3" [../neuron_predictor_fixptClass.hpp:112]   --->   Operation 77 'sext' 'sext_ln112_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 78 [1/1] (1.81ns)   --->   "%add_ln112_3 = add i14 %inst_w_3_loc_0, i14 %sext_ln112_3" [../neuron_predictor_fixptClass.hpp:112]   --->   Operation 78 'add' 'add_ln112_3' <Predicate = true> <Delay = 1.81> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 79 [1/1] (0.00ns)   --->   "%mrv = insertvalue i22 <undef>, i10 %sub_ln95" [../neuron_predictor_fixptClass.hpp:125]   --->   Operation 79 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i22 %mrv, i12 %predicted_write_assign" [../neuron_predictor_fixptClass.hpp:125]   --->   Operation 80 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 81 [1/1] (0.00ns)   --->   "%store_ln69 = store i13 %add_ln100, i13 %inst_b" [../neuron_predictor_fixptClass.hpp:69]   --->   Operation 81 'store' 'store_ln69' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 82 [1/1] (0.00ns)   --->   "%store_ln68 = store i14 %add_ln112, i14 %inst_w_0" [../neuron_predictor_fixptClass.hpp:68]   --->   Operation 82 'store' 'store_ln68' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 83 [1/1] (0.00ns)   --->   "%store_ln65 = store i14 %add_ln112_3, i14 %inst_w_3" [../neuron_predictor_fixptClass.hpp:65]   --->   Operation 83 'store' 'store_ln65' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 84 [1/1] (0.00ns)   --->   "%store_ln65 = store i14 %add_ln112_2, i14 %inst_w_2" [../neuron_predictor_fixptClass.hpp:65]   --->   Operation 84 'store' 'store_ln65' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 85 [1/1] (0.00ns)   --->   "%store_ln65 = store i14 %add_ln112_1, i14 %inst_w_1" [../neuron_predictor_fixptClass.hpp:65]   --->   Operation 85 'store' 'store_ln65' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 86 [1/1] (0.00ns)   --->   "%store_ln64 = store i11 %inst_x_hist_2_loc_0, i11 %inst_x_hist_3" [../neuron_predictor_fixptClass.hpp:64]   --->   Operation 86 'store' 'store_ln64' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 87 [1/1] (0.00ns)   --->   "%store_ln64 = store i11 %inst_x_hist_1_loc_0, i11 %inst_x_hist_2" [../neuron_predictor_fixptClass.hpp:64]   --->   Operation 87 'store' 'store_ln64' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 88 [1/1] (0.00ns)   --->   "%ret_ln125 = ret i22 %mrv_1" [../neuron_predictor_fixptClass.hpp:125]   --->   Operation 88 'ret' 'ret_ln125' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 6.456ns
+The critical path consists of the following:
+	wire read operation ('reset_rsvd_read', ../neuron_predictor_fixptClass.hpp:33) on port 'reset_rsvd' (../neuron_predictor_fixptClass.hpp:33) [14]  (0.000 ns)
+	'or' operation 1 bit ('or_ln58', ../neuron_predictor_fixptClass.hpp:58) [18]  (0.978 ns)
+	multiplexor before 'phi' operation 11 bit ('inst_x_hist_0_loc_0', ../neuron_predictor_fixptClass.hpp:87) with incoming values : ('inst_x_hist_0_load', ../neuron_predictor_fixptClass.hpp:87) [33]  (1.588 ns)
+	'br' operation ('br_ln58', ../neuron_predictor_fixptClass.hpp:58) [28]  (1.588 ns)
+	'phi' operation 11 bit ('inst_x_hist_0_loc_0', ../neuron_predictor_fixptClass.hpp:87) with incoming values : ('inst_x_hist_0_load', ../neuron_predictor_fixptClass.hpp:87) [33]  (0.000 ns)
+	'mul' operation 24 bit of DSP[46] ('mul_ln88', ../neuron_predictor_fixptClass.hpp:88) [44]  (3.890 ns)
+
+ <State 2>: 21.593ns
+The critical path consists of the following:
+	'phi' operation 11 bit ('inst_x_hist_1_loc_0', ../neuron_predictor_fixptClass.hpp:87) with incoming values : ('inst_x_hist_1_load', ../neuron_predictor_fixptClass.hpp:87) [34]  (0.000 ns)
+	'mul' operation 24 bit of DSP[50] ('mul_ln88_1', ../neuron_predictor_fixptClass.hpp:88) [49]  (3.360 ns)
+	'add' operation 24 bit of DSP[50] ('acc', ../neuron_predictor_fixptClass.hpp:88) [50]  (3.020 ns)
+	'add' operation 24 bit of DSP[54] ('acc', ../neuron_predictor_fixptClass.hpp:88) [54]  (3.020 ns)
+	'add' operation 24 bit of DSP[58] ('add_ln88', ../neuron_predictor_fixptClass.hpp:88) [58]  (3.020 ns)
+	'sub' operation 10 bit ('residual', ../neuron_predictor_fixptClass.hpp:95) [62]  (1.731 ns)
+	'mul' operation 21 bit ('mul_ln110', ../neuron_predictor_fixptClass.hpp:110) [68]  (5.630 ns)
+	'add' operation 14 bit ('add_ln112', ../neuron_predictor_fixptClass.hpp:112) [71]  (1.812 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

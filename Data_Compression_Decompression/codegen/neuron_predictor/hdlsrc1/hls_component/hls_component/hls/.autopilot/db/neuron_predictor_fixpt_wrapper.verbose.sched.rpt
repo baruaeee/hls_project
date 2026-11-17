@@ -1,0 +1,148 @@
+
+
+================================================================
+== Vitis HLS Report for 'neuron_predictor_fixpt_wrapper'
+================================================================
+* Date:           Tue Nov 17 01:43:25 2026
+
+* Version:        2026.1 (Build 6493734 on Jun 16 2026)
+* Project:        hls_component
+* Solution:       hls
+* Product family: zynq
+* Target device:  xc7z010i-clg225-1L
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  8.477 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        3|        3|  30.000 ns|  30.000 ns|    4|    4|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.76>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%reset_rsvd_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %reset_rsvd" [../neuron_predictor_fixpt_wrapper.cpp:13]   --->   Operation 5 'read' 'reset_rsvd_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%x_in_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %x_in" [../neuron_predictor_fixpt_wrapper.cpp:13]   --->   Operation 6 'read' 'x_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [4/4] (7.76ns)   --->   "%call_ret = call i28 @neuron_predictor_fixpt, i11 %x_in_read, i1 %reset_rsvd_read, i1 %inst_x0_not_empty, i11 %inst_x0, i11 %inst_x1, i11 %inst_x2, i11 %inst_x3, i14 %inst_w0, i14 %inst_w1, i14 %inst_w2, i14 %inst_w3, i14 %inst_b" [../neuron_predictor_fixpt_wrapper.cpp:16]   --->   Operation 7 'call' 'call_ret' <Predicate = true> <Delay = 7.76> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 8.47>
+ST_2 : Operation 8 [3/4] (8.47ns)   --->   "%call_ret = call i28 @neuron_predictor_fixpt, i11 %x_in_read, i1 %reset_rsvd_read, i1 %inst_x0_not_empty, i11 %inst_x0, i11 %inst_x1, i11 %inst_x2, i11 %inst_x3, i14 %inst_w0, i14 %inst_w1, i14 %inst_w2, i14 %inst_w3, i14 %inst_b" [../neuron_predictor_fixpt_wrapper.cpp:16]   --->   Operation 8 'call' 'call_ret' <Predicate = true> <Delay = 8.47> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 8.47>
+ST_3 : Operation 9 [2/4] (8.47ns)   --->   "%call_ret = call i28 @neuron_predictor_fixpt, i11 %x_in_read, i1 %reset_rsvd_read, i1 %inst_x0_not_empty, i11 %inst_x0, i11 %inst_x1, i11 %inst_x2, i11 %inst_x3, i14 %inst_w0, i14 %inst_w1, i14 %inst_w2, i14 %inst_w3, i14 %inst_b" [../neuron_predictor_fixpt_wrapper.cpp:16]   --->   Operation 9 'call' 'call_ret' <Predicate = true> <Delay = 8.47> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 10 [1/1] (0.00ns)   --->   "%spectopmodule_ln13 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_6" [../neuron_predictor_fixpt_wrapper.cpp:13]   --->   Operation 10 'spectopmodule' 'spectopmodule_ln13' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i11 %x_in"   --->   Operation 11 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i11 %x_in, void @empty_3, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %reset_rsvd"   --->   Operation 13 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %reset_rsvd, void @empty_3, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i14 %residual"   --->   Operation 15 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i14 %residual, void @empty_3, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i14 %predicted"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i14 %predicted, void @empty_3, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/4] (0.00ns)   --->   "%call_ret = call i28 @neuron_predictor_fixpt, i11 %x_in_read, i1 %reset_rsvd_read, i1 %inst_x0_not_empty, i11 %inst_x0, i11 %inst_x1, i11 %inst_x2, i11 %inst_x3, i14 %inst_w0, i14 %inst_w1, i14 %inst_w2, i14 %inst_w3, i14 %inst_b" [../neuron_predictor_fixpt_wrapper.cpp:16]   --->   Operation 19 'call' 'call_ret' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%residual_ret = extractvalue i28 %call_ret" [../neuron_predictor_fixpt_wrapper.cpp:16]   --->   Operation 20 'extractvalue' 'residual_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%write_ln16 = write void @_ssdm_op_Write.ap_auto.i14P0A, i14 %residual, i14 %residual_ret" [../neuron_predictor_fixpt_wrapper.cpp:16]   --->   Operation 21 'write' 'write_ln16' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%predicted_ret = extractvalue i28 %call_ret" [../neuron_predictor_fixpt_wrapper.cpp:16]   --->   Operation 22 'extractvalue' 'predicted_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%write_ln16 = write void @_ssdm_op_Write.ap_auto.i14P0A, i14 %predicted, i14 %predicted_ret" [../neuron_predictor_fixpt_wrapper.cpp:16]   --->   Operation 23 'write' 'write_ln16' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%ret_ln17 = ret" [../neuron_predictor_fixpt_wrapper.cpp:17]   --->   Operation 24 'ret' 'ret_ln17' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 7.766ns
+The critical path consists of the following:
+	wire read operation ('reset_rsvd_read', ../neuron_predictor_fixpt_wrapper.cpp:13) on port 'reset_rsvd' (../neuron_predictor_fixpt_wrapper.cpp:13) [24]  (0.000 ns)
+	'call' operation 28 bit ('call_ret', ../neuron_predictor_fixpt_wrapper.cpp:16) to 'neuron_predictor_fixpt' [26]  (7.766 ns)
+
+ <State 2>: 8.477ns
+The critical path consists of the following:
+	'call' operation 28 bit ('call_ret', ../neuron_predictor_fixpt_wrapper.cpp:16) to 'neuron_predictor_fixpt' [26]  (8.477 ns)
+
+ <State 3>: 8.477ns
+The critical path consists of the following:
+	'call' operation 28 bit ('call_ret', ../neuron_predictor_fixpt_wrapper.cpp:16) to 'neuron_predictor_fixpt' [26]  (8.477 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

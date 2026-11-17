@@ -1,0 +1,28 @@
+[
+  {
+    "directory": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component",
+    "arguments": [
+      "/home/exotic/Vivado/2026.1/Vitis/lnx64/tools/clang-16/bin/clang++",
+      "--gcc-toolchain=/home/exotic/Vivado/2026.1/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/home/exotic/Vivado/2026.1/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=neuron_predictor_fixpt_wrapper",
+      "-c",
+      "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/neuron_predictor_fixpt_main.cpp"
+    ],
+    "file": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/neuron_predictor_fixpt_main.cpp"
+  },
+  {
+    "directory": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component",
+    "arguments": [
+      "/home/exotic/Vivado/2026.1/Vitis/lnx64/tools/clang-16/bin/clang++",
+      "--gcc-toolchain=/home/exotic/Vivado/2026.1/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/home/exotic/Vivado/2026.1/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=neuron_predictor_fixpt_wrapper",
+      "-c",
+      "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/neuron_predictor_fixpt_wrapper.cpp"
+    ],
+    "file": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/neuron_predictor_fixpt_wrapper.cpp"
+  }
+]

@@ -1,0 +1,146 @@
+
+
+================================================================
+== Synthesis Summary Report of 'neuron_predictor_fixpt_wrapper'
+================================================================
++ General Information: 
+    * Date:           Tue Nov 17 13:55:20 2026
+    * Version:        2026.1 (Build 6493734 on Jun 16 2026)
+    * Project:        hls_component
+    * Solution:       hls
+    * Product family: zynq
+    * Target device:  xc7z010i-clg225-1L
+    
+
+* Performance & Resource Estimates: 
++----------------------------------+------+---------------+----------+---------+------+----------+---------+--------+------+------+---------+-----------+----------+-----+
+|              Modules             | Issue|               | Iteration|         | Trip |          |      Latency     |      |      |         |           |          |     |
+|              & Loops             | Type | Violation Type|  Latency | Interval| Count| Pipelined| (cycles)|  (ns)  | Slack| BRAM |   DSP   |     FF    |    LUT   | URAM|
++----------------------------------+------+---------------+----------+---------+------+----------+---------+--------+------+------+---------+-----------+----------+-----+
+|+ neuron_predictor_fixpt_wrapper  |     -|              -|         -|        4|     -|        no|        3|  30.000|  0.41|     -|  8 (10%)|  297 (~0%)|  356 (2%)|    -|
++----------------------------------+------+---------------+----------+---------+------+----------+---------+--------+------+------+---------+-----------+----------+-----+
+    Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------------+---------+-----------+----------+
+| Port       | Mode    | Direction | Bitwidth |
++------------+---------+-----------+----------+
+| predicted  | ap_vld  | out       | 12       |
+| reset_rsvd | ap_none | in        | 1        |
+| residual   | ap_vld  | out       | 10       |
+| x_in       | ap_none | in        | 11       |
++------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+-------------+
+| Argument   | Direction | Datatype    |
++------------+-----------+-------------+
+| x_in       | in        | ap_int<11>  |
+| reset_rsvd | in        | bool        |
+| residual   | out       | ap_int<10>& |
+| predicted  | out       | ap_int<12>& |
++------------+-----------+-------------+
+
+* SW-to-HW Mapping
++------------+------------------+---------+
+| Argument   | HW Interface     | HW Type |
++------------+------------------+---------+
+| x_in       | x_in             | port    |
+| reset_rsvd | reset_rsvd       | port    |
+| residual   | residual         | port    |
+| residual   | residual_ap_vld  | port    |
+| predicted  | predicted        | port    |
+| predicted  | predicted_ap_vld | port    |
++------------+------------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                             | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++----------------------------------+-----+--------+-------------+-----+--------+---------+
+| + neuron_predictor_fixpt_wrapper | 8   |        |             |     |        |         |
+|   xor_ln48_fu_256_p2             |     |        | xor_ln48    | xor | auto   | 0       |
+|   or_ln48_fu_262_p2              |     |        | or_ln48     | or  | auto   | 0       |
+|   mul_14s_11s_25_1_1_U1          | 1   | yes    | mul_ln76    | mul | dsp    | 0       |
+|   mul_14s_11s_25_1_1_U2          | 1   | yes    | mul_ln76_1  | mul | dsp    | 0       |
+|   mul_14s_11s_25_1_1_U3          | 1   | yes    | mul_ln76_2  | mul | dsp    | 0       |
+|   mul_14s_11s_25_1_1_U4          | 1   | yes    | mul_ln76_3  | mul | dsp    | 0       |
+|   add_ln86_fu_392_p2             |     | yes    | add_ln86    | add | fabric | 0       |
+|   add_ln86_1_fu_398_p2           |     | yes    | add_ln86_1  | add | fabric | 0       |
+|   add_ln86_2_fu_425_p2           |     | yes    | add_ln86_2  | add | fabric | 0       |
+|   add_ln86_3_fu_438_p2           |     | yes    | add_ln86_3  | add | fabric | 0       |
+|   acc_fu_448_p2                  |     |        | acc         | add | fabric | 0       |
+|   sub_ln95_fu_475_p2             |     |        | sub_ln95    | sub | fabric | 0       |
+|   add_ln99_fu_508_p2             |     |        | add_ln99    | add | fabric | 0       |
+|   mul_11s_10s_21_1_1_U5          | 1   | yes    | mul_ln107   | mul | dsp    | 0       |
+|   add_ln111_fu_537_p2            |     |        | add_ln111   | add | fabric | 0       |
+|   mul_11s_10s_21_1_1_U6          | 1   | yes    | mul_ln107_1 | mul | dsp    | 0       |
+|   add_ln111_1_fu_563_p2          |     |        | add_ln111_1 | add | fabric | 0       |
+|   mul_11s_10s_21_1_1_U7          | 1   | yes    | mul_ln107_2 | mul | dsp    | 0       |
+|   add_ln111_2_fu_589_p2          |     |        | add_ln111_2 | add | fabric | 0       |
+|   mul_11s_10s_21_1_1_U8          | 1   | yes    | mul_ln107_3 | mul | dsp    | 0       |
+|   add_ln111_3_fu_615_p2          |     |        | add_ln111_3 | add | fabric | 0       |
++----------------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Ignored Pragmas
++-----------------+--------------------------------+-------------------------------------------------------------------+-----------------+
+| Type            | Options                        | Location                                                          | Messages        |
++-----------------+--------------------------------+-------------------------------------------------------------------+-----------------+
+| ARRAY_PARTITION | variable=x_hist complete dim=1 | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:64) | Not implemented |
+| ARRAY_PARTITION | variable=w complete dim=1      | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:65) | Not implemented |
+| ARRAY_PARTITION | variable=prod complete dim=1   | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:69) | Not implemented |
++-----------------+--------------------------------+-------------------------------------------------------------------+-----------------+
+
+* Implemented Pragmas
++-----------------+-------------------------------------+-------------------------------------------------------------------------------------------------+
+| Type            | Options                             | Location                                                                                        |
++-----------------+-------------------------------------+-------------------------------------------------------------------------------------------------+
+| ARRAY_PARTITION | dim=1 type=complete variable=inst.w | in neuron_predictor_fixpt_wrapper (../neuron_predictor_fixpt_wrapper.cpp:16)                    |
+| UNROLL          |                                     | in neuron_predictor_fixptclass::neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:52)  |
+| UNROLL          |                                     | in neuron_predictor_fixptclass::neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:74)  |
+| UNROLL          |                                     | in neuron_predictor_fixptclass::neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:105) |
+| UNROLL          |                                     | in neuron_predictor_fixptclass::neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:119) |
++-----------------+-------------------------------------+-------------------------------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++---------+---------------------------------+--------------------------------------------------------------------+
+| Type    | Options                         | Location                                                           |
++---------+---------------------------------+--------------------------------------------------------------------+
+| UNROLL  |                                 | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:52)  |
+| UNROLL  |                                 | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:74)  |
+| BIND_OP | variable=prod op=mul impl=dsp   | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:78)  |
+| BIND_OP | variable=acc op=add impl=fabric | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:89)  |
+| UNROLL  |                                 | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:105) |
+| BIND_OP | variable=grad op=mul impl=dsp   | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:109) |
+| UNROLL  |                                 | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:119) |
++---------+---------------------------------+--------------------------------------------------------------------+
+
+

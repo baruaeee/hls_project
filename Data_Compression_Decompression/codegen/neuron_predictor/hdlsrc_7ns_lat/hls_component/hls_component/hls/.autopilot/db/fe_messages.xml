@@ -1,0 +1,77 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:36:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=5" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:53:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:69:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:89:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:100:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="neuron_predictor_fixpt_wrapper" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=neuron_predictor_fixpt_wrapper" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:36:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=5" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:53:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:69:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:89:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:100:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:98:5" msg_body="Loop 'L4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="L4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:86:5" msg_body="Loop 'L3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="L3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:67:5" msg_body="Loop 'L2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="L2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:52:7" msg_body="Loop 'L1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="L1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:35:0" msg_body="Unrolling loop 'L4' (../neuron_predictor_fixptClass.hpp:98:5) in function 'neuron_predictor_fixptClass::neuron_predictor_fixpt' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../neuron_predictor_fixptClass.hpp:98:5" LoopName="L4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:35:0" msg_body="Unrolling loop 'L3' (../neuron_predictor_fixptClass.hpp:86:5) in function 'neuron_predictor_fixptClass::neuron_predictor_fixpt' completely with a factor of 4">
+        <args Factor="4" LoopLoc="../neuron_predictor_fixptClass.hpp:86:5" LoopName="L3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:35:0" msg_body="Unrolling loop 'L2' (../neuron_predictor_fixptClass.hpp:67:5) in function 'neuron_predictor_fixptClass::neuron_predictor_fixpt' completely with a factor of 4">
+        <args Factor="4" LoopLoc="../neuron_predictor_fixptClass.hpp:67:5" LoopName="L2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:35:0" msg_body="Unrolling loop 'L1' (../neuron_predictor_fixptClass.hpp:52:7) in function 'neuron_predictor_fixptClass::neuron_predictor_fixpt' completely with a factor of 4">
+        <args Factor="4" LoopLoc="../neuron_predictor_fixptClass.hpp:52:7" LoopName="L1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../neuron_predictor_fixpt_wrapper.cpp:12:0" msg_body="array_partition dim=1 type=complete variable=inst.x_hist 1 neuron_predictor_fixpt_wrapper ../neuron_predictor_fixpt_wrapper.cpp:12:0 config_array_partition -complete_threshold 4inst.x_hist">
+        <args PragmaFunction="neuron_predictor_fixpt_wrapper" PragmaInferReason="config_array_partition -complete_threshold 4" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete variable=inst.x_hist" PragmaType="array_partition" VarLoc="../neuron_predictor_fixpt_wrapper.cpp:12:0" VarName="inst.x_hist"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="../neuron_predictor_fixpt_wrapper.cpp:12:0" msg_body="Partitioning small array 'inst.x_hist' due to array size.">
+        <args Value="inst.x_hist"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../neuron_predictor_fixpt_wrapper.cpp:12:0" msg_body="array_partition dim=1 type=complete variable=inst.w 1 neuron_predictor_fixpt_wrapper ../neuron_predictor_fixpt_wrapper.cpp:12:0 config_array_partition -complete_threshold 4inst.w">
+        <args PragmaFunction="neuron_predictor_fixpt_wrapper" PragmaInferReason="config_array_partition -complete_threshold 4" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete variable=inst.w" PragmaType="array_partition" VarLoc="../neuron_predictor_fixpt_wrapper.cpp:12:0" VarName="inst.w"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="../neuron_predictor_fixpt_wrapper.cpp:12:0" msg_body="Partitioning small array 'inst.w' due to array size.">
+        <args Value="inst.w"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../neuron_predictor_fixpt_wrapper.cpp:12:0" msg_body="Applying array_partition to 'inst.x_hist': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="inst.x_hist"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../neuron_predictor_fixpt_wrapper.cpp:12:0" msg_body="Applying array_partition to 'inst.w': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="inst.w"/>
+    </msg>
+</xilinx:hls_fe_msgs>

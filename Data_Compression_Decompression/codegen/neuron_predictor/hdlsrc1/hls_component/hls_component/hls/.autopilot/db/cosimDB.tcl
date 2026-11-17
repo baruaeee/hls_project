@@ -1,0 +1,87 @@
+
+
+set RtlHierarchyInfo {[
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
+		"CDFG" : "neuron_predictor_fixpt_wrapper",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3", "EstimateLatencyMax" : "3",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
+			{"Name" : "x_in", "Type" : "None", "Direction" : "I"},
+			{"Name" : "reset_rsvd", "Type" : "None", "Direction" : "I"},
+			{"Name" : "residual", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "predicted", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "inst_x0_not_empty", "Type" : "OVld", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_neuron_predictor_fixpt_fu_78", "Port" : "inst_x0_not_empty", "Inst_start_state" : "1", "Inst_end_state" : "4"}]},
+			{"Name" : "inst_x0", "Type" : "OVld", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_neuron_predictor_fixpt_fu_78", "Port" : "inst_x0", "Inst_start_state" : "1", "Inst_end_state" : "4"}]},
+			{"Name" : "inst_x1", "Type" : "OVld", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_neuron_predictor_fixpt_fu_78", "Port" : "inst_x1", "Inst_start_state" : "1", "Inst_end_state" : "4"}]},
+			{"Name" : "inst_x2", "Type" : "OVld", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_neuron_predictor_fixpt_fu_78", "Port" : "inst_x2", "Inst_start_state" : "1", "Inst_end_state" : "4"}]},
+			{"Name" : "inst_x3", "Type" : "OVld", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_neuron_predictor_fixpt_fu_78", "Port" : "inst_x3", "Inst_start_state" : "1", "Inst_end_state" : "4"}]},
+			{"Name" : "inst_w0", "Type" : "OVld", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_neuron_predictor_fixpt_fu_78", "Port" : "inst_w0", "Inst_start_state" : "1", "Inst_end_state" : "4"}]},
+			{"Name" : "inst_w1", "Type" : "OVld", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_neuron_predictor_fixpt_fu_78", "Port" : "inst_w1", "Inst_start_state" : "1", "Inst_end_state" : "4"}]},
+			{"Name" : "inst_w2", "Type" : "OVld", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_neuron_predictor_fixpt_fu_78", "Port" : "inst_w2", "Inst_start_state" : "1", "Inst_end_state" : "4"}]},
+			{"Name" : "inst_w3", "Type" : "OVld", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_neuron_predictor_fixpt_fu_78", "Port" : "inst_w3", "Inst_start_state" : "1", "Inst_end_state" : "4"}]},
+			{"Name" : "inst_b", "Type" : "OVld", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_neuron_predictor_fixpt_fu_78", "Port" : "inst_b", "Inst_start_state" : "1", "Inst_end_state" : "4"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_neuron_predictor_fixpt_fu_78", "Parent" : "0", "Child" : ["2", "3", "4", "5", "6", "7", "8", "9"],
+		"CDFG" : "neuron_predictor_fixpt",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "3",
+		"VariableLatency" : "0", "ExactLatency" : "3", "EstimateLatencyMin" : "3", "EstimateLatencyMax" : "3",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
+			{"Name" : "x_in", "Type" : "None", "Direction" : "I"},
+			{"Name" : "reset_rsvd", "Type" : "None", "Direction" : "I"},
+			{"Name" : "inst_x0_not_empty", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "inst_x0", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "inst_x1", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "inst_x2", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "inst_x3", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "inst_w0", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "inst_w1", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "inst_w2", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "inst_w3", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "inst_b", "Type" : "OVld", "Direction" : "IO"}]},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_neuron_predictor_fixpt_fu_78.mul_14ns_11s_25_1_1_U1", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_neuron_predictor_fixpt_fu_78.mul_14s_11s_23_1_1_U2", "Parent" : "1"},
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_neuron_predictor_fixpt_fu_78.mul_14s_11s_24_1_1_U3", "Parent" : "1"},
+	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_neuron_predictor_fixpt_fu_78.mul_14s_11s_24_1_1_U4", "Parent" : "1"},
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_neuron_predictor_fixpt_fu_78.mul_14s_11s_25_1_1_U5", "Parent" : "1"},
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_neuron_predictor_fixpt_fu_78.mul_14s_11s_24_1_1_U6", "Parent" : "1"},
+	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_neuron_predictor_fixpt_fu_78.mul_14s_11s_25_1_1_U7", "Parent" : "1"},
+	{"ID" : "9", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_neuron_predictor_fixpt_fu_78.mul_14s_11s_25_1_1_U8", "Parent" : "1"}]}

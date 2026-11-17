@@ -1,0 +1,490 @@
+<profile>
+    <ReportVersion>
+        <Version>2026.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z010i-clg225-1L</Part>
+        <TopModelName>neuron_predictor_fixpt_wrapper</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>8.477</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>3</Best-caseLatency>
+            <Average-caseLatency>3</Average-caseLatency>
+            <Worst-caseLatency>3</Worst-caseLatency>
+            <Best-caseRealTimeLatency>30.000 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>30.000 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>30.000 ns</Worst-caseRealTimeLatency>
+            <Interval-min>4</Interval-min>
+            <Interval-max>4</Interval-max>
+            <PerformancePragma>-</PerformancePragma>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>Timing Violation</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>../neuron_predictor_fixpt_wrapper.cpp:13</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <DSP>8</DSP>
+            <FF>342</FF>
+            <LUT>672</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>120</BRAM_18K>
+            <DSP>80</DSP>
+            <FF>35200</FF>
+            <LUT>17600</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>neuron_predictor_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>neuron_predictor_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>neuron_predictor_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>neuron_predictor_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>neuron_predictor_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>neuron_predictor_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>x_in</name>
+            <Object>x_in</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>11</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>reset_rsvd</name>
+            <Object>reset_rsvd</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>residual</name>
+            <Object>residual</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>14</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>residual_ap_vld</name>
+            <Object>residual</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>predicted</name>
+            <Object>predicted</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>14</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>predicted_ap_vld</name>
+            <Object>predicted</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>neuron_predictor_fixpt_wrapper</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_neuron_predictor_fixpt_fu_78</InstName>
+                    <ModuleName>neuron_predictor_fixpt</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>78</ID>
+                    <BindInstances>xor_ln57_fu_297_p2 or_ln57_fu_303_p2 mul_14ns_11s_25_1_1_U1 mul_14s_11s_23_1_1_U2 mul_14s_11s_24_1_1_U3 mul_14s_11s_24_1_1_U4 add_ln90_fu_453_p2 add_ln90_1_fu_523_p2 add_ln91_fu_539_p2 add_ln91_1_fu_567_p2 sub_ln94_fu_600_p2 add_ln97_fu_640_p2 mul_14s_11s_25_1_1_U5 add_ln99_fu_685_p2 mul_14s_11s_24_1_1_U6 add_ln102_fu_731_p2 mul_14s_11s_25_1_1_U7 add_ln104_fu_769_p2 mul_14s_11s_25_1_1_U8 add_ln106_fu_811_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>neuron_predictor_fixpt</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <TargetInitiationInterval>3</TargetInitiationInterval>
+                    <EstimatedClockPeriod>8.477</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>3</Best-caseLatency>
+                    <Average-caseLatency>3</Average-caseLatency>
+                    <Worst-caseLatency>3</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>30.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>30.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>30.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>3</PipelineInitiationInterval>
+                    <PipelineDepth>4</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>Timing Violation</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../neuron_predictor_fixptClass.hpp:71</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>8</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>10</UTIL_DSP>
+                    <FF>338</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>647</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln57_fu_297_p2" SOURCE="../neuron_predictor_fixptClass.hpp:57" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln57" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="or" PRAGMA="" RTLNAME="or_ln57_fu_303_p2" SOURCE="../neuron_predictor_fixptClass.hpp:57" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln57" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_14ns_11s_25_1_1_U1" SOURCE="../neuron_predictor_fixptClass.hpp:86" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln86" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_14s_11s_23_1_1_U2" SOURCE="../neuron_predictor_fixptClass.hpp:87" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln87" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_14s_11s_24_1_1_U3" SOURCE="../neuron_predictor_fixptClass.hpp:88" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln88" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_14s_11s_24_1_1_U4" SOURCE="../neuron_predictor_fixptClass.hpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln89" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="yes" RTLNAME="add_ln90_fu_453_p2" SOURCE="../neuron_predictor_fixptClass.hpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln90" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="yes" RTLNAME="add_ln90_1_fu_523_p2" SOURCE="../neuron_predictor_fixptClass.hpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln90_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="yes" RTLNAME="add_ln91_fu_539_p2" SOURCE="../neuron_predictor_fixptClass.hpp:91" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln91" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="yes" RTLNAME="add_ln91_1_fu_567_p2" SOURCE="../neuron_predictor_fixptClass.hpp:91" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln91_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="yes" RTLNAME="sub_ln94_fu_600_p2" SOURCE="../neuron_predictor_fixptClass.hpp:94" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln94" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="yes" RTLNAME="add_ln97_fu_640_p2" SOURCE="../neuron_predictor_fixptClass.hpp:97" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln97" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_14s_11s_25_1_1_U5" SOURCE="../neuron_predictor_fixptClass.hpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln100" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="yes" RTLNAME="add_ln99_fu_685_p2" SOURCE="../neuron_predictor_fixptClass.hpp:99" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln99" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_14s_11s_24_1_1_U6" SOURCE="../neuron_predictor_fixptClass.hpp:103" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln103" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="yes" RTLNAME="add_ln102_fu_731_p2" SOURCE="../neuron_predictor_fixptClass.hpp:102" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln102" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_14s_11s_25_1_1_U7" SOURCE="../neuron_predictor_fixptClass.hpp:105" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln105" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="yes" RTLNAME="add_ln104_fu_769_p2" SOURCE="../neuron_predictor_fixptClass.hpp:104" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln104" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_14s_11s_25_1_1_U8" SOURCE="../neuron_predictor_fixptClass.hpp:106" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln106" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="yes" RTLNAME="add_ln106_fu_811_p2" SOURCE="../neuron_predictor_fixptClass.hpp:106" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln106" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>neuron_predictor_fixpt_wrapper</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>8.477</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>3</Best-caseLatency>
+                    <Average-caseLatency>3</Average-caseLatency>
+                    <Worst-caseLatency>3</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>30.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>30.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>30.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>4</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>Timing Violation</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../neuron_predictor_fixpt_wrapper.cpp:13</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>8</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>10</UTIL_DSP>
+                    <FF>342</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>672</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_interface m_axi_alignment_size="1"/>
+        <config_rtl auto_prefix="1"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="x_in" index="0" direction="in" srcType="ap_int&lt;11&gt;" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="x_in" name="x_in" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="reset_rsvd" index="1" direction="in" srcType="bool" srcSize="1">
+            <hwRefs>
+                <hwRef type="port" interface="reset_rsvd" name="reset_rsvd" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="residual" index="2" direction="out" srcType="ap_fixed&lt;14, 10, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="residual" name="residual" usage="data" direction="out"/>
+                <hwRef type="port" interface="residual_ap_vld" name="residual_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="predicted" index="3" direction="out" srcType="ap_fixed&lt;14, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="predicted" name="predicted" usage="data" direction="out"/>
+                <hwRef type="port" interface="predicted_ap_vld" name="predicted_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="x_in" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="11">
+            <portMaps>
+                <portMap portMapName="x_in">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>x_in</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="x_in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="reset_rsvd" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="reset_rsvd">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>reset_rsvd</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="reset_rsvd"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="residual" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="14">
+            <portMaps>
+                <portMap portMapName="residual">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>residual</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="residual"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="predicted" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="14">
+            <portMaps>
+                <portMap portMapName="predicted">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>predicted</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="predicted"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="predicted">ap_vld, out, 14</column>
+                    <column name="reset_rsvd">ap_none, in, 1</column>
+                    <column name="residual">ap_vld, out, 14</column>
+                    <column name="x_in">ap_none, in, 11</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="x_in">in, ap_int&lt;11&gt;</column>
+                    <column name="reset_rsvd">in, bool</column>
+                    <column name="residual">out, ap_fixed&lt;14 10 (ap_q_mode)5 (ap_o_mode)3 0&gt;&amp;</column>
+                    <column name="predicted">out, ap_fixed&lt;14 12 (ap_q_mode)5 (ap_o_mode)3 0&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="x_in">x_in, port</column>
+                    <column name="reset_rsvd">reset_rsvd, port</column>
+                    <column name="residual">residual, port</column>
+                    <column name="residual">residual_ap_vld, port</column>
+                    <column name="predicted">predicted, port</column>
+                    <column name="predicted">predicted_ap_vld, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="pipeline" status="valid" location="../neuron_predictor_fixptClass.hpp:71" parentFunction="neuron_predictor_fixpt" variable="" isDirective="0" options="ii=3"/>
+        <Pragma type="bind_op" status="valid" location="../neuron_predictor_fixptClass.hpp:77" parentFunction="neuron_predictor_fixpt" variable="predicted" isDirective="0" options="variable=predicted op=add impl=fabric"/>
+        <Pragma type="bind_op" status="valid" location="../neuron_predictor_fixptClass.hpp:78" parentFunction="neuron_predictor_fixpt" variable="residual" isDirective="0" options="variable=residual op=sub impl=fabric"/>
+        <Pragma type="bind_op" status="valid" location="../neuron_predictor_fixptClass.hpp:79" parentFunction="neuron_predictor_fixpt" variable="b_next" isDirective="0" options="variable=b_next op=add impl=fabric"/>
+        <Pragma type="bind_op" status="valid" location="../neuron_predictor_fixptClass.hpp:80" parentFunction="neuron_predictor_fixpt" variable="w0_next" isDirective="0" options="variable=w0_next op=add impl=fabric"/>
+        <Pragma type="bind_op" status="valid" location="../neuron_predictor_fixptClass.hpp:81" parentFunction="neuron_predictor_fixpt" variable="w1_next" isDirective="0" options="variable=w1_next op=add impl=fabric"/>
+        <Pragma type="bind_op" status="valid" location="../neuron_predictor_fixptClass.hpp:82" parentFunction="neuron_predictor_fixpt" variable="w2_next" isDirective="0" options="variable=w2_next op=add impl=fabric"/>
+        <Pragma type="bind_op" status="valid" location="../neuron_predictor_fixptClass.hpp:83" parentFunction="neuron_predictor_fixpt" variable="w3_next" isDirective="0" options="variable=w3_next op=add impl=fabric"/>
+    </PragmaReport>
+</profile>

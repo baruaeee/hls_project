@@ -1,0 +1,3 @@
+relativeroot=/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component
+original_argv=-c --mode hls --config /home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_config.cfg --work_dir hls_component 
+

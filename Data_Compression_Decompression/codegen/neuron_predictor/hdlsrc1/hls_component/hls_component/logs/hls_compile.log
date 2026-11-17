@@ -1,0 +1,156 @@
+  **** HLS Build v2026.1 6493734
+INFO: [HLS 200-2005] Using work_dir /home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component'.
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../ap_fixed_ostream.hpp' from hls_config.cfg(6)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/ap_fixed_ostream.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../hlsutils.hpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hlsutils.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../neuron_predictor_fixptClass.hpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/neuron_predictor_fixptClass.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../neuron_predictor_fixpt_main.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/neuron_predictor_fixpt_main.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../neuron_predictor_fixpt_wrapper.cpp' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/neuron_predictor_fixpt_wrapper.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../predicted_expected.dat' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/predicted_expected.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../reset_rsvd.dat' from hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/reset_rsvd.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../residual_expected.dat' from hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/residual_expected.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../rt_defines.h' from hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/rt_defines.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../rtwtypes.hpp' from hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/rtwtypes.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../x_in.dat' from hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/x_in.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../neuron_predictor_fixptClass_tb.hpp' from hls_config.cfg(17)
+INFO: [HLS 200-10] Adding test bench file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/neuron_predictor_fixptClass_tb.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=neuron_predictor_fixpt_wrapper' from hls_config.cfg(18)
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z010iclg225-1L' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(4)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/vitis-comp.json
+WARNING: [HLS 200-40] Skipped source file 'x_in.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'residual_expected.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'reset_rsvd.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'predicted_expected.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'x_in.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'residual_expected.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'reset_rsvd.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'predicted_expected.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 11.14 seconds. CPU system time: 1.01 seconds. Elapsed time: 12.45 seconds; current allocated memory: 251.668 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file '../neuron_predictor_fixpt_wrapper.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../neuron_predictor_fixpt_main.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 44.72 seconds. CPU system time: 2.73 seconds. Elapsed time: 48.52 seconds; current allocated memory: 254.129 MB.
+INFO: [HLS 200-1995] There were 9,646 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 629 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 193 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 193 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 193 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 193 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 193 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 193 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 193 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 193 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 193 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 193 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 193 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 193 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 200 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 202 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.31 seconds. CPU system time: 0.65 seconds. Elapsed time: 10.4 seconds; current allocated memory: 256.102 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 256.102 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 256.875 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 258.379 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.14 seconds; current allocated memory: 281.297 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 283.496 MB.
+INFO: [HLS 200-2255] Checking Wire Delay Status: Wire Delay Mode is ON
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'neuron_predictor_fixpt_wrapper' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'neuron_predictor_fixpt' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'neuron_predictor_fixpt'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'mul' operation 23 bit ('mul_ln87', ../neuron_predictor_fixptClass.hpp:87) to 'add' operation 19 bit ('add_ln90', ../neuron_predictor_fixptClass.hpp:90) (combination delay: 7.76606 ns) to honor II or Latency constraint in region 'neuron_predictor_fixpt'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'mul' operation 25 bit ('mul_ln100', ../neuron_predictor_fixptClass.hpp:100) to 'add' operation 40 bit ('add_ln99', ../neuron_predictor_fixptClass.hpp:99) (combination delay: 8.477 ns) to honor II or Latency constraint in region 'neuron_predictor_fixpt'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 3, Final II = 3, Depth = 4, function 'neuron_predictor_fixpt'
+WARNING: [HLS 200-871] Estimated clock period (8.477 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'neuron_predictor_fixpt' consists of the following:
+	'mul' operation 25 bit ('mul_ln100', ../neuron_predictor_fixptClass.hpp:100) [100]  (5.600 ns)
+	'add' operation 40 bit ('add_ln99', ../neuron_predictor_fixptClass.hpp:99) [103]  (2.877 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.24 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.29 seconds; current allocated memory: 284.828 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 284.828 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'neuron_predictor_fixpt_wrapper' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (8.477 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'neuron_predictor_fixpt_wrapper' consists of the following:
+	'call' operation 28 bit ('call_ret', ../neuron_predictor_fixpt_wrapper.cpp:16) to 'neuron_predictor_fixpt' [26]  (8.477 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 284.828 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 284.828 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'neuron_predictor_fixpt' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'inst_x0_not_empty' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'inst_x0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'inst_x1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'inst_x2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'inst_x3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'inst_w0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'inst_w1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'inst_w2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'inst_w3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'inst_b' is power-on initialization.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'neuron_predictor_fixpt' pipeline 'neuron_predictor_fixpt' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_14ns_11s_25_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_14s_11s_23_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_14s_11s_24_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_14s_11s_25_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'neuron_predictor_fixpt'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 284.828 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'neuron_predictor_fixpt_wrapper' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'neuron_predictor_fixpt_wrapper/x_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'neuron_predictor_fixpt_wrapper/reset_rsvd' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'neuron_predictor_fixpt_wrapper/residual' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'neuron_predictor_fixpt_wrapper/predicted' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'neuron_predictor_fixpt_wrapper' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'neuron_predictor_fixpt_wrapper'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.22 seconds; current allocated memory: 285.422 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.42 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.51 seconds; current allocated memory: 287.969 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file /home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/neuron_predictor/hdlsrc/hls_component/hls_component/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.12 seconds. CPU system time: 0.17 seconds. Elapsed time: 1.33 seconds; current allocated memory: 290.176 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for neuron_predictor_fixpt_wrapper.
+INFO: [VLOG 209-307] Generating Verilog RTL for neuron_predictor_fixpt_wrapper.
+INFO: [HLS 200-789] **** Estimated Fmax: 117.97 MHz
+INFO: [HLS 200-112] Total CPU user time: 63.63 seconds. Total CPU system time: 4.69 seconds. Total elapsed time: 74.38 seconds; peak allocated memory: 290.176 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 20s

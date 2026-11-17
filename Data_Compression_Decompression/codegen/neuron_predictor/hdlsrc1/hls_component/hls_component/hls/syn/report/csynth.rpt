@@ -1,0 +1,128 @@
+
+
+================================================================
+== Synthesis Summary Report of 'neuron_predictor_fixpt_wrapper'
+================================================================
++ General Information: 
+    * Date:           Tue Nov 17 01:43:26 2026
+    * Version:        2026.1 (Build 6493734 on Jun 16 2026)
+    * Project:        hls_component
+    * Solution:       hls
+    * Product family: zynq
+    * Target device:  xc7z010i-clg225-1L
+    
+
+* Performance & Resource Estimates: 
++----------------------------------+--------+---------------+----------+---------+------+----------+---------+--------+-------+------+---------+-----------+----------+-----+
+|              Modules             |  Issue |               | Iteration|         | Trip |          |      Latency     |       |      |         |           |          |     |
+|              & Loops             |  Type  | Violation Type|  Latency | Interval| Count| Pipelined| (cycles)|  (ns)  | Slack | BRAM |   DSP   |     FF    |    LUT   | URAM|
++----------------------------------+--------+---------------+----------+---------+------+----------+---------+--------+-------+------+---------+-----------+----------+-----+
+|+ neuron_predictor_fixpt_wrapper  |  Timing|              -|         -|        4|     -|        no|        3|  30.000|  -1.18|     -|  8 (10%)|  342 (~0%)|  672 (3%)|    -|
+| + neuron_predictor_fixpt         |  Timing|              -|         -|        3|     -|       yes|        3|  30.000|  -1.18|     -|  8 (10%)|  338 (~0%)|  647 (3%)|    -|
++----------------------------------+--------+---------------+----------+---------+------+----------+---------+--------+-------+------+---------+-----------+----------+-----+
+    Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------------+---------+-----------+----------+
+| Port       | Mode    | Direction | Bitwidth |
++------------+---------+-----------+----------+
+| predicted  | ap_vld  | out       | 14       |
+| reset_rsvd | ap_none | in        | 1        |
+| residual   | ap_vld  | out       | 14       |
+| x_in       | ap_none | in        | 11       |
++------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+--------------------------------------------------+
+| Argument   | Direction | Datatype                                         |
++------------+-----------+--------------------------------------------------+
+| x_in       | in        | ap_int<11>                                       |
+| reset_rsvd | in        | bool                                             |
+| residual   | out       | ap_fixed<14, 10, (ap_q_mode)5, (ap_o_mode)3, 0>& |
+| predicted  | out       | ap_fixed<14, 12, (ap_q_mode)5, (ap_o_mode)3, 0>& |
++------------+-----------+--------------------------------------------------+
+
+* SW-to-HW Mapping
++------------+------------------+---------+
+| Argument   | HW Interface     | HW Type |
++------------+------------------+---------+
+| x_in       | x_in             | port    |
+| reset_rsvd | reset_rsvd       | port    |
+| residual   | residual         | port    |
+| residual   | residual_ap_vld  | port    |
+| predicted  | predicted        | port    |
+| predicted  | predicted_ap_vld | port    |
++------------+------------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------+-----+--------+------------+-----+--------+---------+
+| Name                             | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++----------------------------------+-----+--------+------------+-----+--------+---------+
+| + neuron_predictor_fixpt_wrapper | 8   |        |            |     |        |         |
+|  + neuron_predictor_fixpt        | 8   |        |            |     |        |         |
+|    xor_ln57_fu_297_p2            |     |        | xor_ln57   | xor | auto   | 0       |
+|    or_ln57_fu_303_p2             |     |        | or_ln57    | or  | auto   | 0       |
+|    mul_14ns_11s_25_1_1_U1        | 1   |        | mul_ln86   | mul | auto   | 0       |
+|    mul_14s_11s_23_1_1_U2         | 1   |        | mul_ln87   | mul | auto   | 0       |
+|    mul_14s_11s_24_1_1_U3         | 1   |        | mul_ln88   | mul | auto   | 0       |
+|    mul_14s_11s_24_1_1_U4         | 1   |        | mul_ln89   | mul | auto   | 0       |
+|    add_ln90_fu_453_p2            |     | yes    | add_ln90   | add | fabric | 0       |
+|    add_ln90_1_fu_523_p2          |     | yes    | add_ln90_1 | add | fabric | 0       |
+|    add_ln91_fu_539_p2            |     | yes    | add_ln91   | add | fabric | 0       |
+|    add_ln91_1_fu_567_p2          |     | yes    | add_ln91_1 | add | fabric | 0       |
+|    sub_ln94_fu_600_p2            |     | yes    | sub_ln94   | sub | fabric | 0       |
+|    add_ln97_fu_640_p2            |     | yes    | add_ln97   | add | fabric | 0       |
+|    mul_14s_11s_25_1_1_U5         | 1   |        | mul_ln100  | mul | auto   | 0       |
+|    add_ln99_fu_685_p2            |     | yes    | add_ln99   | add | fabric | 0       |
+|    mul_14s_11s_24_1_1_U6         | 1   |        | mul_ln103  | mul | auto   | 0       |
+|    add_ln102_fu_731_p2           |     | yes    | add_ln102  | add | fabric | 0       |
+|    mul_14s_11s_25_1_1_U7         | 1   |        | mul_ln105  | mul | auto   | 0       |
+|    add_ln104_fu_769_p2           |     | yes    | add_ln104  | add | fabric | 0       |
+|    mul_14s_11s_25_1_1_U8         | 1   |        | mul_ln106  | mul | auto   | 0       |
+|    add_ln106_fu_811_p2           |     | yes    | add_ln106  | add | fabric | 0       |
++----------------------------------+-----+--------+------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------+---------------------------------------+-------------------------------------------------------------------+
+| Type     | Options                               | Location                                                          |
++----------+---------------------------------------+-------------------------------------------------------------------+
+| PIPELINE | ii=3                                  | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:71) |
+| BIND_OP  | variable=predicted op=add impl=fabric | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:77) |
+| BIND_OP  | variable=residual op=sub impl=fabric  | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:78) |
+| BIND_OP  | variable=b_next op=add impl=fabric    | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:79) |
+| BIND_OP  | variable=w0_next op=add impl=fabric   | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:80) |
+| BIND_OP  | variable=w1_next op=add impl=fabric   | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:81) |
+| BIND_OP  | variable=w2_next op=add impl=fabric   | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:82) |
+| BIND_OP  | variable=w3_next op=add impl=fabric   | in neuron_predictor_fixpt (../neuron_predictor_fixptClass.hpp:83) |
++----------+---------------------------------------+-------------------------------------------------------------------+
+
+

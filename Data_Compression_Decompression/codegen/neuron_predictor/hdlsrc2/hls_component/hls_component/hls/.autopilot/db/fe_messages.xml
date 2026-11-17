@@ -1,0 +1,83 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:73:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x_hist complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:74:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=w complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:75:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:85:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:108:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:119:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="neuron_predictor_fixpt_wrapper" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=neuron_predictor_fixpt_wrapper" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:73:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x_hist complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:74:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=w complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:75:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:85:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:108:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../neuron_predictor_fixptClass.hpp:119:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="neuron_predictor_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="../neuron_predictor_fixpt_wrapper.cpp:16:8" msg_body="Adding 'inst' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="inst"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="../neuron_predictor_fixpt_wrapper.cpp:12:0" msg_body="Disaggregating variable 'inst'">
+        <args Name="inst"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:117:5" msg_body="Loop 'L4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="L4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:105:5" msg_body="Loop 'L3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="L3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:82:5" msg_body="Loop 'L2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="L2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:63:7" msg_body="Loop 'L1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="L1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:35:0" msg_body="Unrolling loop 'L4' (../neuron_predictor_fixptClass.hpp:117:5) in function 'neuron_predictor_fixptClass::neuron_predictor_fixpt' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../neuron_predictor_fixptClass.hpp:117:5" LoopName="L4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:35:0" msg_body="Unrolling loop 'L3' (../neuron_predictor_fixptClass.hpp:105:5) in function 'neuron_predictor_fixptClass::neuron_predictor_fixpt' completely with a factor of 4">
+        <args Factor="4" LoopLoc="../neuron_predictor_fixptClass.hpp:105:5" LoopName="L3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:35:0" msg_body="Unrolling loop 'L2' (../neuron_predictor_fixptClass.hpp:82:5) in function 'neuron_predictor_fixptClass::neuron_predictor_fixpt' completely with a factor of 4">
+        <args Factor="4" LoopLoc="../neuron_predictor_fixptClass.hpp:82:5" LoopName="L2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../neuron_predictor_fixptClass.hpp:35:0" msg_body="Unrolling loop 'L1' (../neuron_predictor_fixptClass.hpp:63:7) in function 'neuron_predictor_fixptClass::neuron_predictor_fixpt' completely with a factor of 4">
+        <args Factor="4" LoopLoc="../neuron_predictor_fixptClass.hpp:63:7" LoopName="L1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../neuron_predictor_fixpt_wrapper.cpp:12:0" msg_body="Applying array_partition to 'inst.x_hist': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="inst.x_hist"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="../neuron_predictor_fixpt_wrapper.cpp:16:8" msg_body="array_partition dim=1 type=complete variable=inst.x_hist false neuron_predictor_fixpt_wrapper ../neuron_predictor_fixpt_wrapper.cpp:16:8 inst.x_hist ../neuron_predictor_fixpt_wrapper.cpp:12:0">
+        <args PragmaFunction="neuron_predictor_fixpt_wrapper" PragmaIsAuto="false" PragmaOptions="dim=1 type=complete variable=inst.x_hist" PragmaSrcLoc="../neuron_predictor_fixpt_wrapper.cpp:16:8" PragmaSrcLoc-DebugLoc="File ../neuron_predictor_fixpt_wrapper.cpp Line 16 Column 8" PragmaType="array_partition" VarLoc="../neuron_predictor_fixpt_wrapper.cpp:12:0" VarName="inst.x_hist"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../neuron_predictor_fixpt_wrapper.cpp:12:0" msg_body="Applying array_partition to 'inst.w': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="inst.w"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="../neuron_predictor_fixpt_wrapper.cpp:16:8" msg_body="array_partition dim=1 type=complete variable=inst.w false neuron_predictor_fixpt_wrapper ../neuron_predictor_fixpt_wrapper.cpp:16:8 inst.w ../neuron_predictor_fixpt_wrapper.cpp:12:0">
+        <args PragmaFunction="neuron_predictor_fixpt_wrapper" PragmaIsAuto="false" PragmaOptions="dim=1 type=complete variable=inst.w" PragmaSrcLoc="../neuron_predictor_fixpt_wrapper.cpp:16:8" PragmaSrcLoc-DebugLoc="File ../neuron_predictor_fixpt_wrapper.cpp Line 16 Column 8" PragmaType="array_partition" VarLoc="../neuron_predictor_fixpt_wrapper.cpp:12:0" VarName="inst.w"/>
+    </msg>
+</xilinx:hls_fe_msgs>
