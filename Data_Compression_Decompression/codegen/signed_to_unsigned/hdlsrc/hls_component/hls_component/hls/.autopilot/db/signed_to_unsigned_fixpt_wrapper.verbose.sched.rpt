@@ -1,0 +1,117 @@
+
+
+================================================================
+== Vitis HLS Report for 'signed_to_unsigned_fixpt_wrapper'
+================================================================
+* Date:           Tue Nov 17 15:30:26 2026
+
+* Version:        2026.1 (Build 6493734 on Jun 16 2026)
+* Project:        hls_component
+* Solution:       hls
+* Product family: zynq
+* Target device:  xc7z010i-clg225-1L
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  0.990 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.99>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%spectopmodule_ln13 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [../signed_to_unsigned_fixpt_wrapper.cpp:13]   --->   Operation 2 'spectopmodule' 'spectopmodule_ln13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i10 %e_in"   --->   Operation 3 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i10 %e_in, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 4 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i10 %u_out"   --->   Operation 5 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i10 %u_out, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%e_in_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %e_in" [../signed_to_unsigned_fixpt_wrapper.cpp:13]   --->   Operation 7 'read' 'e_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns) (grouped into LUT with out node select_ln36)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i10.i32, i10 %e_in_read, i32 9" [../signed_to_unsigned_fixptClass.hpp:36->../signed_to_unsigned_fixpt_wrapper.cpp:15]   --->   Operation 8 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%shl_ln37 = shl i10 %e_in_read, i10 1" [../signed_to_unsigned_fixptClass.hpp:37->../signed_to_unsigned_fixpt_wrapper.cpp:15]   --->   Operation 9 'shl' 'shl_ln37' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns) (grouped into LUT with out node select_ln36)   --->   "%xor_ln39 = xor i10 %shl_ln37, i10 1023" [../signed_to_unsigned_fixptClass.hpp:39->../signed_to_unsigned_fixpt_wrapper.cpp:15]   --->   Operation 10 'xor' 'xor_ln39' <Predicate = (tmp)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln36 = select i1 %tmp, i10 %xor_ln39, i10 %shl_ln37" [../signed_to_unsigned_fixptClass.hpp:36->../signed_to_unsigned_fixpt_wrapper.cpp:15]   --->   Operation 11 'select' 'select_ln36' <Predicate = true> <Delay = 0.99> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%write_ln36 = write void @_ssdm_op_Write.ap_auto.i10P0A, i10 %u_out, i10 %select_ln36" [../signed_to_unsigned_fixptClass.hpp:36->../signed_to_unsigned_fixpt_wrapper.cpp:15]   --->   Operation 12 'write' 'write_ln36' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%ret_ln16 = ret" [../signed_to_unsigned_fixpt_wrapper.cpp:16]   --->   Operation 13 'ret' 'ret_ln16' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.990ns
+The critical path consists of the following:
+	wire read operation ('e_in_read', ../signed_to_unsigned_fixpt_wrapper.cpp:13) on port 'e_in' (../signed_to_unsigned_fixpt_wrapper.cpp:13) [8]  (0.000 ns)
+	'select' operation 10 bit ('select_ln36', ../signed_to_unsigned_fixptClass.hpp:36->../signed_to_unsigned_fixpt_wrapper.cpp:15) [12]  (0.990 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,8 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="signed_to_unsigned_fixpt_wrapper" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=signed_to_unsigned_fixpt_wrapper" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../signed_to_unsigned_fixpt_wrapper.cpp:14:0" msg_body="Inlining function 'signed_to_unsigned_fixptClass::signed_to_unsigned_fixpt(ap_int&lt;10&gt;, ap_uint&lt;10&gt;&amp;)' into 'signed_to_unsigned_fixpt_wrapper(ap_int&lt;10&gt;, ap_uint&lt;10&gt;&amp;)'">
+        <args Callee="signed_to_unsigned_fixptClass::signed_to_unsigned_fixpt(ap_int&lt;10&gt;, ap_uint&lt;10&gt;&amp;)" Callee-DebugLoc="File ../signed_to_unsigned_fixptClass.hpp Line 24 Column 0" Caller="signed_to_unsigned_fixpt_wrapper(ap_int&lt;10&gt;, ap_uint&lt;10&gt;&amp;)" Caller-DebugLoc="File ../signed_to_unsigned_fixpt_wrapper.cpp Line 14 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>

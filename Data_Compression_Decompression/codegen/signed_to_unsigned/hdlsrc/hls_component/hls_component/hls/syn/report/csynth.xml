@@ -1,0 +1,309 @@
+<profile>
+    <ReportVersion>
+        <Version>2026.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z010i-clg225-1L</Part>
+        <TopModelName>signed_to_unsigned_fixpt_wrapper</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>0.990</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>0</Best-caseLatency>
+            <Average-caseLatency>0</Average-caseLatency>
+            <Worst-caseLatency>0</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+            <Interval-min>1</Interval-min>
+            <Interval-max>1</Interval-max>
+            <PerformancePragma>-</PerformancePragma>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>../signed_to_unsigned_fixpt_wrapper.cpp:13</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <FF>0</FF>
+            <LUT>20</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>120</BRAM_18K>
+            <DSP>80</DSP>
+            <FF>35200</FF>
+            <LUT>17600</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>signed_to_unsigned_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>signed_to_unsigned_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>signed_to_unsigned_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>signed_to_unsigned_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>signed_to_unsigned_fixpt_wrapper</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>e_in</name>
+            <Object>e_in</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>10</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>u_out</name>
+            <Object>u_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>10</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>u_out_ap_vld</name>
+            <Object>u_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>signed_to_unsigned_fixpt_wrapper</ModuleName>
+            <BindInstances>xor_ln39_fu_59_p2 u_out</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>signed_to_unsigned_fixpt_wrapper</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>0.990</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>0</Best-caseLatency>
+                    <Average-caseLatency>0</Average-caseLatency>
+                    <Worst-caseLatency>0</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../signed_to_unsigned_fixpt_wrapper.cpp:13</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>0</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>0</UTIL_FF>
+                    <LUT>20</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln39_fu_59_p2" SOURCE="../signed_to_unsigned_fixptClass.hpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln39" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="u_out" SOURCE="../signed_to_unsigned_fixptClass.hpp:36" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln36" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_interface m_axi_alignment_size="1"/>
+        <config_rtl auto_prefix="1"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="e_in" index="0" direction="in" srcType="ap_int&lt;10&gt;" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="e_in" name="e_in" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="u_out" index="1" direction="out" srcType="ap_uint&lt;10&gt;&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="u_out" name="u_out" usage="data" direction="out"/>
+                <hwRef type="port" interface="u_out_ap_vld" name="u_out_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="e_in" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="10">
+            <portMaps>
+                <portMap portMapName="e_in">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>e_in</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="e_in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="u_out" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="10">
+            <portMaps>
+                <portMap portMapName="u_out">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>u_out</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="u_out"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="e_in">ap_none, in, 10</column>
+                    <column name="u_out">ap_vld, out, 10</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="e_in">in, ap_int&lt;10&gt;</column>
+                    <column name="u_out">out, ap_uint&lt;10&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="e_in">e_in, port</column>
+                    <column name="u_out">u_out, port</column>
+                    <column name="u_out">u_out_ap_vld, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport/>
+</profile>

@@ -1,0 +1,27 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<10, false>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<10, false>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<10>::ap_uint" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<43, true>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<10>::ap_uint" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<43>::ap_int" off="0" region="0" recursive="0"/>
+<pragma file="Vivado/2026.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<43, true>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="Vivado/2026.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="operator-" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<43, true>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<43, true>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<42, true>::checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="Vivado/2026.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<10, false>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<42, true>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<42, true>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="operator*" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<42, true>::ap_int_base" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<43, true>::checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="operator>=" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="operator*" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="operator-" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<42>::ap_int" off="0" region="0" recursive="0"/>
+<pragma file="Vivado/2026.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<42, true>::ssdm_int" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<10, true>::operator>=" off="0" region="0" recursive="0"/>
+</pragmas>

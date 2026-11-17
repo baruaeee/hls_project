@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op xor" ID="" IMPL="auto" LATENCY="0" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln39_fu_59_p2" SOURCE="../signed_to_unsigned_fixptClass.hpp:39" VARIABLE="xor_ln39" MODULE="signed_to_unsigned_fixpt_wrapper" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE="" CE_REG=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="u_out" SOURCE="../signed_to_unsigned_fixptClass.hpp:36" VARIABLE="select_ln36" MODULE="signed_to_unsigned_fixpt_wrapper" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE="" CE_REG=""/>
+</BindInfo>

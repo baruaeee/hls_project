@@ -1,0 +1,253 @@
+<ENTRY>
+{
+ "thisFile": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component/hls_component/hls_component.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Nov 17 15:29:27 2026",
+ "timestampMillis": "1794925767286",
+ "buildStep": {
+  "cmdId": "25ae29d1-a8e4-4689-9f4f-4092059cb046",
+  "name": "v++",
+  "logFile": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component/hls_component/logs/hls_component.steps.log",
+  "commandLine": "/home/exotic/Vivado/2026.1/Vitis/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component/hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component/hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component/hls_config.cfg",
+    "content": "part=xc7z010iclg225-1L\n\n[hls]\npackage.output.format=ip_catalog\npackage.output.syn=false\nclock=100MHz\nsyn.file=../ap_fixed_ostream.hpp\nsyn.file=../e_in.dat\nsyn.file=../hlsutils.hpp\nsyn.file=../rt_defines.h\nsyn.file=../rtwtypes.hpp\nsyn.file=../signed_to_unsigned_fixptClass.hpp\nsyn.file=../signed_to_unsigned_fixpt_main.cpp\nsyn.file=../signed_to_unsigned_fixpt_wrapper.cpp\nsyn.file=../u_out_expected.dat\ntb.file=../signed_to_unsigned_fixptClass_tb.hpp\nsyn.top=signed_to_unsigned_fixpt_wrapper"
+   }
+  ],
+  "cwd": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 17 15:29:27 2026",
+ "timestampMillis": "1794925767287",
+ "status": {
+  "cmdId": "25ae29d1-a8e4-4689-9f4f-4092059cb046",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Nov 17 15:29:33 2026",
+ "timestampMillis": "1794925773350",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "signed_to_unsigned_fixpt_wrapper",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/ap_fixed_ostream.hpp",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/e_in.dat",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hlsutils.hpp",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/rt_defines.h",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/rtwtypes.hpp",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/signed_to_unsigned_fixptClass.hpp",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/signed_to_unsigned_fixpt_main.cpp",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/signed_to_unsigned_fixpt_wrapper.cpp",
+     "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/u_out_expected.dat"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2026.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Nov 17 15:29:33 2026",
+ "timestampMillis": "1794925773351",
+ "buildStep": {
+  "cmdId": "c38c7e3e-f93a-40b1-b7c4-62411073ebb7",
+  "name": "",
+  "logFile": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component/hls_component/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 17 15:29:33 2026",
+ "timestampMillis": "1794925773351",
+ "status": {
+  "cmdId": "c38c7e3e-f93a-40b1-b7c4-62411073ebb7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 17 15:29:33 2026",
+ "timestampMillis": "1794925773352",
+ "report": {
+  "path": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component/hls_component/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 17 15:29:33 2026",
+ "timestampMillis": "1794925773352",
+ "report": {
+  "path": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component/hls_component/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 17 15:29:33 2026",
+ "timestampMillis": "1794925773352",
+ "report": {
+  "path": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component/hls_component/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 17 15:30:27 2026",
+ "timestampMillis": "1794925827941",
+ "report": {
+  "path": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component/hls_component/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 17 15:30:27 2026",
+ "timestampMillis": "1794925827943",
+ "report": {
+  "path": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component/hls_component/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 17 15:30:27 2026",
+ "timestampMillis": "1794925827944",
+ "report": {
+  "path": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component/hls_component/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 17 15:30:27 2026",
+ "timestampMillis": "1794925827945",
+ "status": {
+  "cmdId": "c38c7e3e-f93a-40b1-b7c4-62411073ebb7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Nov 17 15:30:28 2026",
+ "timestampMillis": "1794925828095",
+ "status": {
+  "cmdId": "25ae29d1-a8e4-4689-9f4f-4092059cb046",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 17 15:30:28 2026",
+ "timestampMillis": "1794925828122",
+ "report": {
+  "path": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component/hls_component/reports/v++_compile_hls_component_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Nov 17 15:30:28 2026",
+ "timestampMillis": "1794925828123",
+ "report": {
+  "path": "/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/signed_to_unsigned/hdlsrc/hls_component/hls_component/reports/.db/v++_compile_hls_component_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
