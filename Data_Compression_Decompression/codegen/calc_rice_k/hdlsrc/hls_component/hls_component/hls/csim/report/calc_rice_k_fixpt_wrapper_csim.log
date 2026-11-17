@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../../calc_rice_k_fixpt_wrapper.cpp in debug mode
+   Compiling ../../../../../calc_rice_k_fixpt_main.cpp in debug mode
+   Generating csim.exe
+### Total Testpoints   : 256
+### Tests Passed       : 256
+**************TEST COMPLETED (PASSED)**************
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

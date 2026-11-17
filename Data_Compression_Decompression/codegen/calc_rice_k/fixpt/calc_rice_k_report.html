@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fixed-Point Report for calc_rice_k</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+	body { font-family: monospace; }
+	h2 { font-family: Arial, Helvetica, sans-serif; color: #990000; margin-top: 50px; }
+	table,th,td { border: 1px solid black; }
+	table { margin-top: 30px; }
+	th { align: center; font-weight: bold; }
+	tr.h { background-color: #99CCFF; }
+	tr.a { background-color: #EEEEFF; }
+	tr.b { background-color: #FFFFFF; }
+	tr.c { background-color: #FFA500; }
+	tr.a td, tr.b td { border-style: none; }
+	td.left { text-align: left; }
+	td.right { text-align: right; }
+	td.center { text-align: center; }
+	td.bold { font-weight: bold; }
+	pre { padding: 0px; margin: 0px; }
+	span { font-style: italic; }
+	.code, .code tr, .code th, .code td { border: none; border-collapse: collapse; }
+	.padd { padding-left: 5px; }
+	td.cov, th.cov { width: 50px; height: 20px; text-align: center; font-weight: bold; border-right: 2px solid black; cell-spacing: 0px; }
+	td.cov { vertical-align: top; }
+	td.black { color: #000000; font-weight: bold; padding-top: 4px; }
+	td.white { color: #FFFFFF; font-weight: bold; padding-top: 4px; }
+	.code th { font-weight: bold; border-bottom: 2px solid black; }
+</style>
+</head>
+<body>
+<h3>Generated on  2026-11-17 22:08:25</h3>
+<p>The following table shows fixed point instrumentation results</p>
+<h2>Fixed-Point Report <span>calc_rice_k<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function k_out = calc_rice_k(u_in, reset)
+% CALC_RICE_K Dynamically estimates optimal Golomb-Rice parameter k
+% using a power-of-two moving window sum and priority encoder (no division/log2).
+%
+% Backward-adaptive: computes k from past 8 samples so the decoder can
+% independently track the exact same k without side-channel overhead.
+
+WIN_SIZE = 8;   % Must be power of 2 (2^3)
+INV_WIN  = 1/8; % Bit-shift right by 3 in fixed-point
+K_MAX    = 8;   % Upper bound on Rice parameter k
+
+persistent u_hist win_sum;
+
+u_val = double(u_in);
+
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov black" style="background-color: rgb(255,160,118);">Once</TD>
+<TD class="padd"><pre>if isempty(u_hist) || reset
+    % Initialize window with small default values (e.g., 4 -&gt; initial k = 1)
+    u_hist  = repmat(4, WIN_SIZE, 1);
+    win_sum = 4 * WIN_SIZE;
+end</pre></TD>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>
+
+% 1. Compute running mean of PAST window samples (shift right by 3)
+avg_u = floor(win_sum * INV_WIN);
+
+% 2. Priority Encoder: Select k such that 2^k &lt;= avg_u &lt; 2^(k+1)
+% Synthesizes to a fast parallel comparator tree (0 DSPs, 1 cycle)
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov black" style="background-color: rgb(226,237,220);">4%</TD>
+<TD class="padd"><pre>if avg_u &gt;= 256
+    k_out = 8;
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov black" style="background-color: rgb(219,233,214);">7%</TD>
+<TD class="padd"><pre>elseif avg_u &gt;= 128
+    k_out = 7;
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>elseif avg_u &gt;= 64
+    k_out = 6;
+elseif avg_u &gt;= 32
+    k_out = 5;
+elseif avg_u &gt;= 16
+    k_out = 4;
+elseif avg_u &gt;= 8
+    k_out = 3;
+elseif avg_u &gt;= 4
+    k_out = 2;
+elseif avg_u &gt;= 2
+    k_out = 1;
+else
+    k_out = 0;
+end
+
+% Clamp to K_MAX
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(157,38,35);">0%</TD>
+<TD class="padd"><pre>if k_out &gt; K_MAX
+    k_out = K_MAX;
+end</pre></TD>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>
+
+% 3. Update sliding window sum &amp; shift register for NEXT sample
+oldest  = u_hist(WIN_SIZE);
+win_sum = win_sum + u_val - oldest;
+
+coder.hdl.loopspec('unroll');
+for i = WIN_SIZE:-1:2
+    u_hist(i) = u_hist(i-1);
+end
+u_hist(1) = u_val;
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 14)</th></TR><TR class="a">
+<TD class="left">INV_WIN</TD><TD class="left">double</TD><TD class="right">0.125</TD><TD class="right">0.125</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 14, 16)</TD></TR>
+<TR class="b">
+<TD class="left">K_MAX</TD><TD class="left">double</TD><TD class="right">8</TD><TD class="right">8</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 4, 0)</TD></TR>
+<TR class="a">
+<TD class="left">WIN_SIZE</TD><TD class="left">double</TD><TD class="right">8</TD><TD class="right">8</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 4, 0)</TD></TR>
+<TR class="b">
+<TD class="left">avg_u</TD><TD class="left">double</TD><TD class="right">4</TD><TD class="right">314</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 9, 0)</TD></TR>
+<TR class="a">
+<TD class="left">i</TD><TD class="left">double</TD><TD class="right">2</TD><TD class="right">8</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 4, 0)</TD></TR>
+<TR class="b">
+<TD class="left">k_out</TD><TD class="left">double</TD><TD class="right">2</TD><TD class="right">8</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 4, 0)</TD></TR>
+<TR class="a">
+<TD class="left">oldest</TD><TD class="left">double</TD><TD class="right">0</TD><TD class="right">648</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 10, 0)</TD></TR>
+<TR class="b">
+<TD class="left">reset</TD><TD class="left">logical</TD><TD class="right">0</TD><TD class="right">1</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 1, 0)</TD></TR>
+<TR class="a">
+<TD class="left">u_hist</TD><TD class="left">double 8 x 1 </TD><TD class="right">0</TD><TD class="right">648</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 10, 0)</TD></TR>
+<TR class="b">
+<TD class="left">u_in</TD><TD class="left">double</TD><TD class="right">0</TD><TD class="right">648</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 10, 0)</TD></TR>
+<TR class="a">
+<TD class="left">u_val</TD><TD class="left">double</TD><TD class="right">0</TD><TD class="right">648</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 10, 0)</TD></TR>
+<TR class="b">
+<TD class="left">win_sum</TD><TD class="left">double</TD><TD class="right">32</TD><TD class="right">2512</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 12, 0)</TD></TR>
+</TABLE>
+
+</body>
+</html>

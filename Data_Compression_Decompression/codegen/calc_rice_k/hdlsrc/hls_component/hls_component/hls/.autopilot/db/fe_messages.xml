@@ -1,0 +1,38 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../calc_rice_k_fixptClass.hpp:55:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="calc_rice_k_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../calc_rice_k_fixptClass.hpp:104:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="calc_rice_k_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="calc_rice_k_fixpt_wrapper" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=calc_rice_k_fixpt_wrapper" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../calc_rice_k_fixptClass.hpp:55:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="calc_rice_k_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../calc_rice_k_fixptClass.hpp:104:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="calc_rice_k_fixpt" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../calc_rice_k_fixptClass.hpp:34:0" msg_body="Unrolling loop 'L2' (../calc_rice_k_fixptClass.hpp:102:5) in function 'calc_rice_k_fixptClass::calc_rice_k_fixpt' completely with a factor of 7">
+        <args Factor="7" LoopLoc="../calc_rice_k_fixptClass.hpp:102:5" LoopName="L2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="../calc_rice_k_fixptClass.hpp:104:1" msg_body="unroll  false calc_rice_k_fixptClass::calc_rice_k_fixpt ../calc_rice_k_fixptClass.hpp:104:1">
+        <args PragmaFunction="calc_rice_k_fixptClass::calc_rice_k_fixpt" PragmaIsAuto="false" PragmaSrcLoc="../calc_rice_k_fixptClass.hpp:104:1" PragmaSrcLoc-DebugLoc="File ../calc_rice_k_fixptClass.hpp Line 104 Column 1" PragmaType="unroll"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../calc_rice_k_fixptClass.hpp:34:0" msg_body="Unrolling loop 'L1' (../calc_rice_k_fixptClass.hpp:54:7) in function 'calc_rice_k_fixptClass::calc_rice_k_fixpt' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../calc_rice_k_fixptClass.hpp:54:7" LoopName="L1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_ACK" msg_id="214-487" msg_severity="INFO" msg_loc="../calc_rice_k_fixptClass.hpp:55:1" msg_body="unroll  false calc_rice_k_fixptClass::calc_rice_k_fixpt ../calc_rice_k_fixptClass.hpp:55:1">
+        <args PragmaFunction="calc_rice_k_fixptClass::calc_rice_k_fixpt" PragmaIsAuto="false" PragmaSrcLoc="../calc_rice_k_fixptClass.hpp:55:1" PragmaSrcLoc-DebugLoc="File ../calc_rice_k_fixptClass.hpp Line 55 Column 1" PragmaType="unroll"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../calc_rice_k_fixpt_wrapper.cpp:15:0" msg_body="Inlining function 'calc_rice_k_fixptClass::calc_rice_k_fixpt(ap_uint&lt;10&gt;, bool, ap_uint&lt;4&gt;&amp;)' into 'calc_rice_k_fixpt_wrapper(ap_uint&lt;10&gt;, bool, ap_uint&lt;4&gt;&amp;)'">
+        <args Callee="calc_rice_k_fixptClass::calc_rice_k_fixpt(ap_uint&lt;10&gt;, bool, ap_uint&lt;4&gt;&amp;)" Callee-DebugLoc="File ../calc_rice_k_fixptClass.hpp Line 34 Column 0" Caller="calc_rice_k_fixpt_wrapper(ap_uint&lt;10&gt;, bool, ap_uint&lt;4&gt;&amp;)" Caller-DebugLoc="File ../calc_rice_k_fixpt_wrapper.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="../calc_rice_k_fixpt_wrapper.cpp:12:0" msg_body="Partitioning array 'inst.u_hist' dimension 1 due to constant index.">
+        <args Dim="1" Value="inst.u_hist"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../calc_rice_k_fixpt_wrapper.cpp:12:0" msg_body="Applying array_partition to 'inst.u_hist': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="inst.u_hist"/>
+    </msg>
+</xilinx:hls_fe_msgs>

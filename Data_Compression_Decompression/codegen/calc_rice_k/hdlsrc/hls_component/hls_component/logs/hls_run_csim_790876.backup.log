@@ -1,0 +1,49 @@
+  **** HLS Build v2026.1 6493734
+INFO: [HLS 200-2005] Using work_dir /home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/calc_rice_k/hdlsrc/hls_component/hls_component 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/calc_rice_k/hdlsrc/hls_component/hls_component/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/calc_rice_k/hdlsrc/hls_component/hls_component'.
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../ap_fixed_ostream.hpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/calc_rice_k/hdlsrc/ap_fixed_ostream.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../calc_rice_k_fixptClass.hpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/calc_rice_k/hdlsrc/calc_rice_k_fixptClass.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../calc_rice_k_fixpt_main.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/calc_rice_k/hdlsrc/calc_rice_k_fixpt_main.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../calc_rice_k_fixpt_wrapper.cpp' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/calc_rice_k/hdlsrc/calc_rice_k_fixpt_wrapper.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../hlsutils.hpp' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/calc_rice_k/hdlsrc/hlsutils.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../k_out_expected.dat' from hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/calc_rice_k/hdlsrc/k_out_expected.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../reset_rsvd.dat' from hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/calc_rice_k/hdlsrc/reset_rsvd.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../rt_defines.h' from hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/calc_rice_k/hdlsrc/rt_defines.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../rtwtypes.hpp' from hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/calc_rice_k/hdlsrc/rtwtypes.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../u_in.dat' from hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/calc_rice_k/hdlsrc/u_in.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../calc_rice_k_fixptClass_tb.hpp' from hls_config.cfg(17)
+INFO: [HLS 200-10] Adding test bench file '/home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/calc_rice_k/hdlsrc/calc_rice_k_fixptClass_tb.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=calc_rice_k_fixpt_wrapper' from hls_config.cfg(18)
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z010iclg225-1L' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1465] Applying config ini 'clock=100MHz' from hls_config.cfg(6)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(4)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/exotic/HLS_Thesis/Data_Compression_Decompression/codegen/calc_rice_k/hdlsrc/hls_component/hls_component/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../calc_rice_k_fixpt_wrapper.cpp in debug mode
+   Compiling ../../../../../calc_rice_k_fixpt_main.cpp in debug mode
+   Generating csim.exe
+ld.lld: error: undefined symbol: calc_rice_k_fixpt_wrapper(ap_uint<10>, bool, ap_uint<4>&)
+>>> referenced by calc_rice_k_fixpt_main.cpp:12 (../../../../../calc_rice_k_fixpt_main.cpp:12)
+>>>               obj/calc_rice_k_fixpt_main.o:(main)
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile.rules:347: csim.exe] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: CSIM Failed
+INFO: [HLS 200-112] Total CPU user time: 7.31 seconds. Total CPU system time: 1.16 seconds. Total elapsed time: 11.81 seconds; peak allocated memory: 251.727 MB.

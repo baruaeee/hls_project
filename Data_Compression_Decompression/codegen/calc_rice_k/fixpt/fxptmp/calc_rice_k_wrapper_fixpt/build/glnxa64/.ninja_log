@@ -1,0 +1,13 @@
+# ninja log v7
+9	507	1794953380000000000	build/glnxa64/rt_nonfinite.o	859182a547c640cb
+28	656	1794953380000000000	build/glnxa64/cpp_mexapi_version.o	bbdb8e5750999558
+25	666	1794953380000000000	build/glnxa64/_coder_calc_rice_k_wrapper_fixpt_hdl_mex_info.o	ed5d063e27cf50a6
+8	996	1794953380000000000	build/glnxa64/calc_rice_k_wrapper_fixpt_hdl_mex_data.o	f037044580f70188
+15	1017	1794953380000000000	build/glnxa64/calc_rice_k_fixpt.o	e6ee3e1a36e56321
+21	1402	1794953380000000000	build/glnxa64/_coder_calc_rice_k_wrapper_fixpt_hdl_mex_mex.o	8849d1188e073714
+12	1524	1794953380000000000	build/glnxa64/calc_rice_k_wrapper_fixpt.o	dd484b2e02cc9dd6
+11	1554	1794953380000000000	build/glnxa64/calc_rice_k_wrapper_fixpt_hdl_mex_terminate.o	332c1f22ae0ea2d2
+10	1567	1794953380000000000	build/glnxa64/calc_rice_k_wrapper_fixpt_hdl_mex_initialize.o	950f7f73d3ec3d26
+17	1614	1794953380000000000	build/glnxa64/_coder_calc_rice_k_wrapper_fixpt_hdl_mex_api.o	1daa8bcce3530190
+14	1857	1794953380000000000	build/glnxa64/calc_rice_k_fixpt_logger.o	162a82b13210479a
+1861	2187	1794953382000000000	calc_rice_k_wrapper_fixpt_hdl_mex.mexa64	c1b10d5d8c6f53f5

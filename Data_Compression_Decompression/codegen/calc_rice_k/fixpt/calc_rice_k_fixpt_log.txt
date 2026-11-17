@@ -1,0 +1,6 @@
+
+Warnings: 
+
+File: /MATLAB Drive/Dat_Comp_Decomp/Rice_Param_k/calc_rice_k.m, line : 42, column : 11. Expression 'k_out = 1' was not executed by the provided testbench or was constant-folded. Proposed numerictypes in this expression are not applied.
+File: /MATLAB Drive/Dat_Comp_Decomp/Rice_Param_k/calc_rice_k.m, line : 44, column : 11. Expression 'k_out = 0' was not executed by the provided testbench or was constant-folded. Proposed numerictypes in this expression are not applied.
+File: /MATLAB Drive/Dat_Comp_Decomp/Rice_Param_k/calc_rice_k.m, line : 49, column : 11. Expression 'k_out = K_MAX;' was not executed by the provided testbench or was constant-folded. Proposed numerictypes in this expression are not applied.

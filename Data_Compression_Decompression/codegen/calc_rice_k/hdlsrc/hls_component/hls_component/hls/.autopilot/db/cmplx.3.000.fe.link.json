@@ -1,0 +1,86 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "calc_rice_k_fixpt_wrapper.cpp",
+    "fileloc": 13,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "calc_rice_k_fixpt_wrapper",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2154
+  },
+  "1": {
+    "basicblocks": 40,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 3,
+    "file": "calc_rice_k_fixptClass.hpp",
+    "fileloc": 32,
+    "instructions": 302,
+    "loads": {
+      "L": 19
+    },
+    "memory_accesses": 20,
+    "name": "calc_rice_k_fixpt",
+    "stores": {
+      "L": 19
+    },
+    "total_instructions": 2150
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "5",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "calc_rice_k_fixpt_wrapper.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 9
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "2",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "calc_rice_k_fixpt_wrapper.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "",
+    "total_instructions": 11
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "calc_rice_k_fixptClass.hpp",
+    "fileloc": 27,
+    "instructions": 3,
+    "memory_accesses": 0,
+    "name": "calc_rice_k_fixpt_initialize",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "4",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "calc_rice_k_fixptClass.hpp",
+    "fileloc": 22,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "calc_rice_k_fixptClass",
+    "total_instructions": 7
+  }
+}
