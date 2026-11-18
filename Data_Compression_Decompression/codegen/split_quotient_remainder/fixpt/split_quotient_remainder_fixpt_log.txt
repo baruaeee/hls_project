@@ -1,0 +1,5 @@
+
+Warnings: 
+
+File: /MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/split_quotient_remainder.m, line : 13, column : 16. Expression 'pow2_k = 1' was not executed by the provided testbench or was constant-folded. Proposed numerictypes in this expression are not applied.
+File: /MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/split_quotient_remainder.m, line : 15, column : 16. Expression 'pow2_k = 2' was not executed by the provided testbench or was constant-folded. Proposed numerictypes in this expression are not applied.

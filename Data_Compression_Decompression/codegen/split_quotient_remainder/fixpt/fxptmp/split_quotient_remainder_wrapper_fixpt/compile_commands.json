@@ -1,0 +1,62 @@
+[
+  {
+    "directory": "/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp/split_quotient_remainder_wrapper_fixpt",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fno-predictive-commoning -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp\" -I \"./interface\" -I \"/MATLAB/extern/include\" -I \".\" -DMODEL=split_quotient_remainder_wrapper_fixpt_hdl_mex -DMW_NEEDS_VERSION_H -msse2 -fno-predictive-commoning -Wno-stringop-overflow -Wno-maybe-uninitialized -c  split_quotient_remainder_wrapper_fixpt_hdl_mex_data.cpp -o build/glnxa64/split_quotient_remainder_wrapper_fixpt_hdl_mex_data.o",
+    "file": "split_quotient_remainder_wrapper_fixpt_hdl_mex_data.cpp",
+    "output": "build/glnxa64/split_quotient_remainder_wrapper_fixpt_hdl_mex_data.o"
+  },
+  {
+    "directory": "/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp/split_quotient_remainder_wrapper_fixpt",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fno-predictive-commoning -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp\" -I \"./interface\" -I \"/MATLAB/extern/include\" -I \".\" -DMODEL=split_quotient_remainder_wrapper_fixpt_hdl_mex -DMW_NEEDS_VERSION_H -msse2 -fno-predictive-commoning -Wno-stringop-overflow -Wno-maybe-uninitialized -c  rt_nonfinite.cpp -o build/glnxa64/rt_nonfinite.o",
+    "file": "rt_nonfinite.cpp",
+    "output": "build/glnxa64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp/split_quotient_remainder_wrapper_fixpt",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fno-predictive-commoning -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp\" -I \"./interface\" -I \"/MATLAB/extern/include\" -I \".\" -DMODEL=split_quotient_remainder_wrapper_fixpt_hdl_mex -DMW_NEEDS_VERSION_H -msse2 -fno-predictive-commoning -Wno-stringop-overflow -Wno-maybe-uninitialized -c  split_quotient_remainder_wrapper_fixpt_hdl_mex_initialize.cpp -o build/glnxa64/split_quotient_remainder_wrapper_fixpt_hdl_mex_initialize.o",
+    "file": "split_quotient_remainder_wrapper_fixpt_hdl_mex_initialize.cpp",
+    "output": "build/glnxa64/split_quotient_remainder_wrapper_fixpt_hdl_mex_initialize.o"
+  },
+  {
+    "directory": "/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp/split_quotient_remainder_wrapper_fixpt",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fno-predictive-commoning -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp\" -I \"./interface\" -I \"/MATLAB/extern/include\" -I \".\" -DMODEL=split_quotient_remainder_wrapper_fixpt_hdl_mex -DMW_NEEDS_VERSION_H -msse2 -fno-predictive-commoning -Wno-stringop-overflow -Wno-maybe-uninitialized -c  split_quotient_remainder_wrapper_fixpt_hdl_mex_terminate.cpp -o build/glnxa64/split_quotient_remainder_wrapper_fixpt_hdl_mex_terminate.o",
+    "file": "split_quotient_remainder_wrapper_fixpt_hdl_mex_terminate.cpp",
+    "output": "build/glnxa64/split_quotient_remainder_wrapper_fixpt_hdl_mex_terminate.o"
+  },
+  {
+    "directory": "/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp/split_quotient_remainder_wrapper_fixpt",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fno-predictive-commoning -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp\" -I \"./interface\" -I \"/MATLAB/extern/include\" -I \".\" -DMODEL=split_quotient_remainder_wrapper_fixpt_hdl_mex -DMW_NEEDS_VERSION_H -msse2 -fno-predictive-commoning -Wno-stringop-overflow -Wno-maybe-uninitialized -c  split_quotient_remainder_wrapper_fixpt.cpp -o build/glnxa64/split_quotient_remainder_wrapper_fixpt.o",
+    "file": "split_quotient_remainder_wrapper_fixpt.cpp",
+    "output": "build/glnxa64/split_quotient_remainder_wrapper_fixpt.o"
+  },
+  {
+    "directory": "/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp/split_quotient_remainder_wrapper_fixpt",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fno-predictive-commoning -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp\" -I \"./interface\" -I \"/MATLAB/extern/include\" -I \".\" -DMODEL=split_quotient_remainder_wrapper_fixpt_hdl_mex -DMW_NEEDS_VERSION_H -msse2 -fno-predictive-commoning -Wno-stringop-overflow -Wno-maybe-uninitialized -c  split_quotient_remainder_fixpt_logger.cpp -o build/glnxa64/split_quotient_remainder_fixpt_logger.o",
+    "file": "split_quotient_remainder_fixpt_logger.cpp",
+    "output": "build/glnxa64/split_quotient_remainder_fixpt_logger.o"
+  },
+  {
+    "directory": "/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp/split_quotient_remainder_wrapper_fixpt",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fno-predictive-commoning -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp\" -I \"./interface\" -I \"/MATLAB/extern/include\" -I \".\" -DMODEL=split_quotient_remainder_wrapper_fixpt_hdl_mex -DMW_NEEDS_VERSION_H -msse2 -fno-predictive-commoning -Wno-stringop-overflow -Wno-maybe-uninitialized -c  interface/_coder_split_quotient_remainder_wrapper_fixpt_hdl_mex_api.cpp -o build/glnxa64/_coder_split_quotient_remainder_wrapper_fixpt_hdl_mex_api.o",
+    "file": "interface/_coder_split_quotient_remainder_wrapper_fixpt_hdl_mex_api.cpp",
+    "output": "build/glnxa64/_coder_split_quotient_remainder_wrapper_fixpt_hdl_mex_api.o"
+  },
+  {
+    "directory": "/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp/split_quotient_remainder_wrapper_fixpt",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fno-predictive-commoning -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp\" -I \"./interface\" -I \"/MATLAB/extern/include\" -I \".\" -DMODEL=split_quotient_remainder_wrapper_fixpt_hdl_mex -DMW_NEEDS_VERSION_H -msse2 -fno-predictive-commoning -Wno-stringop-overflow -Wno-maybe-uninitialized -c  interface/_coder_split_quotient_remainder_wrapper_fixpt_hdl_mex_mex.cpp -o build/glnxa64/_coder_split_quotient_remainder_wrapper_fixpt_hdl_mex_mex.o",
+    "file": "interface/_coder_split_quotient_remainder_wrapper_fixpt_hdl_mex_mex.cpp",
+    "output": "build/glnxa64/_coder_split_quotient_remainder_wrapper_fixpt_hdl_mex_mex.o"
+  },
+  {
+    "directory": "/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp/split_quotient_remainder_wrapper_fixpt",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fno-predictive-commoning -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp\" -I \"./interface\" -I \"/MATLAB/extern/include\" -I \".\" -DMODEL=split_quotient_remainder_wrapper_fixpt_hdl_mex -DMW_NEEDS_VERSION_H -msse2 -fno-predictive-commoning -Wno-stringop-overflow -Wno-maybe-uninitialized -c  interface/_coder_split_quotient_remainder_wrapper_fixpt_hdl_mex_info.cpp -o build/glnxa64/_coder_split_quotient_remainder_wrapper_fixpt_hdl_mex_info.o",
+    "file": "interface/_coder_split_quotient_remainder_wrapper_fixpt_hdl_mex_info.cpp",
+    "output": "build/glnxa64/_coder_split_quotient_remainder_wrapper_fixpt_hdl_mex_info.o"
+  },
+  {
+    "directory": "/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp/split_quotient_remainder_wrapper_fixpt",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fno-predictive-commoning -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/MATLAB Drive/Dat_Comp_Decomp/Split_Quotient_Remainder/codegen/split_quotient_remainder/fixpt/fxptmp\" -I \"./interface\" -I \"/MATLAB/extern/include\" -I \".\" -DMODEL=split_quotient_remainder_wrapper_fixpt_hdl_mex -DMW_NEEDS_VERSION_H -msse2 -fno-predictive-commoning -Wno-stringop-overflow -Wno-maybe-uninitialized -c  /MATLAB/extern/version/cpp_mexapi_version.cpp -o build/glnxa64/cpp_mexapi_version.o",
+    "file": "/MATLAB/extern/version/cpp_mexapi_version.cpp",
+    "output": "build/glnxa64/cpp_mexapi_version.o"
+  }
+]

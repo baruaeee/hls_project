@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fixed-Point Report for split_quotient_remainder</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+	body { font-family: monospace; }
+	h2 { font-family: Arial, Helvetica, sans-serif; color: #990000; margin-top: 50px; }
+	table,th,td { border: 1px solid black; }
+	table { margin-top: 30px; }
+	th { align: center; font-weight: bold; }
+	tr.h { background-color: #99CCFF; }
+	tr.a { background-color: #EEEEFF; }
+	tr.b { background-color: #FFFFFF; }
+	tr.c { background-color: #FFA500; }
+	tr.a td, tr.b td { border-style: none; }
+	td.left { text-align: left; }
+	td.right { text-align: right; }
+	td.center { text-align: center; }
+	td.bold { font-weight: bold; }
+	pre { padding: 0px; margin: 0px; }
+	span { font-style: italic; }
+	.code, .code tr, .code th, .code td { border: none; border-collapse: collapse; }
+	.padd { padding-left: 5px; }
+	td.cov, th.cov { width: 50px; height: 20px; text-align: center; font-weight: bold; border-right: 2px solid black; cell-spacing: 0px; }
+	td.cov { vertical-align: top; }
+	td.black { color: #000000; font-weight: bold; padding-top: 4px; }
+	td.white { color: #FFFFFF; font-weight: bold; padding-top: 4px; }
+	.code th { font-weight: bold; border-bottom: 2px solid black; }
+</style>
+</head>
+<body>
+<h3>Generated on  2026-11-18 01:34:20</h3>
+<p>The following table shows fixed point instrumentation results</p>
+<h2>Fixed-Point Report <span>split_quotient_remainder<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function [q_out, r_out] = split_quotient_remainder(u_in, k_in)
+% SPLIT_QUOTIENT_REMAINDER Splits unsigned residual u into quotient (q)
+% and remainder (r) for Golomb-Rice parameter k (0 &lt;= k &lt;= 8).
+%
+% Synthesizes to pure barrel-shifter + bit-masking logic (0 DSPs).
+
+u_val = double(u_in);
+k_val = double(k_in);
+
+% Power-of-two lookup avoids exponentiation/divider hardware in HLS
+switch k_val
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(157,38,35);">0%</TD>
+<TD class="padd"><pre>    case 0
+        pow2_k = 1;</pre></TD>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>
+    case 1
+        pow2_k = 2;
+    case 2
+        pow2_k = 4;
+    case 3
+        pow2_k = 8;
+    case 4
+        pow2_k = 16;
+    case 5
+        pow2_k = 32;
+    case 6
+        pow2_k = 64;
+    case 7
+        pow2_k = 128;
+    otherwise
+        pow2_k = 256; % k = 8 max
+end
+
+% Quotient: floor(u / 2^k) -&gt; synthesizes to variable right-shift (u &gt;&gt; k)
+q_out = floor(u_val / pow2_k);
+
+% Remainder: u - (q * 2^k) -&gt; synthesizes to bit-mask (u &amp; (2^k - 1))
+r_out = u_val - (q_out * pow2_k);
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 14)</th></TR><TR class="a">
+<TD class="left">k_in</TD><TD class="left">double</TD><TD class="right">2</TD><TD class="right">8</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 4, 0)</TD></TR>
+<TR class="b">
+<TD class="left">k_val</TD><TD class="left">double</TD><TD class="right">2</TD><TD class="right">8</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 4, 0)</TD></TR>
+<TR class="a">
+<TD class="left">pow2_k</TD><TD class="left">double</TD><TD class="right">4</TD><TD class="right">256</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 9, 0)</TD></TR>
+<TR class="b">
+<TD class="left">q_out</TD><TD class="left">double</TD><TD class="right">0</TD><TD class="right">66</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 7, 0)</TD></TR>
+<TR class="a">
+<TD class="left">r_out</TD><TD class="left">double</TD><TD class="right">0</TD><TD class="right">241</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 8, 0)</TD></TR>
+<TR class="b">
+<TD class="left">u_in</TD><TD class="left">double</TD><TD class="right">0</TD><TD class="right">648</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 10, 0)</TD></TR>
+<TR class="a">
+<TD class="left">u_val</TD><TD class="left">double</TD><TD class="right">0</TD><TD class="right">648</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 10, 0)</TD></TR>
+</TABLE>
+
+</body>
+</html>

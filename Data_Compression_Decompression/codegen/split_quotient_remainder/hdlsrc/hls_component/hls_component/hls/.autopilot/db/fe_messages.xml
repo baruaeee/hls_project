@@ -1,0 +1,8 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="split_quotient_remainder_fixpt_wrapper" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=split_quotient_remainder_fixpt_wrapper" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../split_quotient_remainder_fixpt_wrapper.cpp:15:0" msg_body="Inlining function 'split_quotient_remainder_fixptClass::split_quotient_remainder_fixpt(ap_uint&lt;10&gt;, ap_uint&lt;4&gt;, ap_uint&lt;7&gt;&amp;, ap_uint&lt;8&gt;&amp;)' into 'split_quotient_remainder_fixpt_wrapper(ap_uint&lt;10&gt;, ap_uint&lt;4&gt;, ap_uint&lt;7&gt;&amp;, ap_uint&lt;8&gt;&amp;)'">
+        <args Callee="split_quotient_remainder_fixptClass::split_quotient_remainder_fixpt(ap_uint&lt;10&gt;, ap_uint&lt;4&gt;, ap_uint&lt;7&gt;&amp;, ap_uint&lt;8&gt;&amp;)" Callee-DebugLoc="File ../split_quotient_remainder_fixptClass.hpp Line 25 Column 0" Caller="split_quotient_remainder_fixpt_wrapper(ap_uint&lt;10&gt;, ap_uint&lt;4&gt;, ap_uint&lt;7&gt;&amp;, ap_uint&lt;8&gt;&amp;)" Caller-DebugLoc="File ../split_quotient_remainder_fixpt_wrapper.cpp Line 15 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
